@@ -1,0 +1,59 @@
+\hypertarget{_cjt___torneos_8hh_source}{}\doxysection{Cjt\+\_\+\+Torneos.\+hh}
+\mbox{\hyperlink{_cjt___torneos_8hh}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00005}00005 \textcolor{preprocessor}{\#ifndef CONJ\_TORNEOS\_HH}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00006}00006 \textcolor{preprocessor}{\#define CONJ\_TORNEOS\_HH}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_torneo_8hh}{Torneo.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_jugador_8hh}{Jugador.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00011}00011 \textcolor{preprocessor}{\#ifndef NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00012}00012 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00013}00013 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00019}\mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{00019}} \textcolor{keyword}{typedef} vector<vector<int>> \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00020}\mbox{\hyperlink{class_cjt___torneos}{00020}} \textcolor{keyword}{class }\mbox{\hyperlink{class_cjt___torneos}{Cjt\_Torneos}}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00021}00021 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00022}00022 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00023}\mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{00023}}   \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}} \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00024}\mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{00024}}   vector<string> \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00025}\mbox{\hyperlink{class_cjt___torneos_a6495300a4ac9d99d6a5a13e0af4815d0}{00025}}   vector<Torneo> \mbox{\hyperlink{class_cjt___torneos_a6495300a4ac9d99d6a5a13e0af4815d0}{circuito}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00026}\mbox{\hyperlink{class_cjt___torneos_a6700b36fda89f219b68f29a46a4df487}{00026}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cjt___torneos_a6700b36fda89f219b68f29a46a4df487}{ntorn}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00028}00028 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00029}00029   \textcolor{comment}{// -\/-\/ CONSTRUCTORA -\/-\/}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00035}\mbox{\hyperlink{class_cjt___torneos_a3da93ce7730f6472ab958496f4af3ec1}{00035}}   \mbox{\hyperlink{class_cjt___torneos_a3da93ce7730f6472ab958496f4af3ec1}{Cjt\_Torneos}}();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00037}00037   \textcolor{comment}{// -\/-\/ MODIFICADORAS -\/-\/}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00044}\mbox{\hyperlink{class_cjt___torneos_a3111bef72d409401941fdb1f9173a1db}{00044}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a3111bef72d409401941fdb1f9173a1db}{anadir\_Torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00050}\mbox{\hyperlink{class_cjt___torneos_a4fdca5875c729108a202fe63de783ea3}{00050}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a4fdca5875c729108a202fe63de783ea3}{eliminar\_Torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00052}00052   \textcolor{comment}{// -\/-\/ CONSULTORAS -\/-\/}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00058}\mbox{\hyperlink{class_cjt___torneos_a72f4b6af379241ca7408ca69a4651271}{00058}}   \mbox{\hyperlink{class_torneo}{Torneo}} \mbox{\hyperlink{class_cjt___torneos_a72f4b6af379241ca7408ca69a4651271}{obtener\_torneo}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id}) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00065}\mbox{\hyperlink{class_cjt___torneos_a2de8584ec3b82801e26af94d47d85387}{00065}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cjt___torneos_a2de8584ec3b82801e26af94d47d85387}{obtener\_puntuacion}}(\textcolor{keyword}{const} \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}} \&Tabla, \textcolor{keyword}{const} \mbox{\hyperlink{class_jugador}{Jugador}} \&P, \textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} columna) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00071}\mbox{\hyperlink{class_cjt___torneos_a0c191f36399bbbfc163852bdf661e514}{00071}}   \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cjt___torneos_a0c191f36399bbbfc163852bdf661e514}{existe\_torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00077}\mbox{\hyperlink{class_cjt___torneos_a0d18a560f7a69f89144c2eb2344d997e}{00077}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cjt___torneos_a0d18a560f7a69f89144c2eb2344d997e}{numero\_torneos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00079}00079   \textcolor{comment}{// -\/-\/ ENTRADA / SALIDA -\/-\/}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00087}\mbox{\hyperlink{class_cjt___torneos_a77323f9a1c10f96ab8b48fe3f5a567ea}{00087}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a77323f9a1c10f96ab8b48fe3f5a567ea}{leer\_tabla\_de\_puntuaciones}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} j) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00096}\mbox{\hyperlink{class_cjt___torneos_aecc09066184bd9773436f123a210b1f9}{00096}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_aecc09066184bd9773436f123a210b1f9}{ini\_torneos}}(\textcolor{keywordtype}{int} n) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00104}\mbox{\hyperlink{class_cjt___torneos_af52b79a1d760f42281de80d7dd78a624}{00104}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_af52b79a1d760f42281de80d7dd78a624}{leer\_categorias}}(\textcolor{keywordtype}{int} n) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00113}\mbox{\hyperlink{class_cjt___torneos_a02ad5c005cab62d6d08ea3272aefb370}{00113}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a02ad5c005cab62d6d08ea3272aefb370}{listar\_categorias}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00119}\mbox{\hyperlink{class_cjt___torneos_a3479fb8622fbc711fed12727780e8141}{00119}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a3479fb8622fbc711fed12727780e8141}{imprimir\_torneos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00120}00120 \};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8hh_source_l00121}00121 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

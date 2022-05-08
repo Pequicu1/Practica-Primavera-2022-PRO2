@@ -1,0 +1,318 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Este es software libre; consulte en el c�digo fuente las condiciones de copia.
+# NO hay garant�a; ni siquiera para MERCANTIBILIDAD o EL CUMPLIMIENTO DE
+# ALG�N PROP�SITO PARTICULAR.
+
+ # Este programa fue construido para i386-pc-mingw32
+ 
+
+# Base de datos del Make, mostrada en Sun May 08 21:59:45 2022
+
+# Variables
+
+# autom�tica/o
+<D = $(patsubst %/,%,$(dir $<))
+# autom�tica/o
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# entorno
+VSCODE_LOG_NATIVE = false
+# autom�tica/o
+?D = $(patsubst %/,%,$(dir $?))
+# entorno
+PLATFORMIO_IDE = 2.4.3
+# autom�tica/o
+@D = $(patsubst %/,%,$(dir $@))
+# entorno
+HOMEDRIVE = C:
+# autom�tica/o
+@F = $(notdir $@)
+# autom�tica/o
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2
+# por defecto
+SHELL := sh.exe
+# entorno
+WINDIR = C:\WINDOWS
+# entorno
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"81204e1a79a1a53aa2a74c293087d05a.es","_translationsConfigFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\81204e1a79a1a53aa2a74c293087d05a.es\\tcf.json","_cacheRoot":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\81204e1a79a1a53aa2a74c293087d05a.es","_resolvedLanguagePackCoreLocation":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\81204e1a79a1a53aa2a74c293087d05a.es\\dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\81204e1a79a1a53aa2a74c293087d05a.es\\corrupted.info","_languagePackSupport":true}
+# entorno
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# entorno
+ONEDRIVE = C:\Users\Ivan\OneDrive
+# entorno
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile
+MAKEFILE_LIST := 
+# entorno
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# entorno
+TMP = C:\Users\Ivan\AppData\Local\Temp
+# entorno
+VSCODE_VERBOSE_LOGGING = true
+# entorno
+PROGRAMW6432 = C:\Program Files
+# entorno
+PROGRAMDATA = C:\ProgramData
+# entorno
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-369cb4bb-94c0-4d31-a376-dbb760b39ad4-sock
+# entorno
+VSCODE_CWD = C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code
+# entorno
+NO_PROXY = 127.0.0.1
+# entorno
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# entorno
+PROCESSOR_ARCHITECTURE = x86
+# entorno
+USERPROFILE = C:\Users\Ivan
+# entorno
+ALLUSERSPROFILE = C:\ProgramData
+# entorno
+VSCODE_LOG_STACK = false
+# entorno
+NUMBER_OF_PROCESSORS = 4
+# entorno
+ELECTRON_RUN_AS_NODE = 1
+# por defecto
+.FEATURES := target-specific order-only second-expansion else-if archives
+# autom�tica/o
+%F = $(notdir $%)
+# entorno
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24616_UTOKCJNTMAIEMPIS
+# entorno
+VSCODE_PIPE_LOGGING = true
+# entorno
+COMPUTERNAME = DESKTOP-4RAEBLP
+# entorno
+PROGRAMFILES = C:\Program Files (x86)
+# entorno
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# entorno
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# entorno
+USERNAME = Ivan
+# entorno
+PUBLIC = C:\Users\Public
+# entorno
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# entorno
+VSCODE_CODE_CACHE_PATH = C:\Users\Ivan\AppData\Roaming\Code\CachedData\dfd34e8260c270da74b5c2d86d61aee4b6d56977
+# entorno
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# entorno
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# entorno
+LOGONSERVER = \\DESKTOP-4RAEBLP
+# entorno
+ONEDRIVECONSUMER = C:\Users\Ivan\OneDrive
+# entorno
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# entorno
+USERDOMAIN = DESKTOP-4RAEBLP
+# entorno
+PLATFORMIO_PATH = C:\Users\Ivan\.platformio\python3;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;C:\Users\Ivan\PycharmProjects\Equaciones\venv\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C;C:\Program Files\Graphviz\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Ivan\Desktop\meld-3.20.4\bin;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\spicetify-cli;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;C:\Users\Ivan\PycharmProjects\Equaciones\venv\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C;C:\Program Files\Graphviz\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Ivan\Desktop\meld-3.20.4\bin;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\spicetify-cli
+# por defecto
+MAKE = $(MAKE_COMMAND)
+# por defecto
+MAKECMDGOALS := all
+# entorno
+PATH = C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;C:\Users\Ivan\PycharmProjects\Equaciones\venv\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C;C:\Program Files\Graphviz\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Ivan\Desktop\meld-3.20.4\bin;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\AppData\Local\atom\bin;C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\Ivan\spicetify-cli
+# entorno
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_201
+# por defecto
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := 
+# entorno
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# autom�tica/o
+%D = $(patsubst %/,%,$(dir $%))
+# entorno
+LOCALAPPDATA = C:\Users\Ivan\AppData\Local
+# entorno
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# por defecto
+MAKE_COMMAND := make.exe
+# entorno
+PROCESSOR_ARCHITEW6432 = AMD64
+# por defecto
+.VARIABLES := 
+# autom�tica/o
+*F = $(notdir $*)
+# entorno
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+# entorno
+OS = Windows_NT
+# entorno
+VSCODE_IPC_HOOK = \\.\pipe\11f8232b86d218e6675845479b472ba2-1.66.2-main-sock
+# entorno
+HOMEPATH = \Users\Ivan
+# entorno
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# entorno
+PROMPT = $P$G
+# entorno
+MFLAGS = -Rrqp
+# autom�tica/o
+*D = $(patsubst %/,%,$(dir $*))
+# entorno
+SYSTEMROOT = C:\WINDOWS
+# autom�tica/o
++D = $(patsubst %/,%,$(dir $+))
+# autom�tica/o
++F = $(notdir $+)
+# entorno
+APPDATA = C:\Users\Ivan\AppData\Roaming
+# entorno
+VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
+# entorno
+TEMP = C:\Users\Ivan\AppData\Local\Temp
+# entorno
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# por defecto
+MAKEFILES := 
+# autom�tica/o
+<F = $(notdir $<)
+# entorno
+PLATFORMIO_CALLER = vscode
+# entorno
+LC_ALL = C
+# autom�tica/o
+^F = $(notdir $^)
+# por defecto
+SUFFIXES := 
+# entorno
+SYSTEMDRIVE = C:
+# entorno
+SESSIONNAME = Console
+# entorno
+PROCESSOR_REVISION = 5e03
+# entorno
+MAKELEVEL := 0
+# entorno
+LANG = C
+# entorno
+PROCESSOR_LEVEL = 6
+# entorno
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# entorno
+VSCODE_PID = 24616
+# entorno
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=96/1024=9%, Rehash=0, Colisiones=13/113=12%
+
+# Valores de variables espec�ficas al patr�n
+
+# No hay valores de variables espec�ficas al patr�n.
+
+# Directorios
+
+# : podr�a no estar establecido.
+# %USERPROFILE%\AppData\Local\Microsoft\WindowsApps: podr�a no estar establecido.
+# C:\Users\Ivan\AppData\Local\atom\bin (llave C:/Users/Ivan/AppData/Local/atom/bin, mtime 1550178580): 6 archivos, no imposibilidades.
+# C:\Program Files\Intel\iCLS Client\ (llave C:/Program Files/Intel/iCLS Client/, mtime 1480504593): 22 archivos, no imposibilidades.
+# C:\Program Files (x86)\Razer Chroma SDK\bin (llave C:/Program Files (x86)/Razer Chroma SDK/bin, mtime 1648644831): 47 archivos, no imposibilidades.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1602712742): 33 archivos, no imposibilidades.
+# C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1646872676): 156 archivos, no imposibilidades.
+# . (llave c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2, mtime 1650036346): 16 archivos, no imposibilidades.
+# C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/Ivan/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1649835547): 4 archivos, no imposibilidades.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (llave C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1499459334): 10 archivos, no imposibilidades.
+# C:\Program Files (x86)\Windows Live\Shared (llave C:/Program Files (x86)/Windows Live/Shared, mtime 1518292824): 34 archivos, no imposibilidades.
+# C:\Users\Ivan\spicetify-cli (llave C:/Users/Ivan/spicetify-cli, mtime 1649968619): 9 archivos, no imposibilidades.
+# C:\Program Files\Graphviz\bin (llave C:/Program Files/Graphviz/bin, mtime 1649844746): 61 archivos, no imposibilidades.
+# C:\MinGW\bin (llave C:/MinGW/bin, mtime 1633964086): 144 archivos, no imposibilidades.
+# C: podr�a no estar establecido.
+# C:\Program Files\Intel\Intel(R) Management Engine Components\IPT (llave C:/Program Files/Intel/Intel(R) Management Engine Components/IPT, mtime 1480504591): 5 archivos, no imposibilidades.
+# C:\Program Files (x86)\Skype\Phone\ (llave C:/Program Files (x86)/Skype/Phone/, mtime 1506247709): 13 archivos, no imposibilidades.
+# C:\WINDOWS\System32\OpenSSH\: podr�a no estar establecido.
+# C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7 (llave C:/Users/Ivan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.7, mtime 1600112637): 6 archivos, no imposibilidades.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (llave C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1547587333): 5 archivos, no imposibilidades.
+# C:\Program Files\Intel\Intel(R) Management Engine Components\DAL (llave C:/Program Files/Intel/Intel(R) Management Engine Components/DAL, mtime 1480504591): 4 archivos, no imposibilidades.
+# C:\Windows (llave C:/Windows, mtime 1604537031): 126 archivos, no imposibilidades.
+# C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps (llave C:/Users/Ivan/AppData/Local/Microsoft/WindowsApps, mtime 1650753305): 32 archivos, no imposibilidades.
+# C:\Program Files\Razer Chroma SDK\bin (llave C:/Program Files/Razer Chroma SDK/bin, mtime 1578303253): 4 archivos, no imposibilidades.
+# C:\Users\Ivan\PycharmProjects\Equaciones\venv\Scripts (llave C:/Users/Ivan/PycharmProjects/Equaciones/venv/Scripts, mtime 1581200605): 64 archivos, no imposibilidades.
+# C:\Program Files\Java\jdk1.8.0_201\bin (llave C:/Program Files/Java/jdk1.8.0_201/bin, mtime 1547587183): 56 archivos, no imposibilidades.
+# C:\Users\Ivan\Desktop\meld-3.20.4\bin (llave C:/Users/Ivan/Desktop/meld-3.20.4/bin, mtime 1651087719): 3 archivos, no imposibilidades.
+# C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin (llave C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin, mtime 1553637628): 5 archivos, no imposibilidades.
+# C:\Program Files (x86)\Intel\iCLS Client\ (llave C:/Program Files (x86)/Intel/iCLS Client/, mtime 1480504593): 20 archivos, no imposibilidades.
+# C:\Windows\system32 (llave C:/Windows/system32, mtime 1651496566): 3064 archivos, no imposibilidades.
+# C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT (llave C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT, mtime 1480504591): 6 archivos, no imposibilidades.
+# C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts (llave C:/Users/Ivan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.7/Scripts, mtime 1564795925): 2 archivos, no imposibilidades.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (llave C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1569359786): 5 archivos, no imposibilidades.
+# C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL (llave C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL, mtime 1480504591): 10 archivos, no imposibilidades.
+# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1650915666): 5 archivos, no imposibilidades.
+
+# 3977 archivos, no imposibilidades en 35 directorios.
+
+# Reglas impl�citas.
+
+# No hay reglas impl�citas.
+
+# Archivos
+
+# No es un objetivo:
+all:
+#  Objetivo de l�nea de instrucciones.
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  El archivo no existe.
+#  El archivo ha sido actualizado.
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
+
+# No es un objetivo:
+.DEFAULT:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+
+# No es un objetivo:
+makefile:
+#  Por omisi�n, MAKEFILES, o -include/sinclude makefile.
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  El archivo no existe.
+#  El archivo ha sido actualizado.
+#  Fallo al ser actualizado.
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
+
+# No es un objetivo:
+.SUFFIXES:
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  La fecha de modificaci�n no se comprob�.
+#  El archivo ha sido actualizado.
+
+# No es un objetivo:
+GNUmakefile:
+#  Por omisi�n, MAKEFILES, o -include/sinclude makefile.
+#  La b�squeda de reglas impl�citas ha sido efectuada.
+#  El archivo no existe.
+#  El archivo ha sido actualizado.
+#  Fallo al ser actualizado.
+# estad�sticas del conjunto de variables de la tabla de hash:
+# Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
+
+# estad�sticas de la tabla de hash de los archivos:
+# Carga=5/1024=0%, Rehash=0, Colisiones=0/16=0%
+# Rutas de b�squeda VPATH
+
+# No hay rutas de b�squeda `vpath'.
+
+# No hay ruta de b�squeda general (variable `VPATH').
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Se termina la base de datos de Make en Sun May 08 21:59:45 2022
+
+ 
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+
