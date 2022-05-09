@@ -50,6 +50,14 @@ public:
     */
   void eliminar_Torneo(const Torneo &T);
 
+  /**
+   * @brief Modifica el Torneo T deseado
+   * \pre P.I inicializado previamente y T existe
+   * \post modifica en el map de torneos el torneo deseado.
+   * @param T
+   */
+  void actualizar_torneo(const Torneo &T);
+
   // -- CONSULTORAS --
 
   /** @brief Consultora que devuelve el Torneo deseado.

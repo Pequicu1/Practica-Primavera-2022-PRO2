@@ -44,6 +44,7 @@ public:
    * @param n
    */
   void modificar_puntos(int n);
+
   /**
    * @brief Modificadora de las estadísticas del jugador.
    * \pre cierto
@@ -106,14 +107,6 @@ public:
   pair<int, int> consultar_juegos() const;
 
   /**
-   * @brief consultora de los partidos jugados por el jugador.
-   * \pre cert
-   * \post devuelve un natural que representa los partidos jugados por el jugador.
-   * @return int
-   */
-  int consultar_partidos_jugados() const;
-
-  /**
    * @brief consultora de los torneos disputados por el jugador.
    * \pre cert
    * \post devuelve un natural que representa los torneos disputados por el jugador.
@@ -143,7 +136,6 @@ private:
   string id;
   int puntos;
   int pos_ranking;
-  int partidos_jugados;
   int torneos_disputados;
   pair<int, int> partidos;
   pair<int, int> sets;

@@ -129,6 +129,8 @@ int main()
 
             BinTree<Jugador> Emparejamientos = T.obtener_cuadro();
             T.imprimir_cuadro(Emparejamientos);
+
+            torns.actualizar_torneo(T);
             cout << endl;
         }
         else if (comando == "finalizar_torneo" or comando == "ft")
@@ -139,6 +141,7 @@ int main()
             cout << ' ' << id << endl;
 
             Torneo T = torns.obtener_torneo(id);
+            cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
             T.imprimir_cuadro(T.obtener_cuadro());
             T.leer_resultados(T.obtener_cuadro());
             // T.imprimir_resultados();

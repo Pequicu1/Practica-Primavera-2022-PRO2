@@ -88,11 +88,6 @@ void Jugador::modificar_estadisticas(int stat, char c)
     }
 }
 
-int Jugador::consultar_partidos_jugados() const
-{
-    return partidos_jugados;
-}
-
 int Jugador::consultar_torneos_disputados() const
 {
     return torneos_disputados;

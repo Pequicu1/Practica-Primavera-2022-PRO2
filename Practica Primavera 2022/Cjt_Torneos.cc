@@ -114,3 +114,8 @@ void Cjt_Torneos::listar_categorias() const
         cout << endl;
     }
 }
+
+void Cjt_Torneos::actualizar_torneo(const Torneo &T)
+{
+    indice_torneos[T.consultar_nombre()] = T;
+}

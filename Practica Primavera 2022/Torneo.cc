@@ -13,7 +13,10 @@
 #include <math.h>
 #endif
 
-Torneo::Torneo() {}
+Torneo::Torneo()
+{
+    Cuadro = BinTree<Jugador>();
+}
 
 void Torneo::leer_torneo()
 {
@@ -100,63 +103,80 @@ void Torneo::imprimir_cuadro(const BinTree<Jugador> &A) const
     }
 }
 
-Jugador ganador(Jugador &J1, Jugador &J2)
+Jugador ganador(Jugador &J1, Jugador &J2, string puntos)
 {
-    /*int p1, p2;
-    char coso;
-    int sets1 = 0;
-    int sets2 = 0;
-    cin >> p1 >> coso >> p2;
-    if (p1 == 1 and p2 == 0)
+    cout << J1.consultar_pos_ranking() << '.' << J1.consultar_id() << " vs " << J2.consultar_pos_ranking() << '.' << J2.consultar_id() << ' ' << puntos;
+    int i, j;
+    i = 0;
+    j = 2;
+
+    int sets1, sets2;
+    sets1 = sets2 = 0;
+
+    // sumar partidos jugados;
+    while (i <= puntos.length())
     {
-        J1.modificar_estadisticas(0, '+');
-        J2.modificar_estadisticas(0, '-');
-        return J1;
+        if (puntos[i] == '1' and puntos[j] == '0')
+        {
+            // J1 ++ partido ganado
+            // J2 ++ partido perdido
+            return J1;
+        }
+        else if (puntos[i] == '0' and puntos[j] == '1')
+            // J2 ++ partido ganado
+            // J1 ++ partido perdido
+            return J2;
+
+        // sumar juegos;
+        if (puntos[i] > puntos[j])
+        {
+            ++sets1;
+        }
+        else
+            ++sets2;
+
+        i += 4;
+        j += 4;
     }
-    else if (p1 == 0 and p2 == 1)
-    {
-        J2.modificar_estadisticas(0, '+');
-        J1.modificar_estadisticas(0, '-');
+
+    if (sets1 > sets2)
+        return J1;
+    else
         return J2;
-    }*/
-    J2 = J2;
-    return J1;
 }
 Jugador leer_resultados_i(const BinTree<Jugador> &A)
 {
-    int puntos;
+    string puntos;
     cin >> puntos;
-    if (puntos == 0)
+    if (puntos == "0")
     {
         return A.value();
-        cout << "holi" << endl;
     }
     else
     {
 
-        string in;
-        cin >> in;
         Partido match;
         match.first = leer_resultados_i(A.left());
+        // cout << match.first.ranking << '.' << match.first.name << " vs ";
         match.second = leer_resultados_i(A.right());
+        // cout << match.second.ranking << '.' << match.second.name << ' ' << puntos;
+        Jugador Ganador = ganador(match.first, match.second, puntos);
+        cout << '(';
+        cout << ')';
 
-        Jugador Ganador = ganador(match.first, match.second);
-        cout << match.first.consultar_id() << " vs " << match.second.consultar_id() << endl;
-        cout << "resultados : " << in << endl;
+        // cout << "resultados: " << puntos << endl;
+        // cout << "Pasa: " << Ganador.name << endl;
+        //  cout << "resultados : " << in << endl;
         return Ganador;
     }
 }
 
 void Torneo::leer_resultados(const BinTree<Jugador> &A)
 {
-    if (A.empty())
-        cout << "ta vacío" << endl;
     leer_resultados_i(A);
 }
 
 BinTree<Jugador> Torneo::obtener_cuadro() const
 {
-    if (Cuadro.empty())
-        cout << "ta vacio" << endl;
     return Cuadro;
 }
