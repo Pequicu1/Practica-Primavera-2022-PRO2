@@ -63,31 +63,6 @@ pair<int, int> Jugador::consultar_juegos() const
     return juegos;
 }
 
-void Jugador::modificar_estadisticas(int stat, char c)
-{
-    if (stat == 0)
-    {
-        if (c == '+')
-            ++partidos.first;
-        else
-            ++partidos.second;
-    }
-    else if (stat == 1)
-    {
-        if (c == '+')
-            ++sets.first;
-        else
-            ++sets.second;
-    }
-    else
-    {
-        if (c == '+')
-            ++juegos.first;
-        else
-            ++juegos.second;
-    }
-}
-
 int Jugador::consultar_torneos_disputados() const
 {
     return torneos_disputados;
@@ -96,6 +71,39 @@ int Jugador::consultar_torneos_disputados() const
 void Jugador::modificar_puntos(int n)
 {
     puntos = n;
+}
+
+void Jugador::mas_torneo()
+{
+    ++torneos_disputados;
+}
+
+void Jugador::modificar_juegos(int n, char c)
+{
+    if (c == '+')
+    {
+        juegos.first += n;
+    }
+    else
+        juegos.second += n;
+}
+void Jugador::modificar_sets(int n, char c)
+{
+    if (c == '+')
+    {
+        sets.first += n;
+    }
+    else
+        sets.second += n;
+}
+void Jugador::modificar_partidos(char c)
+{
+    if (c == '+')
+    {
+        ++partidos.first;
+    }
+    else
+        ++partidos.second;
 }
 
 void Jugador::escribir_jugador() const

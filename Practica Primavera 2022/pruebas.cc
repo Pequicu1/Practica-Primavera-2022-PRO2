@@ -10,7 +10,14 @@ struct Jugador
     string name;
 };
 
-typedef pair<Jugador, Jugador> Partido;
+// typedef pair<Jugador, Jugador> Partido;
+
+struct Partido
+{
+    Jugador J1;
+    Jugador J2;
+    string puntos;
+};
 
 struct Cjt_Jugadores
 {
@@ -113,7 +120,7 @@ Jugador ganador(Jugador &J1, Jugador &J2, string puntos)
         return J2;
 }
 
-Jugador leer_resultados_i(const BinTree<Jugador> &A)
+Jugador leer_resultados_i(const BinTree<Jugador> &A, BinTree<Partido> &Res)
 {
     string puntos;
     cin >> puntos;
@@ -125,23 +132,30 @@ Jugador leer_resultados_i(const BinTree<Jugador> &A)
     {
 
         Partido match;
-        match.first = leer_resultados_i(A.left());
-        match.second = leer_resultados_i(A.right());
+        match.J1 = leer_resultados_i(A.left(), Res);
+        match.J2 = leer_resultados_i(A.right(), Res);
+        Jugador Ganador = ganador(match.J1, match.J2, puntos);
 
-        Jugador Ganador = ganador(match.first, match.second, puntos);
-        cout << match.first.ranking << '.' << match.first.name << " vs " << match.second.ranking << '.' << match.second.name << endl;
-        cout << "resultados: " << puntos << endl;
-        cout << "Pasa: " << Ganador.name << endl;
-        // cout << "resultados : " << in << endl;
+        // leer_resultados_i(A.left(), Res);
+        // leer_resultados_i(A.right(), Res);
+
+        Res = BinTree<Partido>(match);
         return Ganador;
     }
 }
 
+void imprimir_resultados(const BinTree<Partido> &Res)
+{
+    cout << Res.value().J1.ranking << '.' << Res.value().J1.name << " vs " << Res.value().J2.ranking << '.' << Res.value().J2.name << ' ' << Res.value().puntos;
+    imprimir_resultados(Res.left());
+    imprimir_resultados(Res.right());
+}
+
 void leer_resultados(const BinTree<Jugador> &A)
 {
-    if (A.empty())
-        cout << "ta vacío" << endl;
-    leer_resultados_i(A);
+    BinTree<Partido> Resultados;
+    leer_resultados_i(A, Resultados);
+    imprimir_resultados(Resultados);
 }
 
 int main()

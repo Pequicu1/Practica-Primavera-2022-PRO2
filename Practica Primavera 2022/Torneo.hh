@@ -41,7 +41,9 @@ public:
         \pre Participantes es un conjunto de jugadores ya incializado.
         \post Retorna un BinTree de pares de jugadores que representa el cuadro de partidos del torneo.
     */
-  void crear_torneo(const Cjt_Jugadores &participantes);
+  void crear_torneo();
+
+  void actualiza_participantes(const Cjt_Jugadores &P);
 
   // -- CONSULTORAS --
 
@@ -63,6 +65,14 @@ public:
     */
   BinTree<Jugador> obtener_cuadro() const;
 
+  /**
+   * @brief Consultora del cuadro de emparejamientos Torneo.
+       \pre El parámetro implícito está previamente inicializado.
+       \post Devuelve los participantes del torneo.
+   * @return Cjt_Jugadores
+   */
+  Cjt_Jugadores obtener_participantes() const;
+
   // -- ENTRADA / SALIDA --
 
   /** @brief Lee un conjunto de jugadores de n participantes.
@@ -75,7 +85,7 @@ public:
         \pre A es un cuadro de emparejamientos inicializado del torneo.
         \post El cuadro A queda con los resultados introducidos en preorden siguiendo el Árbol binario.
     */
-  void leer_resultados(const BinTree<Jugador> &A);
+  void leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntuaciones);
 
   /** @brief Operación de lectura
      \pre cierto

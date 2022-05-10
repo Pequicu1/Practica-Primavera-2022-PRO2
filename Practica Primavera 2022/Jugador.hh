@@ -46,12 +46,30 @@ public:
   void modificar_puntos(int n);
 
   /**
-   * @brief Modificadora de las estadísticas del jugador.
+   * @brief incrementa los torneos jugados;
    * \pre cierto
-      \post Se incrementa o decrementa los sets, juegos o partidos.
-   * @param estat
+   * \post el jugador pasa a tener un torneo jugado más.
    */
-  void modificar_estadisticas(int stat, char c);
+  void mas_torneo();
+
+  /**
+   * @brief Modificadora de los juegos del jugador.
+      \pre cierto
+      \post El parámetro implícito pasa a tener n juegos ganados o perdidos.
+   */
+  void modificar_juegos(int n, char c);
+  /**
+   * @brief Modificadora de los sets del jugador.
+      \pre cierto
+      \post El parámetro implícito pasa a tener n sets ganados o perdidos.
+   */
+  void modificar_sets(int n, char c);
+  /**
+   * @brief Modificadora de los partidos del jugador.
+      \pre cierto
+      \post se incrementa en 1 los partidos gando o perdidos por el jugador.
+   */
+  void modificar_partidos(char c);
 
   // -- CONSULTORAS --
 

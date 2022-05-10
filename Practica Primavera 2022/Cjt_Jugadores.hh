@@ -50,6 +50,13 @@ public:
     */
     void eliminar_jugador(const Jugador &jug);
 
+    /**
+     * @brief modifica las estadisticas de los jugadores del ranking
+     * \pre cierto
+     * \post se modifica el jugador objetivo del ranking
+     */
+    void modificar_ranking(const Jugador &P);
+
     // -- CONSULTORAS --
 
     /** @brief Consultora que indica si existe el jugador P en el circuito.

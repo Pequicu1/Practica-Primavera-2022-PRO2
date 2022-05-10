@@ -125,11 +125,11 @@ int main()
             int nparticipantes;
             cin >> nparticipantes;
             Cjt_Jugadores Participantes = T.leer_participantes(nparticipantes, jugs);
-            T.crear_torneo(Participantes);
+            T.actualiza_participantes(Participantes);
+            T.crear_torneo();
 
             BinTree<Jugador> Emparejamientos = T.obtener_cuadro();
             T.imprimir_cuadro(Emparejamientos);
-
             torns.actualizar_torneo(T);
             cout << endl;
         }
@@ -141,9 +141,8 @@ int main()
             cout << ' ' << id << endl;
 
             Torneo T = torns.obtener_torneo(id);
-            cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
-            T.imprimir_cuadro(T.obtener_cuadro());
-            T.leer_resultados(T.obtener_cuadro());
+            // cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
+            T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1]);
             // T.imprimir_resultados();
         }
         else if (comando == "listar_ranking" or comando == "lr")

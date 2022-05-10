@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
  # Este programa fue construido para i386-pc-mingw32
  
 
-# Base de datos del Make, mostrada en Mon May 09 19:00:44 2022
+# Base de datos del Make, mostrada en Tue May 10 16:45:56 2022
 
 # Variables
 
@@ -60,7 +60,7 @@ PROGRAMW6432 = C:\Program Files
 # entorno
 PROGRAMDATA = C:\ProgramData
 # entorno
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2d2900c7-e282-47af-b590-918e79ef5926-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ea87b7cc-dde9-489a-84d0-05cc311488e0-sock
 # entorno
 VSCODE_CWD = C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code
 # entorno
@@ -84,7 +84,7 @@ ELECTRON_RUN_AS_NODE = 1
 # autom�tica/o
 %F = $(notdir $%)
 # entorno
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_23520_XKAWAMJIFPCQNILR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8792_SFYAXLPRCJQDTKRI
 # entorno
 VSCODE_PIPE_LOGGING = true
 # entorno
@@ -170,8 +170,6 @@ SYSTEMROOT = C:\WINDOWS
 # entorno
 APPDATA = C:\Users\Ivan\AppData\Roaming
 # entorno
-__COMPAT_LAYER = DetectorsAppHealth
-# entorno
 VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
 # entorno
 TEMP = C:\Users\Ivan\AppData\Local\Temp
@@ -204,11 +202,11 @@ PROCESSOR_LEVEL = 6
 # entorno
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # entorno
-VSCODE_PID = 23520
+VSCODE_PID = 8792
 # entorno
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # estad�sticas del conjunto de variables de la tabla de hash:
-# Carga=97/1024=9%, Rehash=0, Colisiones=13/114=11%
+# Carga=96/1024=9%, Rehash=0, Colisiones=13/113=12%
 
 # Valores de variables espec�ficas al patr�n
 
@@ -223,8 +221,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # C:\Program Files (x86)\Razer Chroma SDK\bin (llave C:/Program Files (x86)/Razer Chroma SDK/bin, mtime 1648644831): 47 archivos, no imposibilidades.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1602712742): 33 archivos, no imposibilidades.
 # C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1646872676): 156 archivos, no imposibilidades.
-# . (llave c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2, mtime 16520 
-40085): 18 archivos, no imposibilidades.
+# . (llave c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2, mtime 1652040085): 18 archivos, no imposibilidades.
 # C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/Ivan/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652027583): 4 archivos, no imposibilidades.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (llave C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1499459334): 10 archivos, no imposibilidades.
 # C:\Program Files (x86)\Windows Live\Shared (llave C:/Program Files (x86)/Windows Live/Shared, mtime 1518292824): 34 archivos, no imposibilidades.
@@ -252,7 +249,8 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts (llave C:/Users/Ivan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.7/Scripts, mtime 1564795925): 2 archivos, no imposibilidades.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (llave C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1569359786): 5 archivos, no imposibilidades.
 # C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL (llave C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL, mtime 1480504591): 10 archivos, no imposibilidades.
-# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1650915666): 5 archivos, no imposibilidades.
+# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1650915666): 5 arch 
+ivos, no imposibilidades.
 
 # 3987 archivos, no imposibilidades en 36 directorios.
 
@@ -303,11 +301,9 @@ GNUmakefile:
 # estad�sticas del conjunto de variables de la tabla de hash:
 # Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
 
-# estad�sticas de la tabla de hash de  
-make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
-
-los archivos:
-# Carga=5/1024=0%, Rehash=0, Colisiones=0/16=0%
+# estad�sticas de la tabla de hash de los archivos:
+# Carga=5/1024=0%, Rehash=0, Colis 
+iones=0/16=0%
 # Rutas de b�squeda VPATH
 
 # No hay rutas de b�squeda `vpath'.
@@ -319,6 +315,8 @@ los archivos:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Se termina la base de datos de Make en Mon May 09 19:00:44 2022
+# Se termina la base de datos de Make en Tue May 10 16:45:56 2022
 
  
+make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.
+

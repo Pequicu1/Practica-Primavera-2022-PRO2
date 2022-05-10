@@ -38,6 +38,11 @@ string Torneo::consultar_nombre() const
     return identificador;
 }
 
+Cjt_Jugadores Torneo::obtener_participantes() const
+{
+    return participantes;
+}
+
 Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
 {
     Cjt_Jugadores new_participantes;
@@ -46,9 +51,15 @@ Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
     {
         int pos;
         cin >> pos;
+        rank0[pos - 1].mas_torneo();
         new_participantes.anadir_jugador(rank0[pos - 1]);
     }
     return new_participantes;
+}
+
+void Torneo::actualiza_participantes(const Cjt_Jugadores &P)
+{
+    participantes = P;
 }
 
 BinTree<Jugador> crear_torneo_i(Jugador ant, const vector<Jugador> &rank, int altura, int altura_act, int x)
@@ -75,14 +86,14 @@ BinTree<Jugador> crear_torneo_i(Jugador ant, const vector<Jugador> &rank, int al
         return Cuadro;
     }
 }
-void Torneo::crear_torneo(const Cjt_Jugadores &jugs)
+void Torneo::crear_torneo()
 {
     // altura del cuadro
-    int altura = ceil(log2(jugs.numero_jugadores()) + 1);
+    int altura = ceil(log2(participantes.numero_jugadores()) + 1);
 
-    int x = pow(2, altura - 1) - jugs.numero_jugadores();
+    int x = pow(2, altura - 1) - participantes.numero_jugadores();
 
-    vector<Jugador> local_rank = jugs.obtener_ranking();
+    vector<Jugador> local_rank = participantes.obtener_ranking();
     Cuadro = crear_torneo_i(local_rank[0], local_rank, altura, 1, x);
 }
 
@@ -103,9 +114,10 @@ void Torneo::imprimir_cuadro(const BinTree<Jugador> &A) const
     }
 }
 
-Jugador ganador(Jugador &J1, Jugador &J2, string puntos)
+Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts, Cjt_Jugadores &parts)
 {
-    cout << J1.consultar_pos_ranking() << '.' << J1.consultar_id() << " vs " << J2.consultar_pos_ranking() << '.' << J2.consultar_id() << ' ' << puntos;
+    cout << J1.consultar_pos_ranking() << '.' << J1.consultar_id() << " vs " << J2.consultar_pos_ranking() << '.' << J2.consultar_id() << ' ' << resultados;
+
     int i, j;
     i = 0;
     j = 2;
@@ -113,67 +125,106 @@ Jugador ganador(Jugador &J1, Jugador &J2, string puntos)
     int sets1, sets2;
     sets1 = sets2 = 0;
 
-    // sumar partidos jugados;
-    while (i <= puntos.length())
-    {
-        if (puntos[i] == '1' and puntos[j] == '0')
-        {
-            // J1 ++ partido ganado
-            // J2 ++ partido perdido
-            return J1;
-        }
-        else if (puntos[i] == '0' and puntos[j] == '1')
-            // J2 ++ partido ganado
-            // J1 ++ partido perdido
-            return J2;
+    Jugador Ganador;
 
-        // sumar juegos;
-        if (puntos[i] > puntos[j])
+    if (resultados.length() > 3)
+    {
+        while (i <= resultados.length())
         {
-            ++sets1;
+
+            if (resultados[i] > resultados[j])
+            {
+                J1.modificar_juegos(resultados[i] - '0', '+');
+                J2.modificar_juegos(resultados[j] - '0', '-');
+                ++sets1;
+            }
+            else if (resultados[i] < resultados[j])
+            {
+                J1.modificar_juegos(resultados[i] - '0', '-');
+                J2.modificar_juegos(resultados[j] - '0', '+');
+                ++sets2;
+            }
+            i += 4;
+            j += 4;
+        }
+
+        if (sets1 > sets2)
+        {
+            J1.modificar_sets(sets1, '+');
+            J2.modificar_sets(sets2, '-');
+            J2.modificar_puntos(pts);
+            // cout << J2.consultar_id() << "tiene: " << J2.consultar_puntos() << endl;
+            Ganador = J1;
         }
         else
-            ++sets2;
-
-        i += 4;
-        j += 4;
+        {
+            J1.modificar_sets(sets1, '-');
+            J2.modificar_sets(sets2, '+');
+            J1.modificar_puntos(pts);
+            Ganador = J2;
+        }
     }
-
-    if (sets1 > sets2)
-        return J1;
     else
-        return J2;
+    {
+
+        if (resultados[i] == '1' and resultados[j] == '0')
+        {
+            J1.modificar_partidos('+');
+            J2.modificar_partidos('-');
+            J2.modificar_puntos(pts);
+            Ganador = J1;
+        }
+        else if (resultados[i] == '0' and resultados[j] == '1')
+        {
+            J2.modificar_partidos('+');
+            J1.modificar_partidos('-');
+            J1.modificar_puntos(pts);
+            Ganador = J2;
+        }
+    }
+    parts.modificar_ranking(J1);
+    parts.modificar_ranking(J2);
+    return Ganador;
 }
-Jugador leer_resultados_i(const BinTree<Jugador> &A)
+Jugador leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int &nivel, Cjt_Jugadores &parts)
 {
     string puntos;
     cin >> puntos;
     if (puntos == "0")
     {
+        --nivel;
         return A.value();
     }
     else
     {
 
         Partido match;
-        match.first = leer_resultados_i(A.left());
-        // cout << match.first.ranking << '.' << match.first.name << " vs ";
-        match.second = leer_resultados_i(A.right());
-        // cout << match.second.ranking << '.' << match.second.name << ' ' << puntos;
-        Jugador Ganador = ganador(match.first, match.second, puntos);
+        match.first = leer_resultados_i(A.left(), pts, ++nivel, parts);
+        match.second = leer_resultados_i(A.right(), pts, ++nivel, parts);
+        --nivel;
         cout << '(';
+        Jugador Ganador = ganador(match.first, match.second, puntos, pts[nivel], parts);
+        if (nivel == 1)
+        {
+            Ganador.modificar_puntos(pts[nivel - 1]);
+            parts.modificar_ranking(Ganador);
+        }
+        cout << endl;
         cout << ')';
 
-        // cout << "resultados: " << puntos << endl;
-        // cout << "Pasa: " << Ganador.name << endl;
-        //  cout << "resultados : " << in << endl;
         return Ganador;
     }
 }
 
-void Torneo::leer_resultados(const BinTree<Jugador> &A)
+void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntos)
 {
-    leer_resultados_i(A);
+    int nivel = 1;
+    leer_resultados_i(A, Puntos, ++nivel, (*this).participantes);
+    cout << endl;
+    // Jugador P = (*this).participantes.obtener_ranking()[0];
+    // P.escribir_jugador();
+    participantes.listar_ranking();
+    cout << endl;
 }
 
 BinTree<Jugador> Torneo::obtener_cuadro() const

@@ -66,12 +66,13 @@ public:
     */
   Torneo obtener_torneo(string id) const;
 
-  /** @brief Consultora que devuelve la puntuación obtenida por el jugador en función de la categoría del torneo y
-   * de la posición final en la que haya quedado el jugador.
-        \pre 1 <= fila <= c && 4 <= columna <= k
-        \post Retorna los puntos obtenidos por el jugador.
-    */
-  int obtener_puntuacion(const Matriz &Tabla, const Jugador &P, int fila, int columna) const;
+  /**
+   * @brief Devuelve la tabla de puntuaciones
+   * \pre cierto
+   * \post devuelve la Matriz que representa la tabla de puntuaciones.
+   * @return Matriz
+   */
+  Matriz obtener_puntuaciones() const;
 
   /** @brief Consultora que indica si existe el Torneo T en el circuito.
         \pre El parámetro implícito está incializado.

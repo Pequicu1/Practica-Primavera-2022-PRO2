@@ -78,6 +78,11 @@ Torneo Cjt_Torneos::obtener_torneo(string name) const
     return it->second;
 }
 
+Matriz Cjt_Torneos::obtener_puntuaciones() const
+{
+    return Tabla_de_puntuaciones;
+}
+
 void Cjt_Torneos::eliminar_Torneo(const Torneo &T)
 {
     map<string, Torneo>::const_iterator it = indice_torneos.find(T.consultar_nombre());

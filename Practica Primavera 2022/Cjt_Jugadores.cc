@@ -82,6 +82,11 @@ void Cjt_Jugadores::eliminar_jugador(const Jugador &P)
     ranking.pop_back();
 }
 
+void Cjt_Jugadores::modificar_ranking(const Jugador &P)
+{
+    ranking[P.consultar_pos_ranking() - 1] = P;
+}
+
 void Cjt_Jugadores::listar_ranking()
 {
     // maybe ordenar aqui el ranking again.
