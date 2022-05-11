@@ -51,7 +51,6 @@ Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
     {
         int pos;
         cin >> pos;
-        rank0[pos - 1].mas_torneo();
         new_participantes.anadir_jugador(rank0[pos - 1]);
     }
     return new_participantes;
@@ -122,8 +121,8 @@ Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts, Cjt_Jugado
     i = 0;
     j = 2;
 
-    int sets1, sets2;
-    sets1 = sets2 = 0;
+    int sets1, sets2, tot;
+    sets1 = sets2 = tot = 0;
 
     Jugador Ganador;
 
@@ -131,36 +130,41 @@ Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts, Cjt_Jugado
     {
         while (i <= resultados.length())
         {
+            J1.modificar_juegos(resultados[i] - '0', '+');
+            J2.modificar_juegos(resultados[i] - '0', '-');
+            J1.modificar_juegos(resultados[j] - '0', '-');
+            J2.modificar_juegos(resultados[j] - '0', '+');
 
-            if (resultados[i] > resultados[j])
+            if (resultados[i] - '0' > resultados[j] - '0')
             {
-                J1.modificar_juegos(resultados[i] - '0', '+');
-                J2.modificar_juegos(resultados[j] - '0', '-');
                 ++sets1;
             }
-            else if (resultados[i] < resultados[j])
+            else
             {
-                J1.modificar_juegos(resultados[i] - '0', '-');
-                J2.modificar_juegos(resultados[j] - '0', '+');
                 ++sets2;
             }
+            ++tot;
             i += 4;
             j += 4;
         }
-
         if (sets1 > sets2)
         {
-            J1.modificar_sets(sets1, '+');
-            J2.modificar_sets(sets2, '-');
+            J1.modificar_sets(tot, '+');
+            J2.modificar_sets(tot, '-');
             J2.modificar_puntos(pts);
-            // cout << J2.consultar_id() << "tiene: " << J2.consultar_puntos() << endl;
+            J2.mas_torneo();
+            J1.modificar_partidos('+');
+            J2.modificar_partidos('-');
             Ganador = J1;
         }
         else
         {
-            J1.modificar_sets(sets1, '-');
-            J2.modificar_sets(sets2, '+');
+            J1.modificar_sets(tot, '-');
+            J2.modificar_sets(tot, '+');
             J1.modificar_puntos(pts);
+            J1.mas_torneo();
+            J1.modificar_partidos('-');
+            J2.modificar_partidos('+');
             Ganador = J2;
         }
     }
@@ -172,6 +176,7 @@ Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts, Cjt_Jugado
             J1.modificar_partidos('+');
             J2.modificar_partidos('-');
             J2.modificar_puntos(pts);
+            J2.mas_torneo();
             Ganador = J1;
         }
         else if (resultados[i] == '0' and resultados[j] == '1')
@@ -179,6 +184,7 @@ Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts, Cjt_Jugado
             J2.modificar_partidos('+');
             J1.modificar_partidos('-');
             J1.modificar_puntos(pts);
+            J1.mas_torneo();
             Ganador = J2;
         }
     }
@@ -207,9 +213,10 @@ Jugador leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int
         if (nivel == 1)
         {
             Ganador.modificar_puntos(pts[nivel - 1]);
+            // Ganador.modificar_partidos('+');
+            Ganador.mas_torneo();
             parts.modificar_ranking(Ganador);
         }
-        cout << endl;
         cout << ')';
 
         return Ganador;
@@ -223,8 +230,12 @@ void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Punto
     cout << endl;
     // Jugador P = (*this).participantes.obtener_ranking()[0];
     // P.escribir_jugador();
-    participantes.listar_ranking();
-    cout << endl;
+    for (int i = 0; i < participantes.obtener_ranking().size(); ++i)
+    {
+        if (participantes.obtener_ranking()[i].consultar_puntos() != 0)
+            cout << participantes.obtener_ranking()[i].consultar_pos_ranking() << '.' << participantes.obtener_ranking()[i].consultar_id() << ' ' << participantes.obtener_ranking()[i].consultar_puntos() << endl;
+    }
+    participantes.ordenar_ranking();
 }
 
 BinTree<Jugador> Torneo::obtener_cuadro() const

@@ -144,6 +144,14 @@ int main()
             // cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
             T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1]);
             // T.imprimir_resultados();
+            // T.obtener_participantes().listar_ranking();
+            // T.obtener_participantes().imprimir_jugadores();
+
+            // T.obtener_participantes().ordenar_ranking();
+            jugs.actualizar_indice(T.obtener_participantes());
+
+            // T.obtener_participantes().listar_ranking();
+            // jugs.imprimir_jugadores();
         }
         else if (comando == "listar_ranking" or comando == "lr")
         {

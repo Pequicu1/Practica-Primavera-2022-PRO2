@@ -9,9 +9,6 @@
  */
 
 #include "Cjt_Jugadores.hh"
-#ifndef NO_DIAGRAM
-#include <algorithm>
-#endif
 
 Cjt_Jugadores::Cjt_Jugadores()
 {
@@ -87,12 +84,40 @@ void Cjt_Jugadores::modificar_ranking(const Jugador &P)
     ranking[P.consultar_pos_ranking() - 1] = P;
 }
 
+void Cjt_Jugadores::actualizar_indice(const Cjt_Jugadores &Plys)
+{
+    vector<Jugador> jug = Plys.obtener_ranking();
+    for (int i = 0; i < jug.size(); ++i)
+    {
+        indice_jugadores[jug[i].consultar_id()] = jug[i];
+    }
+}
+
 void Cjt_Jugadores::listar_ranking()
 {
     // maybe ordenar aqui el ranking again.
     for (int i = 0; i < ranking.size(); ++i)
     {
         cout << ranking[i].consultar_pos_ranking() << ' ' << ranking[i].consultar_id() << ' ' << ranking[i].consultar_puntos() << endl;
+    }
+}
+
+bool comp(const Jugador &j1, const Jugador &j2)
+{
+    if (j1.consultar_puntos() == j2.consultar_puntos())
+    {
+        return j1.consultar_pos_ranking() < j2.consultar_pos_ranking();
+    }
+    else
+        return j1.consultar_puntos() > j2.consultar_puntos();
+}
+
+void Cjt_Jugadores::ordenar_ranking()
+{
+    sort(ranking.begin(), ranking.end(), comp);
+    for (int i = 0; i < ranking.size(); ++i)
+    {
+        ranking[i].modificar_ranking(i + 1);
     }
 }
 

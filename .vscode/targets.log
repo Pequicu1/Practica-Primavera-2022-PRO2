@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
  # Este programa fue construido para i386-pc-mingw32
  
 
-# Base de datos del Make, mostrada en Tue May 10 16:45:56 2022
+# Base de datos del Make, mostrada en Wed May 11 11:52:34 2022
 
 # Variables
 
@@ -33,14 +33,13 @@ HOMEDRIVE = C:
 # autom�tica/o
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/ 
-PRO2
+CURDIR := c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2
 # por defecto
 SHELL := sh.exe
 # entorno
 WINDIR = C:\WINDOWS
 # entorno
-VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"16468021c5e76390b081b2c772725871.es","_translationsConfigFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\tcf.json","_cacheRoot":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es","_resolvedLanguagePackCoreLocation":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\57fd6d0195bb9b9d1b49f6da5db789060795de47","_corruptedFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"16468021c5e76390b081b2c772725871.es","_translationsConfigFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\tcf.json","_cacheRoot":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es","_resolvedLanguagePackCoreLocation":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"C:\\Users\\Ivan\\AppData\\Roaming\\Code\\clp\\16468021c5e76390b081b2c772725871.es\\corrupted.info","_languagePackSupport":true}
 # entorno
 VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # entorno
@@ -60,7 +59,7 @@ PROGRAMW6432 = C:\Program Files
 # entorno
 PROGRAMDATA = C:\ProgramData
 # entorno
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ea87b7cc-dde9-489a-84d0-05cc311488e0-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9aa9d9d3-5353-4b62-ba4a-92589ec6ccaf-sock
 # entorno
 VSCODE_CWD = C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code
 # entorno
@@ -84,7 +83,7 @@ ELECTRON_RUN_AS_NODE = 1
 # autom�tica/o
 %F = $(notdir $%)
 # entorno
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8792_SFYAXLPRCJQDTKRI
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24748_GCGYBEGIOHQCFDNQ
 # entorno
 VSCODE_PIPE_LOGGING = true
 # entorno
@@ -102,7 +101,7 @@ PUBLIC = C:\Users\Public
 # entorno
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # entorno
-VSCODE_CODE_CACHE_PATH = C:\Users\Ivan\AppData\Roaming\Code\CachedData\57fd6d0195bb9b9d1b49f6da5db789060795de47
+VSCODE_CODE_CACHE_PATH = C:\Users\Ivan\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
 # entorno
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # entorno
@@ -150,7 +149,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 # entorno
 OS = Windows_NT
 # entorno
-VSCODE_IPC_HOOK = \\.\pipe\11f8232b86d218e6675845479b472ba2-1.67.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\11f8232b86d218e6675845479b472ba2-1.67.1-main-sock
 # entorno
 HOMEPATH = \Users\Ivan
 # entorno
@@ -169,6 +168,8 @@ SYSTEMROOT = C:\WINDOWS
 +F = $(notdir $+)
 # entorno
 APPDATA = C:\Users\Ivan\AppData\Roaming
+# entorno
+__COMPAT_LAYER = DetectorsAppHealth
 # entorno
 VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
 # entorno
@@ -202,11 +203,11 @@ PROCESSOR_LEVEL = 6
 # entorno
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # entorno
-VSCODE_PID = 8792
+VSCODE_PID = 24748
 # entorno
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # estad�sticas del conjunto de variables de la tabla de hash:
-# Carga=96/1024=9%, Rehash=0, Colisiones=13/113=12%
+# Carga=97/1024=9%, Rehash=0, Colisiones=13/114=11%
 
 # Valores de variables espec�ficas al patr�n
 
@@ -222,7 +223,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (llave C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1602712742): 33 archivos, no imposibilidades.
 # C:\Windows\System32\Wbem (llave C:/Windows/System32/Wbem, mtime 1646872676): 156 archivos, no imposibilidades.
 # . (llave c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2, mtime 1652040085): 18 archivos, no imposibilidades.
-# C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/Ivan/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652027583): 4 archivos, no imposibilidades.
+# C:\Users\Ivan\AppData\Local\Programs\Microsoft VS Code\bin (llave C:/Users/Ivan/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652204795): 4 archivos, no imposibilidades.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (llave C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1499459334): 10 archivos, no imposibilidades.
 # C:\Program Files (x86)\Windows Live\Shared (llave C:/Program Files (x86)/Windows Live/Shared, mtime 1518292824): 34 archivos, no imposibilidades.
 # C:\Users\Ivan\spicetify-cli (llave C:/Users/Ivan/spicetify-cli, mtime 1649968619): 9 archivos, no imposibilidades.
@@ -249,8 +250,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-4RAEBLP
 # C:\Users\Ivan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts (llave C:/Users/Ivan/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.7/Scripts, mtime 1564795925): 2 archivos, no imposibilidades.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (llave C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1569359786): 5 archivos, no imposibilidades.
 # C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL (llave C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL, mtime 1480504591): 10 archivos, no imposibilidades.
-# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1650915666): 5 arch 
-ivos, no imposibilidades.
+# C:\Program Files (x86)\GnuWin32\bin (llave C:/Program Files (x86)/GnuWin32/bin, mtime 1650915666): 5 archivos, no imposibilidades.
 
 # 3987 archivos, no imposibilidades en 36 directorios.
 
@@ -302,8 +302,7 @@ GNUmakefile:
 # Carga=0/32=0%, Rehash=0, Colisiones=0/0=0%
 
 # estad�sticas de la tabla de hash de los archivos:
-# Carga=5/1024=0%, Rehash=0, Colis 
-iones=0/16=0%
+# Carga=5/1024=0%, Rehash=0, Colisiones=0/16=0%
 # Rutas de b�squeda VPATH
 
 # No hay rutas de b�squeda `vpath'.
@@ -315,7 +314,7 @@ iones=0/16=0%
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Se termina la base de datos de Make en Tue May 10 16:45:56 2022
+# Se termina la base de datos de Make en Wed May 11 11:52:34 2022
 
  
 make.exe: *** No hay ninguna regla para construir el objetivo `all'.  Alto.

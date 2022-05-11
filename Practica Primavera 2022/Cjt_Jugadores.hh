@@ -10,6 +10,7 @@
 #ifndef NO_DIAGRAM
 #include <vector>
 #include <map>
+#include <algorithm>
 #endif
 
 /** @class Cjt_Jugadores
@@ -56,6 +57,21 @@ public:
      * \post se modifica el jugador objetivo del ranking
      */
     void modificar_ranking(const Jugador &P);
+
+    /**
+     * @brief actualiza el jugador en el mapa
+     * \pre cierto
+     * \post El jugador con el identificador deseado será actualizado con nuvos datos;
+     * @param P
+     */
+    void actualizar_indice(const Cjt_Jugadores &P);
+
+    /**
+     * @brief Ordena reordena el ranking de jugadores en funcion de sus puntos;
+     * \pre cierto
+     * \post El ranking del PI esta ordenado decrecientemente en funcion de los puntos de los jugadores.
+     */
+    void ordenar_ranking();
 
     // -- CONSULTORAS --
 
