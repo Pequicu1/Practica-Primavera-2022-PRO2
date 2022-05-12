@@ -1,0 +1,113 @@
+3 10
+Copa_Davis
+Liga_Rubi
+ITF_World_Tennis_Tour
+500 400 300 200 100 50 25 10 5 0
+42069 30060 10000 2003 1024 256 128 64 32 16
+2293 1823 1663 1523 1381 1229 1087 947 811 661
+4
+Super_Torneo 1
+Mega_Torneo 2
+Hiper_Torneo 3
+UltraMegaHiper_Torneo 2
+30
+Lucía
+Sofía
+Martina
+María
+Julia
+Paula
+Valeria
+Emma
+Daniela
+Carla
+Alba
+Noa
+Alma
+Sara
+Carmen
+Vega
+Lara
+Mia
+Valentina
+Olivia
+Claudia
+Jimena
+Lola
+Chlóe
+Aitana
+Abril
+Ana
+Laia
+Triana
+Candela
+iniciar_torneo UltraMegaHiper_Torneo
+15
+2 4 6 8 10 12 14 16 18 20 22 24 26 28 30
+finalizar_torneo UltraMegaHiper_Torneo
+1-0
+1-0
+0-1
+1-0
+0 0
+0-1
+0 0
+1-0
+0-1
+0 0
+0-1
+0 0
+1-0
+1-0
+0
+0-1
+1-0
+0-1
+0 0
+1-0
+0 0
+bj Emma
+bj Daniela
+bj Carla
+bj Alba
+bj Noa
+bj Alma
+bj Sara
+bj Carmen
+bj Vega
+listar_ranking
+listar_jugadores
+nt Torneuwu -2
+consultar_jugador Vega
+nj Luz
+consultar_jugador Luz
+it Super_Torneo
+8
+1 2 3 5 7 9 11 13
+6-7,7-5,5-7
+0-6,6-4,7-6
+1-0
+0 0
+0 0
+6-0,6-0
+0 0
+0 0
+0-1
+1-6,2-6
+0 0
+0 0
+7-6,7-6
+0 0
+0 0
+bt UltraMegaHiper_Torneo
+cj Vega
+cj Aitana
+listar_categorias
+listar_ranking
+listar_torneos
+listar_jugadores
+fin
+
+
+
+
