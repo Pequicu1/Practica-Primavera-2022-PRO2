@@ -142,13 +142,19 @@ int main()
 
             Torneo T = torns.obtener_torneo(id);
             // cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
-            T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1]);
-            // T.imprimir_resultados();
-            // T.obtener_participantes().listar_ranking();
+            T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1], jugs);
             // T.obtener_participantes().imprimir_jugadores();
+            //  jugs.actualizar_indice(T.obtener_participantes());
+            //   T.imprimir_resultados();
+            //   T.obtener_participantes().listar_ranking();
+            //   T.obtener_participantes().imprimir_jugadores();
 
             // T.obtener_participantes().ordenar_ranking();
-            jugs.actualizar_indice(T.obtener_participantes());
+            // jugs.actualizar_indice(T.obtener_participantes());
+            // jugs.imprimir_jugadores();
+            // jugs.imprimir_jugadores();
+            jugs.ordenar_ranking();
+            jugs.actualizar_ranking();
 
             // T.obtener_participantes().listar_ranking();
             // jugs.imprimir_jugadores();

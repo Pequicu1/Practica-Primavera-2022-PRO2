@@ -17,10 +17,18 @@
     */
 
 typedef pair<Jugador, Jugador> Partido;
+struct Participante
+{
+  string name;
+  int puntos;
+};
 class Torneo
 {
 
 private:
+  vector<Participante> Partic_act;
+  vector<Participante> Partic_ant;
+
   string identificador;
   Cjt_Jugadores participantes;
   int categoria;
@@ -85,13 +93,17 @@ public:
         \pre A es un cuadro de emparejamientos inicializado del torneo.
         \post El cuadro A queda con los resultados introducidos en preorden siguiendo el Árbol binario.
     */
-  void leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntuaciones);
+  void leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntuaciones, Cjt_Jugadores &General);
 
+  Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts);
+
+  Jugador leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
   /** @brief Operación de lectura
      \pre cierto
      \post El parámetro implícito pasa a tener un identificador y una categoría.
  */
-  void leer_torneo();
+  void
+  leer_torneo();
 
   /** @brief Operación de escritura del cuadro del parámetro implícito.
         \pre <em>cierto</em>

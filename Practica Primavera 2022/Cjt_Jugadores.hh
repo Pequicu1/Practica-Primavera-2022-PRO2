@@ -64,7 +64,11 @@ public:
      * \post El jugador con el identificador deseado será actualizado con nuvos datos;
      * @param P
      */
-    void actualizar_indice(const Cjt_Jugadores &P);
+    void mod_indice(const Jugador &P);
+
+    void actualizar_indice(const Cjt_Jugadores &Ply);
+
+    void modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugador &J2, string resultados, const vector<int> &puntos, int nivel);
 
     /**
      * @brief Ordena reordena el ranking de jugadores en funcion de sus puntos;

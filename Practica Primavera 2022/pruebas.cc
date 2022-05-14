@@ -120,27 +120,29 @@ Jugador ganador(Jugador &J1, Jugador &J2, string puntos)
         return J2;
 }
 
-Jugador leer_resultados_i(const BinTree<Jugador> &A, BinTree<Partido> &Res)
+BinTree<Partido> leer_resultados_i(const BinTree<Jugador> &A, Jugador &P)
 {
     string puntos;
     cin >> puntos;
     if (puntos == "0")
     {
-        return A.value();
+        cout << A.value().name << endl;
+        P = A.value();
+        return BinTree<Partido>();
     }
     else
     {
 
         Partido match;
-        match.J1 = leer_resultados_i(A.left(), Res);
-        match.J2 = leer_resultados_i(A.right(), Res);
-        Jugador Ganador = ganador(match.J1, match.J2, puntos);
+        BinTree<Partido> L = leer_resultados_i(A, P);
+        BinTree<Partido> R = leer_resultados_i(A, P);
+        match =
 
+            return BinTree<Partido>(match, L, R);
         // leer_resultados_i(A.left(), Res);
         // leer_resultados_i(A.right(), Res);
 
-        Res = BinTree<Partido>(match);
-        return Ganador;
+        // Res = BinTree<Partido>(match);
     }
 }
 
@@ -153,8 +155,8 @@ void imprimir_resultados(const BinTree<Partido> &Res)
 
 void leer_resultados(const BinTree<Jugador> &A)
 {
-    BinTree<Partido> Resultados;
-    leer_resultados_i(A, Resultados);
+    Jugador P;
+    BinTree<Partido> Resultados = leer_resultados_i(A, P);
     imprimir_resultados(Resultados);
 }
 

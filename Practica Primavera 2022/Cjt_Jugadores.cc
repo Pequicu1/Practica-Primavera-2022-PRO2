@@ -84,12 +84,19 @@ void Cjt_Jugadores::modificar_ranking(const Jugador &P)
     ranking[P.consultar_pos_ranking() - 1] = P;
 }
 
-void Cjt_Jugadores::actualizar_indice(const Cjt_Jugadores &Plys)
+void Cjt_Jugadores::mod_indice(const Jugador &P)
 {
-    vector<Jugador> jug = Plys.obtener_ranking();
-    for (int i = 0; i < jug.size(); ++i)
+    map<string, Jugador>::iterator it = indice_jugadores.find(P.consultar_id());
+    (*it).second = P;
+}
+
+void Cjt_Jugadores::actualizar_indice(const Cjt_Jugadores &P)
+{
+    vector<Jugador> jugs = P.obtener_ranking();
+    for (int i = 0; i < jugs.size(); ++i)
     {
-        indice_jugadores[jug[i].consultar_id()] = jug[i];
+        map<string, Jugador>::iterator it = indice_jugadores.find(jugs[i].consultar_id());
+        (*it).second = jugs[i];
     }
 }
 
@@ -129,5 +136,108 @@ void Cjt_Jugadores::imprimir_jugadores() const
     {
         it->second.escribir_jugador();
         ++it;
+    }
+}
+
+void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugador &J2, string resultados, const vector<int> &pts, int nivel)
+{
+    map<string, Jugador>::iterator it1 = indice_jugadores.find(J1.consultar_id());
+    map<string, Jugador>::iterator it2 = indice_jugadores.find(J2.consultar_id());
+
+    if (Ganador.consultar_id() == J1.consultar_id())
+    {
+        (*it1).second.modificar_partidos('+');
+        (*it2).second.modificar_partidos('-');
+    }
+    else
+    {
+        (*it1).second.modificar_partidos('-');
+        (*it2).second.modificar_partidos('+');
+    }
+
+    int i, j;
+    i = 0;
+    j = 2;
+
+    int sets1, sets2, tot;
+    sets1 = sets2 = tot = 0;
+
+    if (resultados.length() > 3)
+    {
+        while (i <= resultados.length())
+        {
+            (*it1).second.modificar_juegos(resultados[i] - '0', '+');
+            (*it2).second.modificar_juegos(resultados[i] - '0', '-');
+            (*it1).second.modificar_juegos(resultados[j] - '0', '-');
+            (*it2).second.modificar_juegos(resultados[j] - '0', '+');
+
+            if (resultados[i] - '0' > resultados[j] - '0')
+            {
+                ++sets1;
+            }
+            else
+            {
+                ++sets2;
+            }
+            ++tot;
+            i += 4;
+            j += 4;
+        }
+        if (sets1 > sets2)
+        {
+            (*it1).second.modificar_sets(tot, '+');
+            (*it2).second.modificar_sets(tot, '-');
+            (*it2).second.modificar_puntos(pts[nivel]);
+            if (nivel == 1)
+            {
+                (*it1).second.modificar_puntos(pts[0]);
+                (*it1).second.mas_torneo();
+            }
+            (*it2).second.mas_torneo();
+            (*it1).second.modificar_partidos('+');
+            (*it2).second.modificar_partidos('-');
+        }
+        else
+        {
+            (*it1).second.modificar_sets(tot, '-');
+            (*it2).second.modificar_sets(tot, '+');
+            (*it1).second.modificar_puntos(pts[nivel]);
+            if (nivel == 1)
+            {
+                (*it2).second.modificar_puntos(pts[0]);
+                (*it2).second.mas_torneo();
+            }
+
+            (*it1).second.modificar_partidos('-');
+            (*it2).second.modificar_partidos('+');
+            (*it1).second.mas_torneo();
+        }
+    }
+    else
+    {
+
+        if (resultados[i] == '1' and resultados[j] == '0')
+        {
+            (*it1).second.modificar_partidos('+');
+            (*it2).second.modificar_partidos('-');
+            (*it2).second.modificar_puntos(pts[nivel]);
+            {
+                (*it1).second.modificar_puntos(pts[0]);
+                (*it1).second.mas_torneo();
+            }
+            (*it2).second.mas_torneo();
+        }
+        else if (resultados[i] == '0' and resultados[j] == '1')
+        {
+            (*it2).second.modificar_partidos('+');
+            (*it1).second.modificar_partidos('-');
+            (*it1).second.modificar_puntos(pts[nivel]);
+            if (nivel == 1)
+            {
+                (*it2).second.modificar_puntos(pts[0]);
+                (*it2).second.mas_torneo();
+            }
+            (*it1).second.mas_torneo();
+        }
     }
 }

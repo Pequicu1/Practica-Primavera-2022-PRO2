@@ -1,7 +1,7 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-make.exe: se ingresa al directorio `c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2'
+make.exe --dry-run --keep-going --print-directory
+make.exe: se ingresa al directorio `c:/Users/ivbui/OneDrive/Escritorio/Practica Pro2/Practica_Piamvera_2022_v.1'
  
 make.exe: *** No se especific� ning�n objetivo y no se encontr� ning�n makefile.  Alto.
 
-make.exe: se sale del directorio `c:/Users/Ivan/Desktop/UNIVERSIDAD/Q2/PRO2'
+make.exe: se sale del directorio `c:/Users/ivbui/OneDrive/Escritorio/Practica Pro2/Practica_Piamvera_2022_v.1'
  
