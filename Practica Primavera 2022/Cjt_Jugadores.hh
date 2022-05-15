@@ -70,6 +70,10 @@ public:
 
     void modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugador &J2, string resultados, const vector<int> &puntos, int nivel);
 
+    map<string, Jugador> consultar_indice() const;
+
+    void restar_puntos(const Cjt_Jugadores &T);
+
     /**
      * @brief Ordena reordena el ranking de jugadores en funcion de sus puntos;
      * \pre cierto

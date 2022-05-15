@@ -58,6 +58,8 @@ public:
    */
   void actualizar_torneo(const Torneo &T);
 
+  void eliminar_jugador(const Jugador &T);
+
   // -- CONSULTORAS --
 
   /** @brief Consultora que devuelve el Torneo deseado.

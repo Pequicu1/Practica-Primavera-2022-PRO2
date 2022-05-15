@@ -87,11 +87,22 @@ void Cjt_Torneos::eliminar_Torneo(const Torneo &T)
 {
     map<string, Torneo>::const_iterator it = indice_torneos.find(T.consultar_nombre());
     indice_torneos.erase(it);
+}
 
-    /*igual no hace falta tener un vector de Torneos jaj salu2
-    int pos = Circuito.begin();
-    Circuito.erase(Circuito.begin() + pos);
-    */
+void Cjt_Torneos::eliminar_jugador(const Jugador &P)
+{
+    map<string, Torneo>::iterator it = indice_torneos.begin();
+    while (it != indice_torneos.end())
+    {
+        Torneo T = it->second;
+        if (T.consultar_parts_ant().existe_jugador(P.consultar_id()))
+        {
+            T.eliminar_jugador(P);
+            T.consultar_parts_ant().listar_ranking();
+            T.consultar_parts_ant().imprimir_jugadores();
+        }
+        ++it;
+    }
 }
 
 void Cjt_Torneos::imprimir_torneos() const

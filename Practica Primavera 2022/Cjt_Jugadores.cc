@@ -109,6 +109,24 @@ void Cjt_Jugadores::listar_ranking()
     }
 }
 
+map<string, Jugador> Cjt_Jugadores::consultar_indice() const
+{
+    return indice_jugadores;
+}
+
+void Cjt_Jugadores::restar_puntos(const Cjt_Jugadores &jugs)
+{
+    for (int i = 0; i < jugs.obtener_ranking().size(); ++i)
+    {
+        // cout << "JUGADOR: " << jugs.obtener_ranking()[i].consultar_id() << endl;
+        if (existe_jugador(jugs.obtener_ranking()[i].consultar_id()))
+        {
+            map<string, Jugador>::iterator it = indice_jugadores.find(jugs.obtener_ranking()[i].consultar_id());
+            (*it).second.modificar_puntos(-jugs.obtener_ranking()[i].consultar_puntos());
+        }
+    }
+}
+
 bool comp(const Jugador &j1, const Jugador &j2)
 {
     if (j1.consultar_puntos() == j2.consultar_puntos())

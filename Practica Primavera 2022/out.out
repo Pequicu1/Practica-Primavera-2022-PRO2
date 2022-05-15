@@ -242,12 +242,12 @@ Zverev Rk:4 Ps:360 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:54 LG:35
 ((((1.Medvedev (16.Sinner 17.Hurkacz)) ((8.Alcaraz 25.Sonego) (9.Norrie 24.Opelka))) ((4.Zverev (13.Nadal 20.Cilic)) ((5.Rublev 28.Cuevas) (12.Ivashka 21.Dimitrov)))) (((2.Djokovic (15.Monfils 18.Fritz)) ((7.Bautista 26.Nishikori) (10.Fucsovics 23.Shapovalov))) ((3.Tsitsipas (14.Schwartzman 19.Bublik)) ((6.Berrettini 27.Murray) (11.Krajinovic 22.Ruud)))))
 #finalizar_torneo Casablanca
 (8.Davidovich vs 9.Coria 6-4,4-6,6-4)(1.Carreno vs 8.Davidovich 6-1,6-4)(4.Fognini vs 13.Verdasco 4-6,4-6)(5.Goffin vs 12.Lopez 7-5,6-7,0-6)(13.Verdasco vs 12.Lopez 6-1,5-7,6-3)(1.Carreno vs 13.Verdasco 4-6,6-3,6-2)(7.Humbert vs 10.Andujar 6-3,4-6,4-6)(2.Ramos vs 10.Andujar 7-5,5-7,7-6)(6.Paire vs 11.Gasquet 4-6,3-6)(3.Delbonis vs 11.Gasquet 6-1,6-1)(2.Ramos vs 3.Delbonis 6-3,6-2)(1.Carreno vs 2.Ramos 6-3,7-6)
-1.Carreno 340
-2.Ramos 195
-3.Delbonis 135
-4.Fognini 65
-5.Goffin 65
-6.Paire 65
+1.Carreno 250
+2.Ramos 150
+3.Delbonis 90
+4.Fognini 20
+5.Goffin 20
+6.Paire 20
 7.Humbert 20
 8.Davidovich 45
 9.Coria 20
@@ -257,32 +257,32 @@ Zverev Rk:4 Ps:360 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:54 LG:35
 13.Verdasco 90
 #ft Indian_Wells
 (16.Sinner vs 17.Hurkacz 5-7,6-4,6-1)(1.Medvedev vs 16.Sinner 6-1,6-0)(8.Alcaraz vs 25.Sonego 1-6,6-4,2-6)(9.Norrie vs 24.Opelka 6-7,4-6)(25.Sonego vs 24.Opelka 6-3,6-3)(1.Medvedev vs 25.Sonego 6-4,6-4)(13.Nadal vs 20.Cilic 6-1,6-1)(4.Zverev vs 13.Nadal 3-6,6-2,5-7)(5.Rublev vs 28.Cuevas 4-6,6-7)(12.Ivashka vs 21.Dimitrov 1-0)(28.Cuevas vs 12.Ivashka 7-5,6-3)(13.Nadal vs 28.Cuevas 6-2,6-3)(1.Medvedev vs 13.Nadal 7-5,3-6,3-6)(15.Monfils vs 18.Fritz 6-3,4-6,6-4)(2.Djokovic vs 15.Monfils 6-4,6-1)(7.Bautista vs 26.Nishikori 6-0,6-2)(10.Fucsovics vs 23.Shapovalov 3-6,2-6)(7.Bautista vs 23.Shapovalov 7-6,7-6)(2.Djokovic vs 7.Bautista 6-3,6-3)(14.Schwartzman vs 19.Bublik 6-2,7-6)(3.Tsitsipas vs 14.Schwartzman 6-4,6-4)(6.Berrettini vs 27.Murray 6-1,6-4)(11.Krajinovic vs 22.Ruud 5-7,3-6)(6.Berrettini vs 22.Ruud 0-1)(3.Tsitsipas vs 22.Ruud 4-6,7-5,6-3)(2.Djokovic vs 3.Tsitsipas 6-2,7-5)(13.Nadal vs 2.Djokovic 3-6,6-4,7-6)
-1.Medvedev 1360
-2.Djokovic 1200
-3.Tsitsipas 860
-4.Zverev 450
-5.Rublev 405
-6.Berrettini 390
-7.Bautista 360
-8.Alcaraz 225
-9.Norrie 225
-10.Fucsovics 225
-11.Krajinovic 225
-12.Ivashka 270
-13.Nadal 1090
-14.Schwartzman 180
-15.Monfils 180
-16.Sinner 180
-17.Hurkacz 135
-18.Fritz 135
-19.Bublik 135
-20.Cilic 90
-21.Dimitrov 90
-22.Ruud 225
-23.Shapovalov 135
-24.Opelka 135
-25.Sonego 225
-26.Nishikori 90
+1.Medvedev 360
+2.Djokovic 600
+3.Tsitsipas 360
+4.Zverev 90
+5.Rublev 45
+6.Berrettini 90
+7.Bautista 180
+8.Alcaraz 45
+9.Norrie 45
+10.Fucsovics 45
+11.Krajinovic 45
+12.Ivashka 90
+13.Nadal 1000
+14.Schwartzman 90
+15.Monfils 90
+16.Sinner 90
+17.Hurkacz 45
+18.Fritz 45
+19.Bublik 45
+20.Cilic 45
+21.Dimitrov 45
+22.Ruud 180
+23.Shapovalov 90
+24.Opelka 90
+25.Sonego 180
+26.Nishikori 45
 27.Murray 45
 28.Cuevas 180
 #lr
@@ -357,61 +357,102 @@ Zverev Rk:4 Ps:360 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:54 LG:35
 69 Raonic 0
 70 Wawrinka 0
 #baja_jugador Verdasco
+13
+Andujar Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Carreno Rk:1 Ps:0 Ts:1 WM:1 LM:1 WS:1 LS:2 WG:10 LG:17
+Coria Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Davidovich Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Delbonis Rk:3 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:10 LG:13
+Fognini Rk:4 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:11 LG:18
+Gasquet Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:5 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:6 LG:12
+Humbert Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lopez Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Paire Rk:6 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Ramos Rk:2 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:11 LG:14
+Verdasco Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+1 Carreno 250
+2 Ramos 150
+3 Delbonis 90
+4 Fognini 20
+5 Goffin 20
+6 Paire 20
+7 Humbert 20
+8 Davidovich 45
+9 Coria 20
+10 Andujar 45
+11 Gasquet 45
+12 Lopez 45
+13 Verdasco 90
+13
+Andujar Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Carreno Rk:1 Ps:0 Ts:1 WM:1 LM:1 WS:1 LS:2 WG:10 LG:17
+Coria Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Davidovich Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Delbonis Rk:3 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:10 LG:13
+Fognini Rk:4 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:11 LG:18
+Gasquet Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:5 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:6 LG:12
+Humbert Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lopez Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Paire Rk:6 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Ramos Rk:2 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:11 LG:14
+Verdasco Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
 69
 #it Wimbledon
 ((((((1.Medvedev (64.Raonic 65.Wawrinka)) (32.Dimitrov 33.Nishikori)) ((16.Sonego 49.Humbert) (17.Ramos 48.Murray))) (((8.Bautista 57.Nishioka) (25.Bublik 40.Isner)) ((9.Carreno 56.Gaston) (24.Fritz 41.Harris)))) ((((4.Tsitsipas 61.Kyrgios) (29.Federer 36.Khachanov)) ((13.Fucsovics 52.Duckworth) (20.Sinner 45.Andujar))) (((5.Zverev 60.Kohlschreiber) (28.Evans 37.Auger-Aliassime)) ((12.Norrie 53.Popyrin) (21.Cuevas 44.Brooksby))))) (((((2.Djokovic 63.Pospisil) (31.Cilic 34.Fognini)) ((15.Ruud 50.Coria) (18.Schwartzman 47.Lopez))) (((7.Berrettini 58.Querrey) (26.Shapovalov 39.Karatsev)) ((10.Ivashka 55.Kwon) (23.Hurkacz 42.Korda)))) ((((3.Nadal 62.Chardy) (30.De-Minaur 35.Goffin)) ((14.Krajinovic 51.Paul) (19.Monfils 46.Gasquet))) (((6.Rublev 59.Vesely) (27.Opelka 38.Basilashvili)) ((11.Alcaraz 54.Djere) (22.Delbonis 43.Lajovic))))))
 #ft Wimbledon
 (64.Raonic vs 65.Wawrinka 3-6,4-6)(1.Medvedev vs 65.Wawrinka 1-0)(32.Dimitrov vs 33.Nishikori 0-1)(1.Medvedev vs 33.Nishikori 6-0,6-1)(16.Sonego vs 49.Humbert 1-0)(17.Ramos vs 48.Murray 0-1)(16.Sonego vs 48.Murray 5-7,3-6)(1.Medvedev vs 48.Murray 6-3,6-1)(8.Bautista vs 57.Nishioka 1-0)(25.Bublik vs 40.Isner 0-1)(8.Bautista vs 40.Isner 6-4,6-4)(9.Carreno vs 56.Gaston 1-0)(24.Fritz vs 41.Harris 0-1)(9.Carreno vs 41.Harris 6-7,6-2,6-2)(8.Bautista vs 9.Carreno 6-3,6-7,6-7)(1.Medvedev vs 9.Carreno 6-2,6-4)(4.Tsitsipas vs 61.Kyrgios 1-0)(29.Federer vs 36.Khachanov 0-1)(4.Tsitsipas vs 36.Khachanov 6-1,6-2)(13.Fucsovics vs 52.Duckworth 1-0)(20.Sinner vs 45.Andujar 0-1)(13.Fucsovics vs 45.Andujar 5-7,3-6)(4.Tsitsipas vs 45.Andujar 7-5,7-5)(5.Zverev vs 60.Kohlschreiber 1-0)(28.Evans vs 37.Auger-Aliassime 0-1)(5.Zverev vs 37.Auger-Aliassime 4-6,5-7)(12.Norrie vs 53.Popyrin 1-0)(21.Cuevas vs 44.Brooksby 0-1)(12.Norrie vs 44.Brooksby 5-7,3-6)(37.Auger-Aliassime vs 44.Brooksby 7-5,3-6,6-3)(4.Tsitsipas vs 37.Auger-Aliassime 3-6,6-4,7-5)(1.Medvedev vs 4.Tsitsipas 6-3,7-6)(2.Djokovic vs 63.Pospisil 1-0)(31.Cilic vs 34.Fognini 0-1)(2.Djokovic vs 34.Fognini 6-2,6-4)(15.Ruud vs 50.Coria 1-0)(18.Schwartzman vs 47.Lopez 0-1)(15.Ruud vs 47.Lopez 0-1)(2.Djokovic vs 47.Lopez 1-0)(7.Berrettini vs 58.Querrey 1-0)(26.Shapovalov vs 39.Karatsev 0-1)(7.Berrettini vs 39.Karatsev 6-1,6-1)(10.Ivashka vs 55.Kwon 1-0)(23.Hurkacz vs 42.Korda 0-1)(10.Ivashka vs 42.Korda 5-7,3-6)(7.Berrettini vs 42.Korda 6-7,6-4,5-7)(2.Djokovic vs 42.Korda 6-3,3-6,6-3)(3.Nadal vs 62.Chardy 1-0)(30.De-Minaur vs 35.Goffin 0-1)(3.Nadal vs 35.Goffin 6-0,6-1)(14.Krajinovic vs 51.Paul 1-0)(19.Monfils vs 46.Gasquet 0-1)(14.Krajinovic vs 46.Gasquet 6-4,5-7,3-6)(3.Nadal vs 46.Gasquet 6-4,7-6)(6.Rublev vs 59.Vesely 1-0)(27.Opelka vs 38.Basilashvili 0-1)(6.Rublev vs 38.Basilashvili 0-1)(11.Alcaraz vs 54.Djere 1-0)(22.Delbonis vs 43.Lajovic 0-1)(11.Alcaraz vs 43.Lajovic 6-4,6-1)(38.Basilashvili vs 11.Alcaraz 6-3,6-4)(3.Nadal vs 38.Basilashvili 5-7,6-3,6-0)(2.Djokovic vs 3.Nadal 7-6,7-6)(1.Medvedev vs 2.Djokovic 4-6,6-3,4-6)
-1.Medvedev 2560
-2.Djokovic 3200
-3.Nadal 1810
-4.Tsitsipas 1580
-5.Zverev 540
-6.Rublev 495
-7.Berrettini 570
-8.Bautista 540
-9.Carreno 700
-10.Ivashka 360
-11.Alcaraz 405
-12.Norrie 315
-13.Fucsovics 315
-14.Krajinovic 315
-15.Ruud 315
-16.Sonego 315
-17.Ramos 240
-18.Schwartzman 225
-19.Monfils 225
-20.Sinner 225
-21.Cuevas 225
-22.Delbonis 180
-23.Hurkacz 180
-24.Fritz 180
-25.Bublik 180
-26.Shapovalov 180
-27.Opelka 180
-28.Evans 135
-29.Federer 135
-30.De-Minaur 135
-31.Cilic 135
-32.Dimitrov 135
-33.Nishikori 180
-34.Fognini 155
-35.Goffin 155
-36.Khachanov 135
-37.Auger-Aliassime 405
-38.Basilashvili 405
-39.Karatsev 135
-40.Isner 135
-41.Harris 135
-42.Korda 405
-43.Lajovic 135
-44.Brooksby 225
-45.Andujar 225
-46.Gasquet 225
-47.Lopez 225
-48.Murray 225
-49.Humbert 65
-50.Coria 65
+1.Medvedev 1200
+2.Djokovic 2000
+3.Nadal 720
+4.Tsitsipas 720
+5.Zverev 90
+6.Rublev 90
+7.Berrettini 180
+8.Bautista 180
+9.Carreno 360
+10.Ivashka 90
+11.Alcaraz 180
+12.Norrie 90
+13.Fucsovics 90
+14.Krajinovic 90
+15.Ruud 90
+16.Sonego 90
+17.Ramos 45
+18.Schwartzman 45
+19.Monfils 45
+20.Sinner 45
+21.Cuevas 45
+22.Delbonis 45
+23.Hurkacz 45
+24.Fritz 45
+25.Bublik 45
+26.Shapovalov 45
+27.Opelka 45
+28.Evans 45
+29.Federer 45
+30.De-Minaur 45
+31.Cilic 45
+32.Dimitrov 45
+33.Nishikori 90
+34.Fognini 90
+35.Goffin 90
+36.Khachanov 90
+37.Auger-Aliassime 360
+38.Basilashvili 360
+39.Karatsev 90
+40.Isner 90
+41.Harris 90
+42.Korda 360
+43.Lajovic 90
+44.Brooksby 180
+45.Andujar 180
+46.Gasquet 180
+47.Lopez 180
+48.Murray 180
+49.Humbert 45
+50.Coria 45
 51.Paul 45
 52.Duckworth 45
 53.Popyrin 45
@@ -569,8 +610,630 @@ Vesely Rk:63 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
 Wawrinka Rk:68 Ps:45 Ts:1 WM:1 LM:1 WS:2 LS:0 WG:12 LG:7
 Zverev Rk:7 Ps:540 Ts:3 WM:4 LM:3 WS:7 LS:7 WG:77 LG:63
 #baja_jugador Fritz
+32
+Auger-Aliassime Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Brooksby Rk:30 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Bublik Rk:19 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+De-Minaur Rk:20 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:17 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Federer Rk:18 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:24 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fritz Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fucsovics Rk:23 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:31 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Harris Rk:22 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Hurkacz Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Isner Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ivashka Rk:28 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Karatsev Rk:15 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:25 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Krajinovic Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:29 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Medvedev Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nishikori Rk:26 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Opelka Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Paire Rk:32 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ruud Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Shapovalov Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Sinner Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Sonego Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Tiafoe Rk:21 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+1 Djokovic 600
+2 Medvedev 1000
+3 Zverev 360
+4 Rublev 360
+5 Ruud 45
+6 Auger-Aliassime 45
+7 Sinner 90
+8 Hurkacz 90
+9 Norrie 180
+10 Shapovalov 45
+11 Fritz 90
+12 Opelka 45
+13 Basilashvili 45
+14 Sonego 45
+15 Karatsev 45
+16 Isner 45
+17 Evans 90
+18 Federer 90
+19 Bublik 90
+20 De-Minaur 90
+21 Tiafoe 90
+22 Harris 45
+23 Fucsovics 180
+24 Fognini 45
+25 Korda 45
+26 Nishikori 45
+27 Krajinovic 180
+28 Ivashka 180
+29 Lajovic 45
+30 Brooksby 45
+31 Goffin 45
+32 Paire 45
+32
+Auger-Aliassime Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Brooksby Rk:30 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Bublik Rk:19 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+De-Minaur Rk:20 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:17 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Federer Rk:18 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:24 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fritz Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Fucsovics Rk:23 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:31 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Harris Rk:22 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Hurkacz Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Isner Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ivashka Rk:28 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Karatsev Rk:15 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:25 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Krajinovic Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:29 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Medvedev Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nishikori Rk:26 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Opelka Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Paire Rk:32 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ruud Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Shapovalov Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Sinner Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Sonego Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Tiafoe Rk:21 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+28
+Alcaraz Rk:8 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:50 LG:44
+Bautista Rk:7 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:3 WG:34 LG:33
+Berrettini Rk:6 Ps:0 Ts:1 WM:3 LM:1 WS:7 LS:4 WG:65 LG:53
+Bublik Rk:19 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:3 WG:27 LG:27
+Cilic Rk:20 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:28 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Dimitrov Rk:21 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:4 LG:12
+Djokovic Rk:2 Ps:0 Ts:1 WM:4 LM:1 WS:9 LS:2 WG:63 LG:35
+Fritz Rk:18 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:19 LG:17
+Fucsovics Rk:10 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:43 LG:40
+Hurkacz Rk:17 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:30 LG:25
+Ivashka Rk:12 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:44 LG:39
+Krajinovic Rk:11 Ps:0 Ts:1 WM:2 LM:1 WS:3 LS:2 WG:22 LG:24
+Medvedev Rk:1 Ps:0 Ts:1 WM:5 LM:0 WS:8 LS:2 WG:56 LG:44
+Monfils Rk:15 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:3 WG:24 LG:26
+Murray Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nadal Rk:13 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:10 LG:14
+Nishikori Rk:26 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:2 LG:12
+Norrie Rk:9 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:4 WG:41 LG:41
+Opelka Rk:24 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Rublev Rk:5 Ps:0 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:51 LG:41
+Ruud Rk:22 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:9 LG:13
+Schwartzman Rk:14 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:22 LG:18
+Shapovalov Rk:23 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Sinner Rk:16 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:29 LG:20
+Sonego Rk:25 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:17
+Tsitsipas Rk:3 Ps:0 Ts:1 WM:3 LM:0 WS:6 LS:1 WG:40 LG:30
+Zverev Rk:4 Ps:0 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:54 LG:35
+1 Medvedev 360
+2 Djokovic 600
+3 Tsitsipas 360
+4 Zverev 90
+5 Rublev 45
+6 Berrettini 90
+7 Bautista 180
+8 Alcaraz 45
+9 Norrie 45
+10 Fucsovics 45
+11 Krajinovic 45
+12 Ivashka 90
+13 Nadal 1000
+14 Schwartzman 90
+15 Monfils 90
+16 Sinner 90
+17 Hurkacz 45
+18 Fritz 45
+19 Bublik 45
+20 Cilic 45
+21 Dimitrov 45
+22 Ruud 180
+23 Shapovalov 90
+24 Opelka 90
+25 Sonego 180
+26 Nishikori 45
+27 Murray 45
+28 Cuevas 180
+28
+Alcaraz Rk:8 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:50 LG:44
+Bautista Rk:7 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:3 WG:34 LG:33
+Berrettini Rk:6 Ps:0 Ts:1 WM:3 LM:1 WS:7 LS:4 WG:65 LG:53
+Bublik Rk:19 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:3 WG:27 LG:27
+Cilic Rk:20 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:28 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Dimitrov Rk:21 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:4 LG:12
+Djokovic Rk:2 Ps:0 Ts:1 WM:4 LM:1 WS:9 LS:2 WG:63 LG:35
+Fritz Rk:18 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:19 LG:17
+Fucsovics Rk:10 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:43 LG:40
+Hurkacz Rk:17 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:30 LG:25
+Ivashka Rk:12 Ps:0 Ts:1 WM:2 LM:1 WS:5 LS:3 WG:44 LG:39
+Krajinovic Rk:11 Ps:0 Ts:1 WM:2 LM:1 WS:3 LS:2 WG:22 LG:24
+Medvedev Rk:1 Ps:0 Ts:1 WM:5 LM:0 WS:8 LS:2 WG:56 LG:44
+Monfils Rk:15 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:3 WG:24 LG:26
+Murray Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nadal Rk:13 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:10 LG:14
+Nishikori Rk:26 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:2 LG:12
+Norrie Rk:9 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:4 WG:41 LG:41
+Opelka Rk:24 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Rublev Rk:5 Ps:0 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:51 LG:41
+Ruud Rk:22 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:9 LG:13
+Schwartzman Rk:14 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:22 LG:18
+Shapovalov Rk:23 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Sinner Rk:16 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:29 LG:20
+Sonego Rk:25 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:17
+Tsitsipas Rk:3 Ps:0 Ts:1 WM:3 LM:0 WS:6 LS:1 WG:40 LG:30
+Zverev Rk:4 Ps:0 Ts:1 WM:3 LM:1 WS:6 LS:3 WG:54 LG:35
+65
+Alcaraz Rk:11 Ps:0 Ts:2 WM:2 LM:2 WS:6 LS:5 WG:59 LG:60
+Andujar Rk:45 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:33 LG:33
+Auger-Aliassime Rk:37 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:38 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Bautista Rk:8 Ps:0 Ts:2 WM:4 LM:2 WS:8 LS:5 WG:66 LG:59
+Berrettini Rk:7 Ps:0 Ts:2 WM:4 LM:2 WS:9 LS:4 WG:77 LG:58
+Brooksby Rk:44 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Bublik Rk:25 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:5 WG:35 LG:40
+Carreno Rk:9 Ps:0 Ts:2 WM:4 LM:1 WS:7 LS:3 WG:51 LG:42
+Chardy Rk:62 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:31 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:16 LG:28
+Coria Rk:50 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:21 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:2 WG:31 LG:30
+De-Minaur Rk:30 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:23 LG:22
+Delbonis Rk:22 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:27
+Dimitrov Rk:32 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:4 LG:12
+Djere Rk:54 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:2 Ps:0 Ts:2 WM:7 LM:2 WS:16 LS:4 WG:116 LG:69
+Duckworth Rk:52 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:28 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:17 LG:20
+Federer Rk:29 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:34 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Fritz Rk:24 Ps:0 Ts:2 WM:1 LM:2 WS:3 LS:4 WG:32 LG:33
+Fucsovics Rk:13 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:48 LG:52
+Gasquet Rk:46 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:14 LG:19
+Gaston Rk:56 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:35 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Harris Rk:41 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Humbert Rk:49 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:15
+Hurkacz Rk:23 Ps:0 Ts:2 WM:1 LM:2 WS:4 LS:4 WG:42 LG:42
+Isner Rk:40 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Ivashka Rk:10 Ps:0 Ts:2 WM:3 LM:2 WS:5 LS:5 WG:52 LG:52
+Karatsev Rk:39 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:36 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:15 LG:19
+Kohlschreiber Rk:60 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:42 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:12
+Krajinovic Rk:14 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:30 LG:37
+Kwon Rk:55 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Kyrgios Rk:61 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:43 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:3 LG:12
+Lopez Rk:47 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:29 LG:30
+Medvedev Rk:1 Ps:0 Ts:2 WM:7 LM:1 WS:13 LS:4 WG:93 LG:70
+Monfils Rk:19 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:45 LG:51
+Murray Rk:48 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Nadal Rk:3 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:5 WG:82 LG:64
+Nishikori Rk:33 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:4 WG:4 LG:24
+Nishioka Rk:57 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:12 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:51 LG:54
+Opelka Rk:27 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:35
+Paul Rk:51 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Popyrin Rk:53 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Pospisil Rk:63 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Querrey Rk:58 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:17 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:5 WG:51 LG:50
+Raonic Rk:64 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:6 Ps:0 Ts:2 WM:3 LM:2 WS:6 LS:5 WG:61 LG:54
+Ruud Rk:15 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:36 LG:38
+Schwartzman Rk:18 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:4 WG:43 LG:38
+Shapovalov Rk:26 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:32 LG:32
+Sinner Rk:20 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:47 LG:44
+Sonego Rk:16 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:50 LG:44
+Tsitsipas Rk:4 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:4 WG:76 LG:65
+Vesely Rk:59 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Wawrinka Rk:65 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:5 Ps:0 Ts:2 WM:3 LM:2 WS:7 LS:5 WG:68 LG:50
+1 Medvedev 1200
+2 Djokovic 2000
+3 Nadal 720
+4 Tsitsipas 720
+5 Zverev 90
+6 Rublev 90
+7 Berrettini 180
+8 Bautista 180
+9 Carreno 360
+10 Ivashka 90
+11 Alcaraz 180
+12 Norrie 90
+13 Fucsovics 90
+14 Krajinovic 90
+15 Ruud 90
+16 Sonego 90
+17 Ramos 45
+18 Schwartzman 45
+19 Monfils 45
+20 Sinner 45
+21 Cuevas 45
+22 Delbonis 45
+23 Hurkacz 45
+24 Fritz 45
+25 Bublik 45
+26 Shapovalov 45
+27 Opelka 45
+28 Evans 45
+29 Federer 45
+30 De-Minaur 45
+31 Cilic 45
+32 Dimitrov 45
+33 Nishikori 90
+34 Fognini 90
+35 Goffin 90
+36 Khachanov 90
+37 Auger-Aliassime 360
+38 Basilashvili 360
+39 Karatsev 90
+40 Isner 90
+41 Harris 90
+42 Korda 360
+43 Lajovic 90
+44 Brooksby 180
+45 Andujar 180
+46 Gasquet 180
+47 Lopez 180
+48 Murray 180
+49 Humbert 45
+50 Coria 45
+51 Paul 45
+52 Duckworth 45
+53 Popyrin 45
+54 Djere 45
+55 Kwon 45
+56 Gaston 45
+57 Nishioka 45
+58 Querrey 45
+59 Vesely 45
+60 Kohlschreiber 45
+61 Kyrgios 45
+62 Chardy 45
+63 Pospisil 45
+64 Raonic 10
+65 Wawrinka 45
+65
+Alcaraz Rk:11 Ps:0 Ts:2 WM:2 LM:2 WS:6 LS:5 WG:59 LG:60
+Andujar Rk:45 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:33 LG:33
+Auger-Aliassime Rk:37 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:38 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Bautista Rk:8 Ps:0 Ts:2 WM:4 LM:2 WS:8 LS:5 WG:66 LG:59
+Berrettini Rk:7 Ps:0 Ts:2 WM:4 LM:2 WS:9 LS:4 WG:77 LG:58
+Brooksby Rk:44 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Bublik Rk:25 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:5 WG:35 LG:40
+Carreno Rk:9 Ps:0 Ts:2 WM:4 LM:1 WS:7 LS:3 WG:51 LG:42
+Chardy Rk:62 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:31 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:16 LG:28
+Coria Rk:50 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:21 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:2 WG:31 LG:30
+De-Minaur Rk:30 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:23 LG:22
+Delbonis Rk:22 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:27
+Dimitrov Rk:32 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:4 LG:12
+Djere Rk:54 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:2 Ps:0 Ts:2 WM:7 LM:2 WS:16 LS:4 WG:116 LG:69
+Duckworth Rk:52 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:28 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:17 LG:20
+Federer Rk:29 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:34 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Fritz Rk:24 Ps:0 Ts:2 WM:1 LM:2 WS:3 LS:4 WG:32 LG:33
+Fucsovics Rk:13 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:48 LG:52
+Gasquet Rk:46 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:14 LG:19
+Gaston Rk:56 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:35 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Harris Rk:41 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Humbert Rk:49 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:15
+Hurkacz Rk:23 Ps:0 Ts:2 WM:1 LM:2 WS:4 LS:4 WG:42 LG:42
+Isner Rk:40 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Ivashka Rk:10 Ps:0 Ts:2 WM:3 LM:2 WS:5 LS:5 WG:52 LG:52
+Karatsev Rk:39 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:36 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:15 LG:19
+Kohlschreiber Rk:60 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:42 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:12
+Krajinovic Rk:14 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:30 LG:37
+Kwon Rk:55 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Kyrgios Rk:61 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:43 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:3 LG:12
+Lopez Rk:47 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:29 LG:30
+Medvedev Rk:1 Ps:0 Ts:2 WM:7 LM:1 WS:13 LS:4 WG:93 LG:70
+Monfils Rk:19 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:45 LG:51
+Murray Rk:48 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Nadal Rk:3 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:5 WG:82 LG:64
+Nishikori Rk:33 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:4 WG:4 LG:24
+Nishioka Rk:57 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:12 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:51 LG:54
+Opelka Rk:27 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:35
+Paul Rk:51 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Popyrin Rk:53 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Pospisil Rk:63 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Querrey Rk:58 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:17 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:5 WG:51 LG:50
+Raonic Rk:64 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:6 Ps:0 Ts:2 WM:3 LM:2 WS:6 LS:5 WG:61 LG:54
+Ruud Rk:15 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:36 LG:38
+Schwartzman Rk:18 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:4 WG:43 LG:38
+Shapovalov Rk:26 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:32 LG:32
+Sinner Rk:20 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:47 LG:44
+Sonego Rk:16 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:50 LG:44
+Tsitsipas Rk:4 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:4 WG:76 LG:65
+Vesely Rk:59 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Wawrinka Rk:65 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:5 Ps:0 Ts:2 WM:3 LM:2 WS:7 LS:5 WG:68 LG:50
 68
 #bj Khachanov
+14
+Alcaraz Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Bautista Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Berrettini Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Carreno Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Delbonis Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Dimitrov Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Garin Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Monfils Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nadal Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Schwartzman Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Tsitsipas Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+1 Tsitsipas 500
+2 Nadal 90
+3 Berrettini 300
+4 Schwartzman 90
+5 Bautista 180
+6 Carreno 90
+7 Alcaraz 180
+8 Cilic 45
+9 Monfils 90
+10 Khachanov 45
+11 Garin 45
+12 Ramos 45
+13 Dimitrov 45
+14 Delbonis 45
+14
+Alcaraz Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Bautista Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Berrettini Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Carreno Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Delbonis Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Dimitrov Rk:13 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Garin Rk:11 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Monfils Rk:9 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Nadal Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Schwartzman Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Tsitsipas Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+65
+Alcaraz Rk:11 Ps:0 Ts:2 WM:2 LM:2 WS:6 LS:5 WG:59 LG:60
+Andujar Rk:45 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:33 LG:33
+Auger-Aliassime Rk:37 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:38 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Bautista Rk:8 Ps:0 Ts:2 WM:4 LM:2 WS:8 LS:5 WG:66 LG:59
+Berrettini Rk:7 Ps:0 Ts:2 WM:4 LM:2 WS:9 LS:4 WG:77 LG:58
+Brooksby Rk:44 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Bublik Rk:25 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:5 WG:35 LG:40
+Carreno Rk:9 Ps:0 Ts:2 WM:4 LM:1 WS:7 LS:3 WG:51 LG:42
+Chardy Rk:62 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:31 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:16 LG:28
+Coria Rk:50 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:21 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:2 WG:31 LG:30
+De-Minaur Rk:30 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:23 LG:22
+Delbonis Rk:22 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:27
+Dimitrov Rk:32 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:4 LG:12
+Djere Rk:54 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:2 Ps:0 Ts:2 WM:7 LM:2 WS:16 LS:4 WG:116 LG:69
+Duckworth Rk:52 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:28 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:17 LG:20
+Federer Rk:29 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:34 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Fritz Rk:24 Ps:0 Ts:2 WM:1 LM:2 WS:3 LS:4 WG:32 LG:33
+Fucsovics Rk:13 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:48 LG:52
+Gasquet Rk:46 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:14 LG:19
+Gaston Rk:56 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:35 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Harris Rk:41 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Humbert Rk:49 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:15
+Hurkacz Rk:23 Ps:0 Ts:2 WM:1 LM:2 WS:4 LS:4 WG:42 LG:42
+Isner Rk:40 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Ivashka Rk:10 Ps:0 Ts:2 WM:3 LM:2 WS:5 LS:5 WG:52 LG:52
+Karatsev Rk:39 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:36 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:15 LG:19
+Kohlschreiber Rk:60 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:42 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:12
+Krajinovic Rk:14 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:30 LG:37
+Kwon Rk:55 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Kyrgios Rk:61 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:43 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:3 LG:12
+Lopez Rk:47 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:29 LG:30
+Medvedev Rk:1 Ps:0 Ts:2 WM:7 LM:1 WS:13 LS:4 WG:93 LG:70
+Monfils Rk:19 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:45 LG:51
+Murray Rk:48 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Nadal Rk:3 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:5 WG:82 LG:64
+Nishikori Rk:33 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:4 WG:4 LG:24
+Nishioka Rk:57 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:12 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:51 LG:54
+Opelka Rk:27 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:35
+Paul Rk:51 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Popyrin Rk:53 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Pospisil Rk:63 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Querrey Rk:58 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:17 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:5 WG:51 LG:50
+Raonic Rk:64 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:6 Ps:0 Ts:2 WM:3 LM:2 WS:6 LS:5 WG:61 LG:54
+Ruud Rk:15 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:36 LG:38
+Schwartzman Rk:18 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:4 WG:43 LG:38
+Shapovalov Rk:26 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:32 LG:32
+Sinner Rk:20 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:47 LG:44
+Sonego Rk:16 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:50 LG:44
+Tsitsipas Rk:4 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:4 WG:76 LG:65
+Vesely Rk:59 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Wawrinka Rk:65 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:5 Ps:0 Ts:2 WM:3 LM:2 WS:7 LS:5 WG:68 LG:50
+1 Medvedev 1200
+2 Djokovic 2000
+3 Nadal 720
+4 Tsitsipas 720
+5 Zverev 90
+6 Rublev 90
+7 Berrettini 180
+8 Bautista 180
+9 Carreno 360
+10 Ivashka 90
+11 Alcaraz 180
+12 Norrie 90
+13 Fucsovics 90
+14 Krajinovic 90
+15 Ruud 90
+16 Sonego 90
+17 Ramos 45
+18 Schwartzman 45
+19 Monfils 45
+20 Sinner 45
+21 Cuevas 45
+22 Delbonis 45
+23 Hurkacz 45
+24 Fritz 45
+25 Bublik 45
+26 Shapovalov 45
+27 Opelka 45
+28 Evans 45
+29 Federer 45
+30 De-Minaur 45
+31 Cilic 45
+32 Dimitrov 45
+33 Nishikori 90
+34 Fognini 90
+35 Goffin 90
+36 Khachanov 90
+37 Auger-Aliassime 360
+38 Basilashvili 360
+39 Karatsev 90
+40 Isner 90
+41 Harris 90
+42 Korda 360
+43 Lajovic 90
+44 Brooksby 180
+45 Andujar 180
+46 Gasquet 180
+47 Lopez 180
+48 Murray 180
+49 Humbert 45
+50 Coria 45
+51 Paul 45
+52 Duckworth 45
+53 Popyrin 45
+54 Djere 45
+55 Kwon 45
+56 Gaston 45
+57 Nishioka 45
+58 Querrey 45
+59 Vesely 45
+60 Kohlschreiber 45
+61 Kyrgios 45
+62 Chardy 45
+63 Pospisil 45
+64 Raonic 10
+65 Wawrinka 45
+65
+Alcaraz Rk:11 Ps:0 Ts:2 WM:2 LM:2 WS:6 LS:5 WG:59 LG:60
+Andujar Rk:45 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:33 LG:33
+Auger-Aliassime Rk:37 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Basilashvili Rk:38 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Bautista Rk:8 Ps:0 Ts:2 WM:4 LM:2 WS:8 LS:5 WG:66 LG:59
+Berrettini Rk:7 Ps:0 Ts:2 WM:4 LM:2 WS:9 LS:4 WG:77 LG:58
+Brooksby Rk:44 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:1 LG:12
+Bublik Rk:25 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:5 WG:35 LG:40
+Carreno Rk:9 Ps:0 Ts:2 WM:4 LM:1 WS:7 LS:3 WG:51 LG:42
+Chardy Rk:62 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:31 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:16 LG:28
+Coria Rk:50 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:21 Ps:0 Ts:1 WM:2 LM:1 WS:4 LS:2 WG:31 LG:30
+De-Minaur Rk:30 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:23 LG:22
+Delbonis Rk:22 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:27
+Dimitrov Rk:32 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:4 LG:12
+Djere Rk:54 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:2 Ps:0 Ts:2 WM:7 LM:2 WS:16 LS:4 WG:116 LG:69
+Duckworth Rk:52 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Evans Rk:28 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:17 LG:20
+Federer Rk:29 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:34 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Fritz Rk:24 Ps:0 Ts:2 WM:1 LM:2 WS:3 LS:4 WG:32 LG:33
+Fucsovics Rk:13 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:48 LG:52
+Gasquet Rk:46 Ps:0 Ts:1 WM:1 LM:1 WS:2 LS:2 WG:14 LG:19
+Gaston Rk:56 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:35 Ps:0 Ts:2 WM:0 LM:2 WS:1 LS:4 WG:19 LG:30
+Harris Rk:41 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Humbert Rk:49 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:14 LG:15
+Hurkacz Rk:23 Ps:0 Ts:2 WM:1 LM:2 WS:4 LS:4 WG:42 LG:42
+Isner Rk:40 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:13
+Ivashka Rk:10 Ps:0 Ts:2 WM:3 LM:2 WS:5 LS:5 WG:52 LG:52
+Karatsev Rk:39 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Khachanov Rk:36 Ps:0 Ts:1 WM:0 LM:1 WS:1 LS:2 WG:15 LG:19
+Kohlschreiber Rk:60 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Korda Rk:42 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:8 LG:12
+Krajinovic Rk:14 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:30 LG:37
+Kwon Rk:55 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Kyrgios Rk:61 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lajovic Rk:43 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:3 LG:12
+Lopez Rk:47 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:3 WG:29 LG:30
+Medvedev Rk:1 Ps:0 Ts:2 WM:7 LM:1 WS:13 LS:4 WG:93 LG:70
+Monfils Rk:19 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:45 LG:51
+Murray Rk:48 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:5 LG:12
+Nadal Rk:3 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:5 WG:82 LG:64
+Nishikori Rk:33 Ps:0 Ts:2 WM:0 LM:2 WS:0 LS:4 WG:4 LG:24
+Nishioka Rk:57 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:12 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:6 WG:51 LG:54
+Opelka Rk:27 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:27 LG:35
+Paul Rk:51 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Popyrin Rk:53 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Pospisil Rk:63 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Querrey Rk:58 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:17 Ps:0 Ts:2 WM:2 LM:2 WS:4 LS:5 WG:51 LG:50
+Raonic Rk:64 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Rublev Rk:6 Ps:0 Ts:2 WM:3 LM:2 WS:6 LS:5 WG:61 LG:54
+Ruud Rk:15 Ps:0 Ts:2 WM:2 LM:2 WS:3 LS:4 WG:36 LG:38
+Schwartzman Rk:18 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:4 WG:43 LG:38
+Shapovalov Rk:26 Ps:0 Ts:2 WM:1 LM:2 WS:2 LS:4 WG:32 LG:32
+Sinner Rk:20 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:47 LG:44
+Sonego Rk:16 Ps:0 Ts:2 WM:2 LM:2 WS:5 LS:5 WG:50 LG:44
+Tsitsipas Rk:4 Ps:0 Ts:2 WM:5 LM:1 WS:10 LS:4 WG:76 LG:65
+Vesely Rk:59 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Wawrinka Rk:65 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Zverev Rk:5 Ps:0 Ts:2 WM:3 LM:2 WS:7 LS:5 WG:68 LG:50
 67
 #it Barcelona
 ((((1.Tsitsipas (16.Murray 17.Nishikori)) (8.Fucsovics 9.Sonego)) ((4.Zverev (13.Andujar 20.Davidovich)) (5.Bautista (12.Monfils 21.Kohlschreiber)))) (((2.Carreno (15.Lopez 18.Fognini)) (7.Korda 10.Ramos)) ((3.Berrettini (14.Gasquet 19.Cilic)) (6.Alcaraz 11.Schwartzman))))
@@ -578,129 +1241,129 @@ Zverev Rk:7 Ps:540 Ts:3 WM:4 LM:3 WS:7 LS:7 WG:77 LG:63
 4
 #ft Barcelona
 (16.Murray vs 17.Nishikori 7-5,6-4)(1.Tsitsipas vs 16.Murray 6-7,6-2,6-7)(8.Fucsovics vs 9.Sonego 6-3,6-0)(16.Murray vs 8.Fucsovics 7-6,3-6,6-4)(13.Andujar vs 20.Davidovich 1-0)(4.Zverev vs 13.Andujar 6-1,6-1)(12.Monfils vs 21.Kohlschreiber 6-7,3-6)(5.Bautista vs 21.Kohlschreiber 4-6,6-3,6-7)(4.Zverev vs 21.Kohlschreiber 6-1,6-4)(16.Murray vs 4.Zverev 2-6,3-6)(15.Lopez vs 18.Fognini 4-6,6-7)(2.Carreno vs 18.Fognini 6-7,6-4,3-6)(7.Korda vs 10.Ramos 6-3,6-3)(18.Fognini vs 7.Korda 1-0)(14.Gasquet vs 19.Cilic 7-5,7-5)(3.Berrettini vs 14.Gasquet 0-1)(6.Alcaraz vs 11.Schwartzman 6-4,7-5)(14.Gasquet vs 6.Alcaraz 0-6,2-6)(18.Fognini vs 6.Alcaraz 6-4,1-6,2-6)(4.Zverev vs 6.Alcaraz 7-5,6-7,7-6)
-1.Tsitsipas 1625
-2.Carreno 745
-3.Berrettini 615
-4.Zverev 1040
-5.Bautista 585
-6.Alcaraz 705
-7.Korda 495
-8.Fucsovics 405
-9.Sonego 360
-10.Ramos 285
-11.Schwartzman 270
-12.Monfils 245
-13.Andujar 270
-14.Gasquet 315
-15.Lopez 245
-16.Murray 405
-17.Nishikori 200
-18.Fognini 335
-19.Cilic 155
-20.Davidovich 65
-21.Kohlschreiber 135
+1.Tsitsipas 45
+2.Carreno 45
+3.Berrettini 45
+4.Zverev 500
+5.Bautista 45
+6.Alcaraz 300
+7.Korda 90
+8.Fucsovics 90
+9.Sonego 45
+10.Ramos 45
+11.Schwartzman 45
+12.Monfils 20
+13.Andujar 45
+14.Gasquet 90
+15.Lopez 20
+16.Murray 180
+17.Nishikori 20
+18.Fognini 180
+19.Cilic 20
+20.Davidovich 20
+21.Kohlschreiber 90
 #nuevo_jugador Fritz
 68
 #lr
-1 Djokovic 3200
-2 Medvedev 2560
-3 Nadal 1810
-4 Tsitsipas 1625
-5 Zverev 1040
-6 Carreno 745
-7 Alcaraz 705
-8 Berrettini 615
-9 Bautista 585
-10 Rublev 495
-11 Korda 495
-12 Auger-Aliassime 405
-13 Basilashvili 405
-14 Fucsovics 405
-15 Murray 405
-16 Ivashka 360
-17 Sonego 360
-18 Fognini 335
-19 Norrie 315
-20 Krajinovic 315
-21 Ruud 315
-22 Gasquet 315
-23 Ramos 285
-24 Schwartzman 270
-25 Andujar 270
-26 Monfils 245
-27 Lopez 245
-28 Sinner 225
-29 Cuevas 225
-30 Brooksby 225
-31 Nishikori 200
-32 Delbonis 180
-33 Hurkacz 180
-34 Bublik 180
-35 Shapovalov 180
-36 Opelka 180
-37 Goffin 155
-38 Cilic 155
-39 Evans 135
-40 Federer 135
-41 De-Minaur 135
-42 Dimitrov 135
-43 Karatsev 135
-44 Isner 135
-45 Harris 135
-46 Lajovic 135
-47 Kohlschreiber 135
-48 Tiafoe 90
-49 Paire 65
-50 Humbert 65
-51 Coria 65
-52 Davidovich 65
-53 Garin 45
-54 Paul 45
-55 Duckworth 45
-56 Popyrin 45
-57 Djere 45
-58 Kwon 45
-59 Gaston 45
-60 Nishioka 45
-61 Querrey 45
-62 Vesely 45
-63 Kyrgios 45
-64 Chardy 45
-65 Pospisil 45
-66 Wawrinka 45
-67 Raonic 10
+1 Djokovic 2600
+2 Nadal 1720
+3 Medvedev 1560
+4 Tsitsipas 1125
+5 Zverev 680
+6 Carreno 655
+7 Alcaraz 525
+8 Korda 450
+9 Bautista 405
+10 Murray 405
+11 Auger-Aliassime 360
+12 Basilashvili 360
+13 Berrettini 315
+14 Sonego 315
+15 Gasquet 315
+16 Fognini 290
+17 Ruud 270
+18 Andujar 270
+19 Lopez 245
+20 Ramos 240
+21 Cuevas 225
+22 Fucsovics 225
+23 Schwartzman 180
+24 Ivashka 180
+25 Brooksby 180
+26 Monfils 155
+27 Nishikori 155
+28 Delbonis 135
+29 Rublev 135
+30 Norrie 135
+31 Krajinovic 135
+32 Sinner 135
+33 Shapovalov 135
+34 Opelka 135
+35 Kohlschreiber 135
+36 Cilic 110
+37 Goffin 110
+38 Dimitrov 90
+39 Hurkacz 90
+40 Bublik 90
+41 Karatsev 90
+42 Isner 90
+43 Harris 90
+44 Lajovic 90
+45 Humbert 65
+46 Coria 65
+47 Davidovich 65
+48 Evans 45
+49 Federer 45
+50 De-Minaur 45
+51 Paul 45
+52 Duckworth 45
+53 Popyrin 45
+54 Djere 45
+55 Kwon 45
+56 Gaston 45
+57 Nishioka 45
+58 Querrey 45
+59 Vesely 45
+60 Kyrgios 45
+61 Chardy 45
+62 Pospisil 45
+63 Wawrinka 45
+64 Paire 20
+65 Raonic 10
+66 Garin 0
+67 Tiafoe 0
 68 Fritz 0
 #it Indian_Wells
-((((1.Djokovic (16.Goffin 17.Cilic)) ((8.Schwartzman 25.Nishioka) (9.Andujar 24.Garin))) ((4.Korda (13.Delbonis 20.De-Minaur)) ((5.Auger-Aliassime 28.Fritz) (12.Nishikori 21.Dimitrov)))) (((2.Medvedev (15.Bublik 18.Evans)) ((7.Ruud 26.Vesely) (10.Cuevas 23.Humbert))) ((3.Nadal (14.Hurkacz 19.Federer)) ((6.Sonego 27.Wawrinka) (11.Brooksby 22.Paire)))))
+((((1.Djokovic (16.Goffin 17.Dimitrov)) ((8.Ivashka 25.Kyrgios) (9.Brooksby 24.Popyrin))) ((4.Auger-Aliassime (13.Sinner 20.Karatsev)) ((5.Basilashvili 28.Fritz) (12.Krajinovic 21.Isner)))) (((2.Nadal (15.Opelka 18.Hurkacz)) ((7.Cuevas 26.Pospisil) (10.Rublev 23.De-Minaur))) ((3.Medvedev (14.Shapovalov 19.Bublik)) ((6.Ruud 27.Garin) (11.Norrie 22.Federer)))))
 #ft Indian_Wells
-(16.Goffin vs 17.Cilic 6-4,4-6,7-6)(1.Djokovic vs 16.Goffin 6-3,6-0)(8.Schwartzman vs 25.Nishioka 6-2,6-3)(9.Andujar vs 24.Garin 1-0)(8.Schwartzman vs 9.Andujar 6-4,4-6,4-6)(1.Djokovic vs 9.Andujar 6-4,6-4)(13.Delbonis vs 20.De-Minaur 7-5,6-0)(4.Korda vs 13.Delbonis 6-1,6-3)(5.Auger-Aliassime vs 28.Fritz 6-1,6-1)(12.Nishikori vs 21.Dimitrov 6-3,6-3)(5.Auger-Aliassime vs 12.Nishikori 7-5,7-6)(4.Korda vs 5.Auger-Aliassime 1-6,6-2,3-6)(1.Djokovic vs 5.Auger-Aliassime 6-2,6-4)(15.Bublik vs 18.Evans 6-2,5-7,4-6)(2.Medvedev vs 18.Evans 6-1,6-2)(7.Ruud vs 26.Vesely 6-1,6-4)(10.Cuevas vs 23.Humbert 7-6,6-3)(7.Ruud vs 10.Cuevas 6-3,6-7,7-5)(2.Medvedev vs 7.Ruud 7-5,7-5)(14.Hurkacz vs 19.Federer 3-6,7-5,5-7)(3.Nadal vs 19.Federer 6-4,7-6)(6.Sonego vs 27.Wawrinka 7-6,6-4)(11.Brooksby vs 22.Paire 0-1)(6.Sonego vs 22.Paire 1-0)(3.Nadal vs 6.Sonego 5-7,6-3,6-0)(2.Medvedev vs 3.Nadal 7-6,4-6,6-7)(1.Djokovic vs 3.Nadal 7-6,3-6,6-4)
-1.Djokovic 4200
-2.Medvedev 2920
-3.Nadal 2410
-4.Korda 675
-5.Auger-Aliassime 765
-6.Sonego 540
-7.Ruud 495
-8.Schwartzman 360
-9.Andujar 450
-10.Cuevas 315
-11.Brooksby 270
-12.Nishikori 290
-13.Delbonis 270
-14.Hurkacz 225
-15.Bublik 225
-16.Goffin 245
-17.Cilic 200
-18.Evans 225
-19.Federer 225
-20.De-Minaur 180
-21.Dimitrov 180
-22.Paire 155
-23.Humbert 110
-24.Garin 90
-25.Nishioka 90
-26.Vesely 90
-27.Wawrinka 90
+(16.Goffin vs 17.Dimitrov 6-4,4-6,7-6)(1.Djokovic vs 16.Goffin 6-3,6-0)(8.Ivashka vs 25.Kyrgios 6-2,6-3)(9.Brooksby vs 24.Popyrin 1-0)(8.Ivashka vs 9.Brooksby 6-4,4-6,4-6)(1.Djokovic vs 9.Brooksby 6-4,6-4)(13.Sinner vs 20.Karatsev 7-5,6-0)(4.Auger-Aliassime vs 13.Sinner 6-1,6-3)(5.Basilashvili vs 28.Fritz 6-1,6-1)(12.Krajinovic vs 21.Isner 6-3,6-3)(5.Basilashvili vs 12.Krajinovic 7-5,7-6)(4.Auger-Aliassime vs 5.Basilashvili 1-6,6-2,3-6)(1.Djokovic vs 5.Basilashvili 6-2,6-4)(15.Opelka vs 18.Hurkacz 6-2,5-7,4-6)(2.Nadal vs 18.Hurkacz 6-1,6-2)(7.Cuevas vs 26.Pospisil 6-1,6-4)(10.Rublev vs 23.De-Minaur 7-6,6-3)(7.Cuevas vs 10.Rublev 6-3,6-7,7-5)(2.Nadal vs 7.Cuevas 7-5,7-5)(14.Shapovalov vs 19.Bublik 3-6,7-5,5-7)(3.Medvedev vs 19.Bublik 6-4,7-6)(6.Ruud vs 27.Garin 7-6,6-4)(11.Norrie vs 22.Federer 0-1)(6.Ruud vs 22.Federer 1-0)(3.Medvedev vs 6.Ruud 5-7,6-3,6-0)(2.Nadal vs 3.Medvedev 7-6,4-6,6-7)(1.Djokovic vs 3.Medvedev 7-6,3-6,6-4)
+1.Djokovic 1000
+2.Nadal 360
+3.Medvedev 600
+4.Auger-Aliassime 180
+5.Basilashvili 360
+6.Ruud 180
+7.Cuevas 180
+8.Ivashka 90
+9.Brooksby 180
+10.Rublev 90
+11.Norrie 45
+12.Krajinovic 90
+13.Sinner 90
+14.Shapovalov 45
+15.Opelka 45
+16.Goffin 90
+17.Dimitrov 45
+18.Hurkacz 90
+19.Bublik 90
+20.Karatsev 45
+21.Isner 45
+22.Federer 90
+23.De-Minaur 45
+24.Popyrin 45
+25.Kyrgios 45
+26.Pospisil 45
+27.Garin 45
 28.Fritz 45
 #lt
 4
@@ -709,141 +1372,141 @@ Casablanca ATP_250
 Indian_Wells Masters_1000
 Wimbledon Grand_Slam
 #lr
-1 Djokovic 4200
-2 Medvedev 2920
-3 Nadal 2410
-4 Tsitsipas 1625
-5 Zverev 1040
-6 Auger-Aliassime 765
-7 Carreno 745
-8 Alcaraz 705
-9 Korda 675
-10 Berrettini 615
-11 Bautista 585
-12 Sonego 540
-13 Rublev 495
-14 Ruud 495
-15 Andujar 450
-16 Basilashvili 405
-17 Fucsovics 405
-18 Murray 405
-19 Ivashka 360
-20 Schwartzman 360
-21 Fognini 335
-22 Norrie 315
-23 Krajinovic 315
-24 Gasquet 315
-25 Cuevas 315
-26 Nishikori 290
-27 Ramos 285
-28 Brooksby 270
-29 Delbonis 270
-30 Monfils 245
-31 Lopez 245
-32 Goffin 245
-33 Sinner 225
-34 Hurkacz 225
-35 Bublik 225
-36 Evans 225
-37 Federer 225
-38 Cilic 200
-39 Shapovalov 180
-40 Opelka 180
-41 De-Minaur 180
-42 Dimitrov 180
-43 Paire 155
-44 Karatsev 135
-45 Isner 135
-46 Harris 135
-47 Lajovic 135
-48 Kohlschreiber 135
-49 Humbert 110
-50 Tiafoe 90
-51 Garin 90
-52 Nishioka 90
-53 Vesely 90
-54 Wawrinka 90
-55 Coria 65
-56 Davidovich 65
-57 Paul 45
-58 Duckworth 45
-59 Popyrin 45
-60 Djere 45
-61 Kwon 45
-62 Gaston 45
-63 Querrey 45
-64 Kyrgios 45
-65 Chardy 45
-66 Pospisil 45
-67 Fritz 45
-68 Raonic 10
+1 Djokovic 3000
+2 Medvedev 1800
+3 Nadal 1080
+4 Tsitsipas 765
+5 Basilashvili 720
+6 Carreno 655
+7 Zverev 590
+8 Auger-Aliassime 540
+9 Alcaraz 480
+10 Korda 450
+11 Murray 360
+12 Brooksby 360
+13 Gasquet 315
+14 Fognini 290
+15 Ruud 270
+16 Andujar 270
+17 Lopez 245
+18 Ramos 240
+19 Bautista 225
+20 Berrettini 225
+21 Cuevas 225
+22 Goffin 200
+23 Fucsovics 180
+24 Ivashka 180
+25 Rublev 180
+26 Krajinovic 180
+27 Sonego 135
+28 Delbonis 135
+29 Norrie 135
+30 Sinner 135
+31 Kohlschreiber 135
+32 Hurkacz 135
+33 Bublik 135
+34 Karatsev 135
+35 Isner 135
+36 Federer 135
+37 Nishikori 110
+38 Schwartzman 90
+39 Shapovalov 90
+40 Opelka 90
+41 Dimitrov 90
+42 Harris 90
+43 Lajovic 90
+44 De-Minaur 90
+45 Popyrin 90
+46 Kyrgios 90
+47 Pospisil 90
+48 Monfils 65
+49 Cilic 65
+50 Humbert 65
+51 Coria 65
+52 Davidovich 65
+53 Evans 45
+54 Paul 45
+55 Duckworth 45
+56 Djere 45
+57 Kwon 45
+58 Gaston 45
+59 Nishioka 45
+60 Querrey 45
+61 Vesely 45
+62 Chardy 45
+63 Wawrinka 45
+64 Garin 45
+65 Paire 20
+66 Raonic 10
+67 Tiafoe 0
+68 Fritz 0
 #lj
 68
-Alcaraz Rk:8 Ps:705 Ts:4 WM:7 LM:4 WS:15 LS:10 WG:137 LG:117
-Andujar Rk:15 Ps:450 Ts:4 WM:6 LM:4 WS:7 LS:10 WG:82 LG:93
-Auger-Aliassime Rk:6 Ps:765 Ts:3 WM:6 LM:3 WS:11 LS:6 WG:90 LG:74
-Basilashvili Rk:16 Ps:405 Ts:2 WM:3 LM:2 WS:3 LS:4 WG:30 LG:37
-Bautista Rk:11 Ps:585 Ts:4 WM:6 LM:4 WS:12 LS:9 WG:112 LG:100
-Berrettini Rk:10 Ps:615 Ts:4 WM:6 LM:4 WS:12 LS:6 WG:106 LG:78
-Brooksby Rk:28 Ps:270 Ts:3 WM:2 LM:3 WS:3 LS:4 WG:28 LG:36
-Bublik Rk:35 Ps:225 Ts:4 WM:1 LM:4 WS:3 LS:7 WG:50 LG:55
-Carreno Rk:7 Ps:745 Ts:4 WM:7 LM:3 WS:12 LS:9 WG:107 LG:100
-Chardy Rk:65 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Cilic Rk:38 Ps:200 Ts:5 WM:0 LM:5 WS:2 LS:8 WG:42 LG:59
-Coria Rk:55 Ps:65 Ts:2 WM:0 LM:2 WS:1 LS:2 WG:14 LG:16
-Cuevas Rk:25 Ps:315 Ts:3 WM:3 LM:3 WS:7 LS:4 WG:59 LG:58
-Davidovich Rk:56 Ps:65 Ts:2 WM:1 LM:2 WS:2 LS:3 WG:21 LG:26
-De-Minaur Rk:41 Ps:180 Ts:3 WM:1 LM:3 WS:2 LS:4 WG:28 LG:35
-Delbonis Rk:29 Ps:270 Ts:4 WM:2 LM:4 WS:4 LS:6 WG:44 LG:44
-Dimitrov Rk:42 Ps:180 Ts:4 WM:0 LM:4 WS:0 LS:4 WG:10 LG:24
-Djere Rk:60 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Djokovic Rk:1 Ps:4200 Ts:4 WM:17 LM:2 WS:32 LS:7 WG:224 LG:146
-Duckworth Rk:58 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Evans Rk:36 Ps:225 Ts:3 WM:2 LM:3 WS:4 LS:5 WG:35 LG:47
-Federer Rk:37 Ps:225 Ts:3 WM:2 LM:3 WS:2 LS:3 WG:28 LG:28
-Fognini Rk:21 Ps:335 Ts:4 WM:4 LM:4 WS:6 LS:9 WG:64 LG:83
-Fritz Rk:67 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:2 LG:12
-Fucsovics Rk:17 Ps:405 Ts:4 WM:4 LM:4 WS:8 LS:9 WG:84 LG:84
-Garin Rk:51 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:0 WG:0 LG:0
-Gasquet Rk:24 Ps:315 Ts:3 WM:5 LM:3 WS:6 LS:7 WG:57 LG:68
-Gaston Rk:62 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Goffin Rk:32 Ps:245 Ts:4 WM:2 LM:4 WS:3 LS:9 WG:40 LG:70
-Harris Rk:46 Ps:135 Ts:2 WM:1 LM:2 WS:1 LS:4 WG:16 LG:30
-Humbert Rk:49 Ps:110 Ts:3 WM:0 LM:3 WS:1 LS:4 WG:23 LG:28
-Hurkacz Rk:34 Ps:225 Ts:4 WM:1 LM:4 WS:5 LS:6 WG:57 LG:60
-Isner Rk:45 Ps:135 Ts:2 WM:1 LM:2 WS:0 LS:4 WG:16 LG:25
-Ivashka Rk:19 Ps:360 Ts:3 WM:4 LM:3 WS:5 LS:7 WG:60 LG:65
-Karatsev Rk:44 Ps:135 Ts:2 WM:1 LM:2 WS:0 LS:2 WG:2 LG:12
-Kohlschreiber Rk:48 Ps:135 Ts:2 WM:2 LM:2 WS:4 LS:3 WG:34 LG:37
-Korda Rk:9 Ps:675 Ts:4 WM:5 LM:4 WS:10 LS:7 WG:85 LG:76
-Krajinovic Rk:23 Ps:315 Ts:3 WM:3 LM:3 WS:4 LS:6 WG:44 LG:54
-Kwon Rk:61 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Kyrgios Rk:64 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Lajovic Rk:47 Ps:135 Ts:2 WM:1 LM:2 WS:0 LS:4 WG:8 LG:24
-Lopez Rk:31 Ps:245 Ts:3 WM:3 LM:3 WS:3 LS:5 WG:39 LG:43
-Medvedev Rk:2 Ps:2920 Ts:4 WM:14 LM:3 WS:27 LS:8 WG:199 LG:137
-Monfils Rk:30 Ps:245 Ts:4 WM:2 LM:4 WS:4 LS:8 WG:54 LG:64
-Murray Rk:18 Ps:405 Ts:3 WM:5 LM:3 WS:8 LS:8 WG:72 LG:87
-Nadal Rk:3 Ps:2410 Ts:4 WM:12 LM:3 WS:23 LS:12 WG:201 LG:152
-Nishikori Rk:26 Ps:290 Ts:5 WM:2 LM:5 WS:2 LS:10 WG:37 LG:69
-Nishioka Rk:52 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:5 LG:12
-Norrie Rk:22 Ps:315 Ts:3 WM:3 LM:3 WS:4 LS:8 WG:59 LG:67
-Opelka Rk:40 Ps:180 Ts:3 WM:1 LM:3 WS:2 LS:4 WG:27 LG:35
-Paire Rk:43 Ps:155 Ts:3 WM:1 LM:3 WS:0 LS:4 WG:8 LG:24
-Paul Rk:57 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Popyrin Rk:59 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Pospisil Rk:66 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Querrey Rk:63 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
-Ramos Rk:27 Ps:285 Ts:4 WM:2 LM:4 WS:4 LS:7 WG:57 LG:62
-Raonic Rk:68 Ps:10 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:7 LG:12
-Rublev Rk:13 Ps:495 Ts:3 WM:4 LM:3 WS:6 LS:5 WG:61 LG:54
-Ruud Rk:14 Ps:495 Ts:4 WM:5 LM:4 WS:7 LS:7 WG:77 LG:72
-Schwartzman Rk:20 Ps:360 Ts:5 WM:3 LM:5 WS:8 LS:8 WG:78 LG:72
-Shapovalov Rk:39 Ps:180 Ts:3 WM:1 LM:3 WS:2 LS:4 WG:32 LG:32
-Sinner Rk:33 Ps:225 Ts:3 WM:2 LM:3 WS:5 LS:5 WG:47 LG:44
-Sonego Rk:12 Ps:540 Ts:5 WM:5 LM:5 WS:8 LS:11 WG:84 LG:96
-Tiafoe Rk:50 Ps:90 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:27 LG:24
-Tsitsipas Rk:4 Ps:1625 Ts:4 WM:9 LM:3 WS:17 LS:9 WG:145 LG:122
-Vesely Rk:53 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:5 LG:12
-Wawrinka Rk:54 Ps:90 Ts:2 WM:1 LM:2 WS:2 LS:2 WG:22 LG:20
-Zverev Rk:5 Ps:1040 Ts:4 WM:8 LM:3 WS:15 LS:8 WG:133 LG:93
+Alcaraz Rk:9 Ps:480 Ts:4 WM:7 LM:4 WS:15 LS:10 WG:137 LG:117
+Andujar Rk:16 Ps:270 Ts:3 WM:4 LM:3 WS:5 LS:7 WG:58 LG:67
+Auger-Aliassime Rk:8 Ps:540 Ts:3 WM:4 LM:3 WS:8 LS:5 WG:66 LG:57
+Basilashvili Rk:5 Ps:720 Ts:3 WM:6 LM:3 WS:9 LS:7 WG:76 LG:72
+Bautista Rk:19 Ps:225 Ts:4 WM:6 LM:4 WS:12 LS:9 WG:112 LG:100
+Berrettini Rk:20 Ps:225 Ts:4 WM:6 LM:4 WS:12 LS:6 WG:106 LG:78
+Brooksby Rk:12 Ps:360 Ts:3 WM:4 LM:3 WS:5 LS:7 WG:52 LG:62
+Bublik Rk:33 Ps:135 Ts:4 WM:2 LM:4 WS:4 LS:8 WG:63 LG:68
+Carreno Rk:6 Ps:655 Ts:4 WM:7 LM:3 WS:12 LS:9 WG:107 LG:100
+Chardy Rk:62 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Cilic Rk:49 Ps:65 Ts:4 WM:0 LM:4 WS:1 LS:6 WG:26 LG:42
+Coria Rk:51 Ps:65 Ts:2 WM:0 LM:2 WS:1 LS:2 WG:14 LG:16
+Cuevas Rk:21 Ps:225 Ts:3 WM:4 LM:3 WS:8 LS:5 WG:72 LG:64
+Davidovich Rk:52 Ps:65 Ts:2 WM:1 LM:2 WS:2 LS:3 WG:21 LG:26
+De-Minaur Rk:44 Ps:90 Ts:3 WM:1 LM:3 WS:2 LS:4 WG:32 LG:35
+Delbonis Rk:28 Ps:135 Ts:3 WM:1 LM:3 WS:2 LS:4 WG:27 LG:27
+Dimitrov Rk:41 Ps:90 Ts:4 WM:0 LM:4 WS:1 LS:4 WG:20 LG:29
+Djere Rk:56 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Djokovic Rk:1 Ps:3000 Ts:4 WM:17 LM:2 WS:32 LS:7 WG:224 LG:146
+Duckworth Rk:55 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Evans Rk:53 Ps:45 Ts:2 WM:1 LM:2 WS:2 LS:2 WG:17 LG:20
+Federer Rk:36 Ps:135 Ts:3 WM:2 LM:3 WS:0 LS:0 WG:0 LG:0
+Fognini Rk:14 Ps:290 Ts:4 WM:4 LM:4 WS:6 LS:9 WG:64 LG:83
+Fritz Rk:68 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:2 LG:12
+Fucsovics Rk:23 Ps:180 Ts:4 WM:4 LM:4 WS:8 LS:9 WG:84 LG:84
+Garin Rk:64 Ps:45 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:10 LG:13
+Gasquet Rk:13 Ps:315 Ts:3 WM:5 LM:3 WS:6 LS:7 WG:57 LG:68
+Gaston Rk:58 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Goffin Rk:22 Ps:200 Ts:4 WM:2 LM:4 WS:3 LS:9 WG:40 LG:70
+Harris Rk:42 Ps:90 Ts:2 WM:1 LM:2 WS:1 LS:4 WG:16 LG:30
+Humbert Rk:50 Ps:65 Ts:2 WM:0 LM:2 WS:1 LS:2 WG:14 LG:15
+Hurkacz Rk:32 Ps:135 Ts:4 WM:2 LM:4 WS:6 LS:7 WG:60 LG:69
+Isner Rk:35 Ps:135 Ts:3 WM:1 LM:3 WS:0 LS:6 WG:22 LG:37
+Ivashka Rk:24 Ps:180 Ts:4 WM:5 LM:4 WS:8 LS:9 WG:86 LG:86
+Karatsev Rk:34 Ps:135 Ts:3 WM:1 LM:3 WS:0 LS:4 WG:7 LG:25
+Kohlschreiber Rk:31 Ps:135 Ts:2 WM:2 LM:2 WS:4 LS:3 WG:34 LG:37
+Korda Rk:10 Ps:450 Ts:3 WM:4 LM:3 WS:7 LS:5 WG:63 LG:58
+Krajinovic Rk:26 Ps:180 Ts:4 WM:4 LM:4 WS:6 LS:8 WG:67 LG:74
+Kwon Rk:57 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Kyrgios Rk:46 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:5 LG:12
+Lajovic Rk:43 Ps:90 Ts:2 WM:1 LM:2 WS:0 LS:4 WG:8 LG:24
+Lopez Rk:17 Ps:245 Ts:3 WM:3 LM:3 WS:3 LS:5 WG:39 LG:43
+Medvedev Rk:2 Ps:1800 Ts:4 WM:15 LM:3 WS:29 LS:10 WG:221 LG:158
+Monfils Rk:48 Ps:65 Ts:4 WM:2 LM:4 WS:4 LS:8 WG:54 LG:64
+Murray Rk:11 Ps:360 Ts:3 WM:5 LM:3 WS:8 LS:8 WG:72 LG:87
+Nadal Rk:3 Ps:1080 Ts:4 WM:11 LM:3 WS:21 LS:10 WG:179 LG:131
+Nishikori Rk:37 Ps:110 Ts:4 WM:1 LM:4 WS:0 LS:8 WG:14 LG:49
+Nishioka Rk:59 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Norrie Rk:29 Ps:135 Ts:4 WM:3 LM:4 WS:4 LS:8 WG:59 LG:67
+Opelka Rk:40 Ps:90 Ts:4 WM:1 LM:4 WS:3 LS:6 WG:42 LG:50
+Paire Rk:65 Ps:20 Ts:2 WM:0 LM:2 WS:0 LS:4 WG:8 LG:24
+Paul Rk:54 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Popyrin Rk:45 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:0 WG:0 LG:0
+Pospisil Rk:47 Ps:90 Ts:2 WM:0 LM:2 WS:0 LS:2 WG:5 LG:12
+Querrey Rk:60 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Ramos Rk:18 Ps:240 Ts:4 WM:2 LM:4 WS:4 LS:7 WG:57 LG:62
+Raonic Rk:66 Ps:10 Ts:1 WM:0 LM:1 WS:0 LS:2 WG:7 LG:12
+Rublev Rk:25 Ps:180 Ts:4 WM:5 LM:4 WS:9 LS:7 WG:89 LG:82
+Ruud Rk:15 Ps:270 Ts:4 WM:5 LM:4 WS:6 LS:6 WG:59 LG:65
+Schwartzman Rk:38 Ps:90 Ts:4 WM:2 LM:4 WS:5 LS:6 WG:52 LG:51
+Shapovalov Rk:39 Ps:90 Ts:4 WM:1 LM:4 WS:3 LS:6 WG:47 LG:50
+Sinner Rk:30 Ps:135 Ts:4 WM:3 LM:4 WS:7 LS:7 WG:64 LG:61
+Sonego Rk:27 Ps:135 Ts:4 WM:3 LM:4 WS:5 LS:9 WG:61 LG:69
+Tiafoe Rk:67 Ps:0 Ts:1 WM:1 LM:1 WS:3 LS:2 WG:27 LG:24
+Tsitsipas Rk:4 Ps:765 Ts:4 WM:9 LM:3 WS:17 LS:9 WG:145 LG:122
+Vesely Rk:61 Ps:45 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Wawrinka Rk:63 Ps:45 Ts:1 WM:1 LM:1 WS:2 LS:0 WG:12 LG:7
+Zverev Rk:7 Ps:590 Ts:4 WM:8 LM:3 WS:15 LS:8 WG:133 LG:93

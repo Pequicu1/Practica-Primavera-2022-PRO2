@@ -43,24 +43,35 @@ Cjt_Jugadores Torneo::obtener_participantes() const
     return participantes;
 }
 
+Cjt_Jugadores Torneo::consultar_parts_ant() const
+{
+    return participantes_ant;
+}
+
 Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
 {
     Cjt_Jugadores new_participantes;
     vector<Jugador> rank0 = Jugs.obtener_ranking();
     for (int i = 0; i < n; ++i)
     {
-        Participante P;
         int pos;
         cin >> pos;
-        P.name = rank0[pos - 1].consultar_id();
+        rank0[pos - 1].modificar_puntos(-rank0[pos - 1].consultar_puntos());
         new_participantes.anadir_jugador(rank0[pos - 1]);
+        // new_participantes.obtener_ranking()[i].modificar_puntos(-new_participantes.obtener_ranking()[i].consultar_puntos());
     }
+
     return new_participantes;
 }
 
 void Torneo::actualiza_participantes(const Cjt_Jugadores &P)
 {
     participantes = P;
+}
+
+void Torneo::actualiza_participantes_ant(const Cjt_Jugadores &P)
+{
+    participantes_ant = P;
 }
 
 BinTree<Jugador> crear_torneo_i(Jugador ant, const vector<Jugador> &rank, int altura, int altura_act, int x)
@@ -182,7 +193,7 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
     // participantes.modificar_ranking(J2);
     return Ganador;
 }
-Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int &nivel, Cjt_Jugadores &General)
+Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, BinTree<Jugador> &C, const vector<int> &pts, int &nivel, Cjt_Jugadores &General)
 {
     string puntos;
     cin >> puntos;
@@ -195,11 +206,13 @@ Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &
     {
 
         Partido match;
-        match.first = leer_resultados_i(A.left(), pts, ++nivel, General);
-        match.second = leer_resultados_i(A.right(), pts, ++nivel, General);
+        match.first = leer_resultados_i(A.left(), C, pts, ++nivel, General);
+        match.second = leer_resultados_i(A.right(), C, pts, ++nivel, General);
+
         --nivel;
         cout << '(';
         Jugador Ganador = ganador(match.first, match.second, puntos, pts[nivel]);
+        // C.value().modificar_ranking(Ganador.consultar_pos_ranking());
         General.modificar_estadisticas(Ganador, match.first, match.second, puntos, pts, nivel);
         participantes.modificar_ranking(Ganador);
 
@@ -211,8 +224,13 @@ Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &
 
 void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntos, Cjt_Jugadores &General)
 {
+    /*cout << "ANTERIORES: " << endl;
+    participantes_ant.listar_ranking();
+    cout << "ACTUALES: " << endl;
+    participantes.listar_ranking();*/
+    BinTree<Jugador> copia = A;
     int nivel = 1;
-    Jugador Ganador = leer_resultados_i(A, Puntos, ++nivel, General);
+    Jugador Ganador = leer_resultados_i(A, copia, Puntos, ++nivel, General);
     Ganador.modificar_puntos(Puntos[0]);
     participantes.modificar_ranking(Ganador);
     cout << endl;
@@ -230,11 +248,20 @@ void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Punto
             cout << participantes.obtener_ranking()[i].consultar_pos_ranking() << '.' << participantes.obtener_ranking()[i].consultar_id() << ' ' << participantes.obtener_ranking()[i].consultar_puntos() << endl;
         }
     }
-    // participantes.imprimir_jugadores();
-    Partic_ant = Partic_act;
+    participantes_ant = participantes;
 }
 
 BinTree<Jugador> Torneo::obtener_cuadro() const
 {
     return Cuadro;
+}
+
+void Torneo::eliminar_jugador(const Jugador &P)
+{
+    Cjt_Jugadores jugs = participantes_ant;
+    map<string, Jugador> a = jugs.consultar_indice();
+    map<string, Jugador>::iterator it = a.find(P.consultar_id());
+    a.erase(it);
+
+    participantes_ant.imprimir_jugadores();
 }

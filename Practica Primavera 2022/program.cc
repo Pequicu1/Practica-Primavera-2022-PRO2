@@ -91,6 +91,7 @@ int main()
             if (jugs.existe_jugador(name))
             {
                 Jugador P = jugs.obtener_jugador(name);
+                torns.eliminar_jugador(P);
                 jugs.eliminar_jugador(P);
                 cout << jugs.numero_jugadores() << endl;
             }
@@ -106,7 +107,10 @@ int main()
             if (torns.existe_torneo(name_torneo))
             {
                 Torneo T = torns.obtener_torneo(name_torneo);
+                // T.obtener_participantes().listar_ranking();
+                jugs.restar_puntos(T.obtener_participantes());
                 torns.eliminar_Torneo(T);
+                jugs.ordenar_ranking();
                 cout << torns.numero_torneos() << endl;
             }
             else
@@ -122,6 +126,7 @@ int main()
 
             Torneo T = torns.obtener_torneo(id);
 
+            // jugs.restar_puntos(T.consultar_parts_ant());
             int nparticipantes;
             cin >> nparticipantes;
             Cjt_Jugadores Participantes = T.leer_participantes(nparticipantes, jugs);
@@ -141,8 +146,10 @@ int main()
             cout << ' ' << id << endl;
 
             Torneo T = torns.obtener_torneo(id);
+            jugs.restar_puntos(T.consultar_parts_ant());
             // cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
             T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1], jugs);
+            torns.actualizar_torneo(T);
             jugs.ordenar_ranking();
             // jugs.listar_ranking();
 

@@ -17,20 +17,14 @@
     */
 
 typedef pair<Jugador, Jugador> Partido;
-struct Participante
-{
-  string name;
-  int puntos;
-};
+
 class Torneo
 {
 
 private:
-  vector<Participante> Partic_act;
-  vector<Participante> Partic_ant;
-
   string identificador;
   Cjt_Jugadores participantes;
+  Cjt_Jugadores participantes_ant;
   int categoria;
   BinTree<Jugador> Cuadro;
 
@@ -52,8 +46,11 @@ public:
   void crear_torneo();
 
   void actualiza_participantes(const Cjt_Jugadores &P);
+  void actualiza_participantes_ant(const Cjt_Jugadores &P);
 
   // -- CONSULTORAS --
+
+  Cjt_Jugadores consultar_parts_ant() const;
 
   /** @brief Consultora de la categoría del torneo.
       \pre <em>cierto</em>
@@ -97,7 +94,9 @@ public:
 
   Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts);
 
-  Jugador leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
+  void eliminar_jugador(const Jugador &P);
+
+  Jugador leer_resultados_i(const BinTree<Jugador> &A, BinTree<Jugador> &C, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
   /** @brief Operación de lectura
      \pre cierto
      \post El parámetro implícito pasa a tener un identificador y una categoría.
