@@ -70,7 +70,7 @@ int Jugador::consultar_torneos_disputados() const
 
 void Jugador::modificar_puntos(int n)
 {
-    puntos = n;
+    puntos += n;
 }
 
 void Jugador::mas_torneo()

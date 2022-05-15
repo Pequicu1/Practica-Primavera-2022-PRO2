@@ -148,11 +148,15 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
         if (sets1 > sets2)
         {
             J2.modificar_puntos(pts);
+            participantes.modificar_ranking(J2);
+
             Ganador = J1;
         }
         else
         {
             J1.modificar_puntos(pts);
+            participantes.modificar_ranking(J1);
+
             Ganador = J2;
         }
     }
@@ -162,16 +166,20 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
         if (resultados[i] == '1' and resultados[j] == '0')
         {
             J2.modificar_puntos(pts);
+            participantes.modificar_ranking(J2);
+
             Ganador = J1;
         }
         else if (resultados[i] == '0' and resultados[j] == '1')
         {
             J1.modificar_puntos(pts);
+            participantes.modificar_ranking(J1);
+
             Ganador = J2;
         }
     }
-    participantes.modificar_ranking(J1);
-    participantes.modificar_ranking(J2);
+    // participantes.modificar_ranking(J1);
+    // participantes.modificar_ranking(J2);
     return Ganador;
 }
 Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, const vector<int> &pts, int &nivel, Cjt_Jugadores &General)

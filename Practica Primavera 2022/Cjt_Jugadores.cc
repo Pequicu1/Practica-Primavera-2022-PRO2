@@ -121,11 +121,22 @@ bool comp(const Jugador &j1, const Jugador &j2)
 
 void Cjt_Jugadores::ordenar_ranking()
 {
+    for (int i = 0; i < ranking.size(); ++i)
+    {
+        map<string, Jugador>::iterator it = indice_jugadores.find(ranking[i].consultar_id());
+        //(*it).second.modificar_ranking(i + 1);
+        ranking[i] = (*it).second;
+        // ranking[i].modificar_ranking(i + 1);
+    }
     sort(ranking.begin(), ranking.end(), comp);
     for (int i = 0; i < ranking.size(); ++i)
     {
-        ranking[i].modificar_ranking(i + 1);
+        map<string, Jugador>::iterator it = indice_jugadores.find(ranking[i].consultar_id());
+        (*it).second.modificar_ranking(i + 1);
+        ranking[i] = (*it).second;
+        // ranking[i].modificar_ranking(i + 1);
     }
+    // listar_ranking();
 }
 
 void Cjt_Jugadores::imprimir_jugadores() const
@@ -174,9 +185,13 @@ void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugado
             if (resultados[i] - '0' > resultados[j] - '0')
             {
                 ++sets1;
+                (*it1).second.modificar_sets(1, '+');
+                (*it2).second.modificar_sets(1, '-');
             }
             else
             {
+                (*it1).second.modificar_sets(1, '-');
+                (*it2).second.modificar_sets(1, '+');
                 ++sets2;
             }
             ++tot;
@@ -185,8 +200,6 @@ void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugado
         }
         if (sets1 > sets2)
         {
-            (*it1).second.modificar_sets(tot, '+');
-            (*it2).second.modificar_sets(tot, '-');
             (*it2).second.modificar_puntos(pts[nivel]);
             if (nivel == 1)
             {
@@ -194,22 +207,15 @@ void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugado
                 (*it1).second.mas_torneo();
             }
             (*it2).second.mas_torneo();
-            (*it1).second.modificar_partidos('+');
-            (*it2).second.modificar_partidos('-');
         }
         else
         {
-            (*it1).second.modificar_sets(tot, '-');
-            (*it2).second.modificar_sets(tot, '+');
             (*it1).second.modificar_puntos(pts[nivel]);
             if (nivel == 1)
             {
                 (*it2).second.modificar_puntos(pts[0]);
                 (*it2).second.mas_torneo();
             }
-
-            (*it1).second.modificar_partidos('-');
-            (*it2).second.modificar_partidos('+');
             (*it1).second.mas_torneo();
         }
     }
@@ -218,9 +224,8 @@ void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugado
 
         if (resultados[i] == '1' and resultados[j] == '0')
         {
-            (*it1).second.modificar_partidos('+');
-            (*it2).second.modificar_partidos('-');
             (*it2).second.modificar_puntos(pts[nivel]);
+            if (nivel == 1)
             {
                 (*it1).second.modificar_puntos(pts[0]);
                 (*it1).second.mas_torneo();
@@ -229,8 +234,6 @@ void Cjt_Jugadores::modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugado
         }
         else if (resultados[i] == '0' and resultados[j] == '1')
         {
-            (*it2).second.modificar_partidos('+');
-            (*it1).second.modificar_partidos('-');
             (*it1).second.modificar_puntos(pts[nivel]);
             if (nivel == 1)
             {
