@@ -2,8 +2,10 @@ PRIVATE-2:
 	COMPROBAR QUE NO SE IMPRIMAN LOS QUE NO TIENEN PUNTOS.
 	TORNEOS IMPARES.
 	EN VEZ DE ELIMINAR EL JUGADOR, PONER LOS PUNTOS A CERO EN BAJA JUGADOR, PARA CADA TORNEO.
+	A mi me paso de borrar un jugador que haya participado en un torneo finalizado y volverlo a añadir.
+	Y volver a iniciar el torneo al que habia participado
+	SI NO AYUDA NADA MÁS, EN VEZ DE HACER Cjt_Jugadores PARA LOS TORNEOS, USAR VECTORES. 
 
 EFICIENCIA:
 	PONER LAS FUNCIONES DONDE TOQUEN + AÑADIR STATIC A LO QUE HAGA FALTA.
-
 
