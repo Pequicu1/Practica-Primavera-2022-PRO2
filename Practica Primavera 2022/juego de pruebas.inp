@@ -3,8 +3,8 @@ Copa_Davis
 Liga_Rubi
 ITF_World_Tennis_Tour
 500 400 300 200 100 50 25 10 5 0
-42069 30060 10000 2003 1024 256 128 64 32 16
-2293 1823 1663 1523 1381 1229 1087 947 811 661
+3 0 0 0 0 0 0 0 0 0
+2 0 0 0 0 0 0 0 0 0
 4
 Super_Torneo 1
 Mega_Torneo 2
@@ -48,24 +48,27 @@ finalizar_torneo UltraMegaHiper_Torneo
 1-0
 1-0
 0-1
-1-0
-0 0
-0-1
-0 0
-1-0
-0-1
-0 0
-0-1
-0 0
-1-0
-1-0
 0
+1-0
+0 0
 0-1
+1-0
+0 0
+0-1
+0 0
+0-1
+1-0
+1-0
+0 0
+0-1
+0 0
 1-0
 0-1
 0 0
 1-0
 0 0
+lj
+lr
 bj Emma
 bj Daniela
 bj Carla
@@ -84,22 +87,7 @@ consultar_jugador Luz
 it Super_Torneo
 8
 1 2 3 5 7 9 11 13
-ft Super_Torneo
-6-7,7-5,5-7
-0-6,6-4,7-6
-1-0
-0 0
-0 0
-6-0,6-0
-0 0
-0 0
-0-1
-1-6,2-6
-0 0
-0 0
-7-6,7-6
-0 0
-0 0
+bt Super_Torneo
 bt UltraMegaHiper_Torneo
 cj Vega
 cj Aitana

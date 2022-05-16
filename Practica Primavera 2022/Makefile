@@ -18,8 +18,8 @@ Torneo.o: Torneo.cc Torneo.hh BinTree.hh
 program.o: program.cc Cjt_Jugadores.hh Cjt_Torneos.hh
 	g++ -c program.cc $(OPCIONS) 
 
-tar: program.cc Cjt_Jugadores.cc Cjt_Jugadores.hh Torneo.cc Torneo.hh Cjt_Torneos.cc Cjt_Torneos.hh Jugador.cc Jugador.hh
-	tar -cvf practica.tar program.cc Cjt_Jugadores.cc Cjt_Jugadores.hh Torneo.cc Torneo.hh Cjt_Torneos.cc Cjt_Torneos.hh Jugador.cc Jugador.hh
+tar: program.cc Cjt_Jugadores.cc Cjt_Jugadores.hh Torneo.cc Torneo.hh Cjt_Torneos.cc Cjt_Torneos.hh Jugador.cc Jugador.hh Makefile
+	tar -cvf practica.tar program.cc Cjt_Jugadores.cc Cjt_Jugadores.hh Torneo.cc Torneo.hh Cjt_Torneos.cc Cjt_Torneos.hh Jugador.cc Jugador.hh Makefile
 
 clean:
 	rm -f *.o *.gch *.exe *.tar

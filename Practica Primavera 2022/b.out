@@ -1,0 +1,205 @@
+#iniciar_torneo UltraMegaHiper_Torneo
+(((1.Sofía (8.Vega 9.Mia)) ((4.Emma 13.Abril) (5.Carla 12.Chlóe))) (((2.María 15.Candela) (7.Sara 10.Olivia)) ((3.Paula 14.Laia) (6.Noa 11.Jimena))))
+#finalizar_torneo UltraMegaHiper_Torneo
+(8.Vega vs 14.Laia 1-0(8.Vega vs 12.Chlóe 1-0(1.Sofía vs 8.Vega 0-1(8.Vega vs 9.Mia 1-0))(4.Emma vs 12.Chlóe 0-1(4.Emma vs 13.Abril 1-0)(5.Carla vs 12.Chlóe 0-1)))(2.María vs 14.Laia 0-1(2.María vs 10.Olivia 1-0(2.María vs 15.Candela 1-0)(7.Sara vs 10.Olivia 0-1))(14.Laia vs 6.Noa 1-0(3.Paula vs 14.Laia 0-1)(6.Noa vs 11.Jimena 1-0))))
+8.Vega 3
+#lj
+30
+Abril Rk:26 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Aitana Rk:25 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Alba Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Alma Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ana Rk:27 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Candela Rk:30 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Carla Rk:11 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Carmen Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Chlóe Rk:24 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Claudia Rk:21 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Daniela Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Emma Rk:9 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Jimena Rk:22 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Julia Rk:6 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Laia Rk:28 Ps:0 Ts:1 WM:3 LM:1 WS:0 LS:0 WG:0 LG:0
+Lara Rk:17 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lola Rk:23 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lucía Rk:2 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Martina Rk:4 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+María Rk:5 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Mia Rk:18 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Noa Rk:13 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Olivia Rk:20 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Paula Rk:7 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Sara Rk:15 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Sofía Rk:3 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Triana Rk:29 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valentina Rk:19 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valeria Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Vega Rk:1 Ps:3 Ts:1 WM:4 LM:0 WS:0 LS:0 WG:0 LG:0
+#lr
+1 Vega 3
+2 Lucía 0
+3 Sofía 0
+4 Martina 0
+5 María 0
+6 Julia 0
+7 Paula 0
+8 Valeria 0
+9 Emma 0
+10 Daniela 0
+11 Carla 0
+12 Alba 0
+13 Noa 0
+14 Alma 0
+15 Sara 0
+16 Carmen 0
+17 Lara 0
+18 Mia 0
+19 Valentina 0
+20 Olivia 0
+21 Claudia 0
+22 Jimena 0
+23 Lola 0
+24 Chlóe 0
+25 Aitana 0
+26 Abril 0
+27 Ana 0
+28 Laia 0
+29 Triana 0
+30 Candela 0
+#bj Emma
+29
+#bj Daniela
+28
+#bj Carla
+27
+#bj Alba
+26
+#bj Noa
+25
+#bj Alma
+24
+#bj Sara
+23
+#bj Carmen
+22
+#bj Vega
+21
+#listar_ranking
+1 Lucía 0
+2 Sofía 0
+3 Martina 0
+4 María 0
+5 Julia 0
+6 Paula 0
+7 Valeria 0
+8 Lara 0
+9 Mia 0
+10 Valentina 0
+11 Olivia 0
+12 Claudia 0
+13 Jimena 0
+14 Lola 0
+15 Chlóe 0
+16 Aitana 0
+17 Abril 0
+18 Ana 0
+19 Laia 0
+20 Triana 0
+21 Candela 0
+#listar_jugadores
+21
+Abril Rk:17 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Aitana Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ana Rk:18 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Candela Rk:21 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Chlóe Rk:15 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Claudia Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Jimena Rk:13 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Julia Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Laia Rk:19 Ps:0 Ts:1 WM:3 LM:1 WS:0 LS:0 WG:0 LG:0
+Lara Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lola Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lucía Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Martina Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+María Rk:4 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Mia Rk:9 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Olivia Rk:11 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Paula Rk:6 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Sofía Rk:2 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Triana Rk:20 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valentina Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valeria Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#nt Torneuwu -2
+error: la categoria no existe
+#consultar_jugador Vega
+error: el jugador no existe
+#nj Luz
+22
+#consultar_jugador Luz
+Luz Rk:22 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#it Super_Torneo
+(((1.Lucía 8.Jimena) (4.Julia 5.Valeria)) ((2.Sofía 7.Olivia) (3.Martina 6.Mia)))
+#bt Super_Torneo
+3
+#bt UltraMegaHiper_Torneo
+2
+#cj Vega
+error: el jugador no existe
+#cj Aitana
+Aitana Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+#listar_categorias
+3 10
+Copa_Davis 500 400 300 200 100 50 25 10 5 0
+Liga_Rubi 3 0 0 0 0 0 0 0 0 0
+ITF_World_Tennis_Tour 2 0 0 0 0 0 0 0 0 0
+#listar_ranking
+1 Lucía 0
+2 Sofía 0
+3 Martina 0
+4 María 0
+5 Julia 0
+6 Paula 0
+7 Valeria 0
+8 Lara 0
+9 Mia 0
+10 Valentina 0
+11 Olivia 0
+12 Claudia 0
+13 Jimena 0
+14 Lola 0
+15 Chlóe 0
+16 Aitana 0
+17 Abril 0
+18 Ana 0
+19 Laia 0
+20 Triana 0
+21 Candela 0
+22 Luz 0
+#listar_torneos
+2
+Hiper_Torneo ITF_World_Tennis_Tour
+Mega_Torneo Liga_Rubi
+#listar_jugadores
+22
+Abril Rk:17 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Aitana Rk:16 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Ana Rk:18 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Candela Rk:21 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Chlóe Rk:15 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Claudia Rk:12 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Jimena Rk:13 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Julia Rk:5 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Laia Rk:19 Ps:0 Ts:1 WM:3 LM:1 WS:0 LS:0 WG:0 LG:0
+Lara Rk:8 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lola Rk:14 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Lucía Rk:1 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Luz Rk:22 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Martina Rk:3 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+María Rk:4 Ps:0 Ts:1 WM:2 LM:1 WS:0 LS:0 WG:0 LG:0
+Mia Rk:9 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Olivia Rk:11 Ps:0 Ts:1 WM:1 LM:1 WS:0 LS:0 WG:0 LG:0
+Paula Rk:6 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Sofía Rk:2 Ps:0 Ts:1 WM:0 LM:1 WS:0 LS:0 WG:0 LG:0
+Triana Rk:20 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valentina Rk:10 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0
+Valeria Rk:7 Ps:0 Ts:0 WM:0 LM:0 WS:0 LS:0 WG:0 LG:0

@@ -16,7 +16,12 @@
     @brief Representa un Torneo
     */
 
-typedef pair<Jugador, Jugador> Partido;
+struct Partido
+{
+  Jugador j1;
+  Jugador j2;
+  string puntos;
+};
 
 class Torneo
 {
@@ -92,11 +97,12 @@ public:
     */
   void leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntuaciones, Cjt_Jugadores &General);
 
+  BinTree<Partido> leer_resultados_i(const BinTree<Jugador> &A, Jugador &Ganador, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
+
   Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts);
 
   void eliminar_jugador(const Jugador &P);
 
-  Jugador leer_resultados_i(const BinTree<Jugador> &A, BinTree<Jugador> &C, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
   /** @brief Operación de lectura
      \pre cierto
      \post El parámetro implícito pasa a tener un identificador y una categoría.
@@ -114,6 +120,6 @@ public:
         \pre <em>cierto</em>
         \post Se han escrito los resultados del torneo en el canal de estandárd de salida.
     */
-  void imprimir_resultados() const;
+  void imprimir_resultados(const BinTree<Partido> &A) const;
 };
 #endif

@@ -14,10 +14,6 @@ Programa modular que pretende simular lo más parecido posible la gestión y fun
 
 #include "Cjt_Jugadores.hh"
 #include "Cjt_Torneos.hh"
-//#include "Categorias.hh"
-#ifndef NO_DIAGRAM
-#include "PRO2Excepcio.hh"
-#endif
 
 int main()
 {
@@ -91,8 +87,8 @@ int main()
             if (jugs.existe_jugador(name))
             {
                 Jugador P = jugs.obtener_jugador(name);
-                torns.eliminar_jugador(P);
                 jugs.eliminar_jugador(P);
+                torns.eliminar_jugador(P);
                 cout << jugs.numero_jugadores() << endl;
             }
             else
@@ -107,8 +103,7 @@ int main()
             if (torns.existe_torneo(name_torneo))
             {
                 Torneo T = torns.obtener_torneo(name_torneo);
-                // T.obtener_participantes().listar_ranking();
-                jugs.restar_puntos(T.obtener_participantes());
+                jugs.restar_puntos(T.consultar_parts_ant());
                 torns.eliminar_Torneo(T);
                 jugs.ordenar_ranking();
                 cout << torns.numero_torneos() << endl;
@@ -116,7 +111,6 @@ int main()
             else
                 cout << "error: el torneo no existe" << endl;
         }
-        // SEGUIR POR AQUIII
         else if (comando == "iniciar_torneo" or comando == "it")
         {
             string id;
@@ -126,7 +120,6 @@ int main()
 
             Torneo T = torns.obtener_torneo(id);
 
-            // jugs.restar_puntos(T.consultar_parts_ant());
             int nparticipantes;
             cin >> nparticipantes;
             Cjt_Jugadores Participantes = T.leer_participantes(nparticipantes, jugs);
@@ -147,25 +140,9 @@ int main()
 
             Torneo T = torns.obtener_torneo(id);
             jugs.restar_puntos(T.consultar_parts_ant());
-            // cout << "QUIERO EL CUADRO DEL TORNEO: " << T.consultar_nombre() << endl;
             T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1], jugs);
             torns.actualizar_torneo(T);
             jugs.ordenar_ranking();
-            // jugs.listar_ranking();
-
-            //  jugs.actualizar_indice(T.obtener_participantes());
-            //   T.imprimir_resultados();
-            //   T.obtener_participantes().listar_ranking();
-            //   T.obtener_participantes().imprimir_jugadores();
-
-            // T.obtener_participantes().ordenar_ranking();
-            // jugs.actualizar_indice(T.obtener_participantes());
-            // jugs.imprimir_jugadores();
-            // jugs.imprimir_jugadores();
-            // jugs.actualizar_ranking();
-
-            // T.obtener_participantes().listar_ranking();
-            // jugs.imprimir_jugadores();
         }
         else if (comando == "listar_ranking" or comando == "lr")
         {

@@ -102,7 +102,6 @@ void Cjt_Jugadores::actualizar_indice(const Cjt_Jugadores &P)
 
 void Cjt_Jugadores::listar_ranking()
 {
-    // maybe ordenar aqui el ranking again.
     for (int i = 0; i < ranking.size(); ++i)
     {
         cout << ranking[i].consultar_pos_ranking() << ' ' << ranking[i].consultar_id() << ' ' << ranking[i].consultar_puntos() << endl;
@@ -118,9 +117,12 @@ void Cjt_Jugadores::restar_puntos(const Cjt_Jugadores &jugs)
 {
     for (int i = 0; i < jugs.obtener_ranking().size(); ++i)
     {
-        // cout << "JUGADOR: " << jugs.obtener_ranking()[i].consultar_id() << endl;
         if (existe_jugador(jugs.obtener_ranking()[i].consultar_id()))
         {
+            if (jugs.obtener_ranking()[i].consultar_id() == "Fritz")
+            {
+                cout << "ESTOY AUQI" << endl;
+            }
             map<string, Jugador>::iterator it = indice_jugadores.find(jugs.obtener_ranking()[i].consultar_id());
             (*it).second.modificar_puntos(-jugs.obtener_ranking()[i].consultar_puntos());
         }
@@ -142,9 +144,7 @@ void Cjt_Jugadores::ordenar_ranking()
     for (int i = 0; i < ranking.size(); ++i)
     {
         map<string, Jugador>::iterator it = indice_jugadores.find(ranking[i].consultar_id());
-        //(*it).second.modificar_ranking(i + 1);
         ranking[i] = (*it).second;
-        // ranking[i].modificar_ranking(i + 1);
     }
     sort(ranking.begin(), ranking.end(), comp);
     for (int i = 0; i < ranking.size(); ++i)
@@ -152,9 +152,7 @@ void Cjt_Jugadores::ordenar_ranking()
         map<string, Jugador>::iterator it = indice_jugadores.find(ranking[i].consultar_id());
         (*it).second.modificar_ranking(i + 1);
         ranking[i] = (*it).second;
-        // ranking[i].modificar_ranking(i + 1);
     }
-    // listar_ranking();
 }
 
 void Cjt_Jugadores::imprimir_jugadores() const

@@ -58,7 +58,13 @@ public:
    */
   void actualizar_torneo(const Torneo &T);
 
-  void eliminar_jugador(const Jugador &T);
+  /**
+   * @brief Elimina el jugador P del torneo.
+   * \pre P está en el torneo.
+   * \post Los participantes del torneo serán los mismos menos el jugador P.
+   */
+
+  void eliminar_jugador(const Jugador &P);
 
   // -- CONSULTORAS --
 

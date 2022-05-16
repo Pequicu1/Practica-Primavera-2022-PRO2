@@ -58,7 +58,6 @@ Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
         cin >> pos;
         rank0[pos - 1].modificar_puntos(-rank0[pos - 1].consultar_puntos());
         new_participantes.anadir_jugador(rank0[pos - 1]);
-        // new_participantes.obtener_ranking()[i].modificar_puntos(-new_participantes.obtener_ranking()[i].consultar_puntos());
     }
 
     return new_participantes;
@@ -128,8 +127,6 @@ void Torneo::imprimir_cuadro(const BinTree<Jugador> &A) const
 
 Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
 {
-    cout << J1.consultar_pos_ranking() << '.' << J1.consultar_id() << " vs " << J2.consultar_pos_ranking() << '.' << J2.consultar_id() << ' ' << resultados;
-
     int i, j;
     i = 0;
     j = 2;
@@ -189,59 +186,51 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
             Ganador = J2;
         }
     }
-    // participantes.modificar_ranking(J1);
-    // participantes.modificar_ranking(J2);
     return Ganador;
 }
-Jugador Torneo::leer_resultados_i(const BinTree<Jugador> &A, BinTree<Jugador> &C, const vector<int> &pts, int &nivel, Cjt_Jugadores &General)
+BinTree<Partido> Torneo::leer_resultados_i(const BinTree<Jugador> &A, Jugador &Ganador, const vector<int> &pts, int &nivel, Cjt_Jugadores &General)
 {
     string puntos;
     cin >> puntos;
     if (puntos == "0")
     {
         --nivel;
-        return A.value();
+        Ganador = A.value();
+        BinTree<Partido> a;
+        return a;
     }
     else
     {
 
         Partido match;
-        match.first = leer_resultados_i(A.left(), C, pts, ++nivel, General);
-        match.second = leer_resultados_i(A.right(), C, pts, ++nivel, General);
+        match.puntos = puntos;
+        BinTree<Partido> I = leer_resultados_i(A.left(), match.j1, pts, ++nivel, General);
+        BinTree<Partido> D = leer_resultados_i(A.right(), match.j2, pts, ++nivel, General);
 
         --nivel;
-        cout << '(';
-        Jugador Ganador = ganador(match.first, match.second, puntos, pts[nivel]);
-        // C.value().modificar_ranking(Ganador.consultar_pos_ranking());
-        General.modificar_estadisticas(Ganador, match.first, match.second, puntos, pts, nivel);
+        Ganador = ganador(match.j1, match.j2, puntos, pts[nivel]);
+
+        General.modificar_estadisticas(Ganador, match.j1, match.j2, puntos, pts, nivel);
         participantes.modificar_ranking(Ganador);
 
-        cout << ')';
+        BinTree<Partido> res(match, I, D);
 
-        return Ganador;
+        return res;
     }
 }
 
 void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntos, Cjt_Jugadores &General)
 {
-    /*cout << "ANTERIORES: " << endl;
-    participantes_ant.listar_ranking();
-    cout << "ACTUALES: " << endl;
-    participantes.listar_ranking();*/
-    BinTree<Jugador> copia = A;
     int nivel = 1;
-    Jugador Ganador = leer_resultados_i(A, copia, Puntos, ++nivel, General);
+    Jugador Ganador;
+    BinTree<Partido> res = leer_resultados_i(A, Ganador, Puntos, ++nivel, General);
+    imprimir_resultados(res);
     Ganador.modificar_puntos(Puntos[0]);
     participantes.modificar_ranking(Ganador);
     cout << endl;
-    // participantes.imprimir_jugadores();
-    //   Jugador P = (*this).participantes.obtener_ranking()[0];
-    //   P.escribir_jugador();
+
     for (int i = 0; i < participantes.obtener_ranking().size(); ++i)
     {
-        // cout << participantes.obtener_ranking()[i].consultar_id() << "HA GANADO: " << participantes.obtener_ranking()[i].consultar_puntos() << endl;
-        //  participantes.obtener_ranking()[i].mas_torneo();
-        //   participantes.modificar_ranking(participantes.obtener_ranking()[i]);
         if (participantes.obtener_ranking()[i].consultar_puntos() != 0)
         {
 
@@ -258,10 +247,25 @@ BinTree<Jugador> Torneo::obtener_cuadro() const
 
 void Torneo::eliminar_jugador(const Jugador &P)
 {
-    Cjt_Jugadores jugs = participantes_ant;
-    map<string, Jugador> a = jugs.consultar_indice();
-    map<string, Jugador>::iterator it = a.find(P.consultar_id());
-    a.erase(it);
+    bool found = false;
+    for (int i = 0; not found; ++i)
+    {
+        if (P.consultar_id() == participantes_ant.obtener_ranking()[i].consultar_id())
+        {
+            participantes_ant.eliminar_jugador(participantes_ant.obtener_ranking()[i]);
+            found = true;
+        }
+    }
+}
 
-    participantes_ant.imprimir_jugadores();
+void Torneo::imprimir_resultados(const BinTree<Partido> &A) const
+{
+    if (not A.empty())
+    {
+        cout << '(';
+        cout << A.value().j1.consultar_pos_ranking() << '.' << A.value().j1.consultar_id() << " vs " << A.value().j2.consultar_pos_ranking() << '.' << A.value().j2.consultar_id() << ' ' << A.value().puntos;
+        imprimir_resultados(A.left());
+        imprimir_resultados(A.right());
+        cout << ')';
+    }
 }

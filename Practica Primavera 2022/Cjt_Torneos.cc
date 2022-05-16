@@ -46,12 +46,10 @@ void Cjt_Torneos::leer_tabla_de_puntuaciones(int c, int k)
 void Cjt_Torneos::ini_torneos(int n)
 {
     // Incializamos los torneos.
-    // Circuito = vector<Torneo>(n);
     for (int i = 0; i < n; ++i)
     {
         Torneo T;
         T.leer_torneo();
-        // Circuito[i] = T;
         indice_torneos[T.consultar_nombre()] = T;
     }
 }
@@ -91,15 +89,14 @@ void Cjt_Torneos::eliminar_Torneo(const Torneo &T)
 
 void Cjt_Torneos::eliminar_jugador(const Jugador &P)
 {
+    int c = 1;
     map<string, Torneo>::iterator it = indice_torneos.begin();
-    while (it != indice_torneos.end())
+    while (c <= P.consultar_torneos_disputados())
     {
-        Torneo T = it->second;
-        if (T.consultar_parts_ant().existe_jugador(P.consultar_id()))
+        if ((*it).second.obtener_participantes().existe_jugador(P.consultar_id()))
         {
-            T.eliminar_jugador(P);
-            T.consultar_parts_ant().listar_ranking();
-            T.consultar_parts_ant().imprimir_jugadores();
+            (*it).second.eliminar_jugador(P);
+            ++c;
         }
         ++it;
     }
