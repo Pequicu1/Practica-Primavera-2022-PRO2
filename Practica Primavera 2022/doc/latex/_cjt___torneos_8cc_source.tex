@@ -1,0 +1,123 @@
+\hypertarget{_cjt___torneos_8cc_source}{}\doxysection{Cjt\+\_\+\+Torneos.\+cc}
+\mbox{\hyperlink{_cjt___torneos_8cc}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_cjt___torneos_8hh}{Cjt\_Torneos.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00013}\mbox{\hyperlink{class_cjt___torneos_a3da93ce7730f6472ab958496f4af3ec1}{00013}} \mbox{\hyperlink{class_cjt___torneos_a3da93ce7730f6472ab958496f4af3ec1}{Cjt\_Torneos::Cjt\_Torneos}}()}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00015}00015     \mbox{\hyperlink{class_cjt___torneos_a6700b36fda89f219b68f29a46a4df487}{ntorn}} = 0;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00016}00016     \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}} = vector<string>(0);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00017}00017     \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}} = \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}}(0, vector<int>(0));}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00020}\mbox{\hyperlink{class_cjt___torneos_aab815548f5bdd9a1116b17b843666272}{00020}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_aab815548f5bdd9a1116b17b843666272}{Cjt\_Torneos::leer\_categorias}}(\textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00021}00021 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00022}00022     \textcolor{comment}{// Lectura de las categorías.}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00023}00023     \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}} = vector<string>(n);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00025}00025     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00026}00026     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00027}00027         cin >> \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}}[i];}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00028}00028     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00031}\mbox{\hyperlink{class_cjt___torneos_aba545a52d944b91fbe71394fd56984f5}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_aba545a52d944b91fbe71394fd56984f5}{Cjt\_Torneos::leer\_tabla\_de\_puntuaciones}}(\textcolor{keywordtype}{int} c, \textcolor{keywordtype}{int} k)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00033}00033     \textcolor{comment}{// Lectura de las puntuaciones}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00034}00034     \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}} = \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}}(c, vector<int>(k));}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00035}00035     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < c; ++i)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00036}00036     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00037}00037         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < k; ++j)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00039}00039             cin >> \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}}[i][j];}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00044}\mbox{\hyperlink{class_cjt___torneos_ab446783c7673ee52a5c69d35b23021d8}{00044}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_ab446783c7673ee52a5c69d35b23021d8}{Cjt\_Torneos::ini\_torneos}}(\textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00045}00045 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00046}00046     \textcolor{comment}{// Incializamos los torneos.}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00047}00047     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00048}00048     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00049}00049         \mbox{\hyperlink{class_torneo}{Torneo}} T;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00050}00050         T.\mbox{\hyperlink{class_torneo_af347eb3ec196e06b5f7ae22fcef2faa0}{leer\_torneo}}();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00051}00051         \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}[T.\mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{consultar\_nombre}}()] = T;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00053}00053 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00055}\mbox{\hyperlink{class_cjt___torneos_a044d1e331407207032ddd7caf99a3249}{00055}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_cjt___torneos_a044d1e331407207032ddd7caf99a3249}{Cjt\_Torneos::existe\_torneo}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00056}00056 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00057}00057     map<string, Torneo>::const\_iterator it = \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.find(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00058}00058     \textcolor{keywordflow}{return} it != \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.end();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00061}\mbox{\hyperlink{class_cjt___torneos_a3111bef72d409401941fdb1f9173a1db}{00061}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a3111bef72d409401941fdb1f9173a1db}{Cjt\_Torneos::anadir\_Torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00062}00062 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00063}00063     \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}[T.\mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{consultar\_nombre}}()] = T;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00064}00064 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00066}\mbox{\hyperlink{class_cjt___torneos_a0d18a560f7a69f89144c2eb2344d997e}{00066}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_cjt___torneos_a0d18a560f7a69f89144c2eb2344d997e}{Cjt\_Torneos::numero\_torneos}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00067}00067 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00068}00068     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.size();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00069}00069 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00071}\mbox{\hyperlink{class_cjt___torneos_a72f4b6af379241ca7408ca69a4651271}{00071}} \mbox{\hyperlink{class_torneo}{Torneo}} \mbox{\hyperlink{class_cjt___torneos_a72f4b6af379241ca7408ca69a4651271}{Cjt\_Torneos::obtener\_torneo}}(\textcolor{keywordtype}{string} name)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00072}00072 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00073}00073     map<string, Torneo>::const\_iterator it = \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.find(name);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00074}00074     \textcolor{keywordflow}{return} it-\/>second;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00077}\mbox{\hyperlink{class_cjt___torneos_ab57a49674be1f0f72f01ff1f644d166e}{00077}} \mbox{\hyperlink{_cjt___torneos_8hh_a542f05eb5259f8e5499aa2e207ddffc3}{Matriz}} \mbox{\hyperlink{class_cjt___torneos_ab57a49674be1f0f72f01ff1f644d166e}{Cjt\_Torneos::obtener\_puntuaciones}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00078}00078 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00079}00079     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}};}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00082}\mbox{\hyperlink{class_cjt___torneos_a4fdca5875c729108a202fe63de783ea3}{00082}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a4fdca5875c729108a202fe63de783ea3}{Cjt\_Torneos::eliminar\_Torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00083}00083 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00084}00084     map<string, Torneo>::const\_iterator it = \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.find(T.\mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{consultar\_nombre}}());}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00085}00085     \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.erase(it);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00086}00086 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00088}\mbox{\hyperlink{class_cjt___torneos_ac81a5def193831ff832035ef9d169ab0}{00088}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_ac81a5def193831ff832035ef9d169ab0}{Cjt\_Torneos::eliminar\_jugador}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_jugador}{Jugador}} \&P)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00089}00089 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00090}00090     map<string, Torneo>::iterator it = \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.begin();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00091}00091     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.end())}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00092}00092     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00093}00093         (*it).second.eliminar\_jugador(P);}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00094}00094         ++it;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00095}00095     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00096}00096 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00098}\mbox{\hyperlink{class_cjt___torneos_a3479fb8622fbc711fed12727780e8141}{00098}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a3479fb8622fbc711fed12727780e8141}{Cjt\_Torneos::imprimir\_torneos}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00099}00099 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00100}00100     cout << \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.size() << endl;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00101}00101     map<string, Torneo>::const\_iterator it = \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.begin();}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00102}00102     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}.end())}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00103}00103     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00104}00104         cout << it-\/>second.consultar\_nombre() << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}}[it-\/>second.consultar\_categoria() -\/ 1];}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00105}00105         cout << endl;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00106}00106         ++it;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00108}00108 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00110}\mbox{\hyperlink{class_cjt___torneos_a02ad5c005cab62d6d08ea3272aefb370}{00110}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a02ad5c005cab62d6d08ea3272aefb370}{Cjt\_Torneos::listar\_categorias}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00111}00111 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00112}00112     cout << \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}}.size() << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}}[0].size() << endl;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00113}00113     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}}.size(); ++i)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00114}00114     \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00115}00115         cout << \mbox{\hyperlink{class_cjt___torneos_ac022fbba080883fbc2763260b07853d5}{categorias}}[i];}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00116}00116         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}}[0].size(); ++j)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00117}00117         \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00118}00118             cout << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_cjt___torneos_a03d189bf6edfa8e33e71a9757f34c657}{Tabla\_de\_puntuaciones}}[i][j];}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00119}00119         \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00120}00120         cout << endl;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00121}00121     \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00122}00122 \}}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00124}\mbox{\hyperlink{class_cjt___torneos_a67188435e5384ebf95ae8655006dd5fb}{00124}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_cjt___torneos_a67188435e5384ebf95ae8655006dd5fb}{Cjt\_Torneos::actualizar\_torneo}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_torneo}{Torneo}} \&T)}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00125}00125 \{}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00126}00126     \mbox{\hyperlink{class_cjt___torneos_ae8ea5b4500669c662316ed25a23a38bf}{indice\_torneos}}[T.\mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{consultar\_nombre}}()] = T;}
+\DoxyCodeLine{\Hypertarget{_cjt___torneos_8cc_source_l00127}00127 \}}
+
+\end{DoxyCode}

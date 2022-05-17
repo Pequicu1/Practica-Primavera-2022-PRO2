@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pro2excepcio_2ehh_0',['PRO2Excepcio.hh',['../_p_r_o2_excepcio_8hh.html',1,'']]]
+  ['torneo_2ecc_0',['Torneo.cc',['../_torneo_8cc.html',1,'']]],
+  ['torneo_2ehh_1',['Torneo.hh',['../_torneo_8hh.html',1,'']]]
 ];

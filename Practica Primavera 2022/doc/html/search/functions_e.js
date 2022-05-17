@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what_0',['what',['../class_p_r_o2_excepcio.html#a6627ed19302010f7b80f638592cce85b',1,'PRO2Excepcio']]]
+  ['value_0',['value',['../class_bin_tree.html#aaccb0c5b6cfe3b84dfeefc58efa24cda',1,'BinTree']]]
 ];

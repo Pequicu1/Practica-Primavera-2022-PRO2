@@ -1,1 +1,22 @@
-Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones. 
+Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones. Se utilizan las clases\+: {\itshape \mbox{\hyperlink{class_jugador}{Jugador}}}, {\itshape \mbox{\hyperlink{class_cjt___jugadores}{Cjt\+\_\+\+Jugadores}}}, {\itshape \mbox{\hyperlink{class_torneo}{Torneo}}} y {\itshape \mbox{\hyperlink{class_cjt___torneos}{Cjt\+\_\+\+Torneos}}}.
+
+Este programa sigue lo siguiente\+:
+\begin{DoxyItemize}
+\item Primero de todo se inicializan las categorias, con sus puntos, seguidamente los torneos del Circuito con una categoria asignada a cada uno y finalmente los jugadores que participan en este circuito.
+\item A conticuión entran una serie de comandos que modificaran el circuito a medida de cada iteracion dependiendo de la orden proporcionada.
+\end{DoxyItemize}
+
+Los posibles comandos que el programa acepta son los siguientes\+:
+\begin{DoxyItemize}
+\item nuevo\+\_\+jugador o nj\+: añade a un nuevo jugador al circuito. Empezará el último en el ranking con 0 puntos.
+\item nuevo\+\_\+torneo o nt\+: añade a un nuevo torneo al circuito.
+\item baja\+\_\+jugador o bj\+: elimina un jugador del circuito.
+\item baja\+\_\+torneo o bt\+: elimina un torneo del circuito. Restando los puntos que habían ganado a aquellos que habian participado en la última edición.
+\item iniciar\+\_\+torneo o it\+: Inicia el torneo deseado creando un cuadro de emparejamientos incial.
+\item finalizar\+\_\+torneo o ft\+: finaliza el torneo deseado, lee un arbol de resultados y computa un arbol de partidos de donde se calcularán los puntos y otras estadísticas ganados o perdidos por los jugadores.
+\item listar\+\_\+ranking o lr\+: imprime los jugadores por orden decreciente de ranking junto con sus puntos.
+\item listar\+\_\+jugadores o lj\+: imprime todos los jugadores por orden alfabético junto con todas las estadísticas del mismo.
+\item listar\+\_\+torneos o lt\+: imprime los todos los torneos del circuito.
+\item listar\+\_\+categorias o lc\+: imprime todas las categorias del circuito junto con los puntos por cada nivel.
+\item fin\+: finaliza el programa. 
+\end{DoxyItemize}

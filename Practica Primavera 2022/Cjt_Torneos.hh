@@ -1,5 +1,5 @@
 /** @file Cjt_Torneos.hh
-    @brief Especificación de la clase conjunto de torneos.
+    @brief Especificación de la clase conjunto de Cjt_Torneos.
 */
 
 #ifndef CONJ_TORNEOS_HH

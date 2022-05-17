@@ -16,15 +16,33 @@ Representa un \mbox{\hyperlink{class_jugador}{Jugador}}.
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_jugador_af7b4bdbeae795163b53d5f0b9445b766}{modificar\+\_\+ranking}} (int n)
 \begin{DoxyCompactList}\small\item\em Modificadora del rankging del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\+\_\+puntos}} (int n)
+\begin{DoxyCompactList}\small\item\em Modificadora de los puntos del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_a2020987455711d7068f4ee600aab3d90}{mas\+\_\+torneo}} ()
+\begin{DoxyCompactList}\small\item\em incrementa los torneos jugados; \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_ab2911f6ac6a37fb9cc27499d0f379a6e}{modificar\+\_\+juegos}} (int n, char c)
+\begin{DoxyCompactList}\small\item\em Modificadora de los juegos del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_aa12ab1bb66031833de8134c1262d624c}{modificar\+\_\+sets}} (int n, char c)
+\begin{DoxyCompactList}\small\item\em Modificadora de los sets del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_ac45437c4bd257d6bfb16e4a8ac3f1c3f}{modificar\+\_\+partidos}} (char c)
+\begin{DoxyCompactList}\small\item\em Modificadora de los partidos del jugador. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_jugador_a51e052535daea3c7d4354f794ef30738}{consultar\+\_\+id}} () const
 \begin{DoxyCompactList}\small\item\em Consultora del Identificador del jugador;. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\+\_\+pos\+\_\+ranking}} () const
 \begin{DoxyCompactList}\small\item\em Consultora de la posición en el ranking del jugador;. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_jugador_a472bb412a7ae132929c7c023319fc829}{consultar\+\_\+puntos}} () const
 \begin{DoxyCompactList}\small\item\em Consultora de los puntos del jugador;. \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_a2d78cfbb62da208cc9df6bbb98f5e332}{consultar\+\_\+partidos}} () const
+\begin{DoxyCompactList}\small\item\em Consultora de los partidos ganados (first) y perdidos(second) \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_aabddb1b03343a9242a68017f783b2c23}{consultar\+\_\+sets}} () const
+\begin{DoxyCompactList}\small\item\em Consultora de los sets ganados (first) y perdidos(second) \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_a851bc2f0988ce331c5ca2da86fd2b0bf}{consultar\+\_\+juegos}} () const
+\begin{DoxyCompactList}\small\item\em Consultora de los juegos ganados (first) y perdidos(second) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jugador_a598481309204ace7410336fcff2de320}{consultar\+\_\+torneos\+\_\+disputados}} () const
+\begin{DoxyCompactList}\small\item\em consultora de los torneos disputados por el jugador. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_jugador_a426a2cf5d5d870a28c1fdab02c784eef}{leer\+\_\+jugador}} ()
 \begin{DoxyCompactList}\small\item\em Operación de lectura del jugador. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_jugador_aa931df7ff10f9707c8af56f259981ca8}{escribir\+\_\+jugador}} ()
+void \mbox{\hyperlink{class_jugador_a345f0a743b82217bf5a10edcd6ccaceb}{escribir\+\_\+jugador}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura del jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atributos privados}
 \begin{DoxyCompactItemize}
@@ -34,6 +52,14 @@ string \mbox{\hyperlink{class_jugador_aaeeacd8da7dd5926ca44073124b5fd71}{id}}
 int \mbox{\hyperlink{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}{puntos}}
 \item 
 int \mbox{\hyperlink{class_jugador_a200ee7c036d98654af6fab08b8b909e9}{pos\+\_\+ranking}}
+\item 
+int \mbox{\hyperlink{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}{torneos\+\_\+disputados}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}
 \end{DoxyCompactItemize}
 
 
@@ -59,8 +85,23 @@ Creadora por defecto.
 {\itshape cierto} 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-El resultado es un jugador vacío. 
+El resultado es un jugador vacío inicializado todo a 0. 
 \end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00013}{13}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014 \{}
+\DoxyCodeLine{00015     \mbox{\hyperlink{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}{puntos}} = 0;}
+\DoxyCodeLine{00016     \mbox{\hyperlink{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}{torneos\_disputados}} = 0;}
+\DoxyCodeLine{00017     \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.first = \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.second = 0;}
+\DoxyCodeLine{00018     \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.first = \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.second = 0;}
+\DoxyCodeLine{00019     \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.first = \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.second = 0;}
+\DoxyCodeLine{00020 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Documentación de las funciones miembro}
@@ -80,6 +121,172 @@ cierto
 \begin{DoxyPostcond}{Postcondición}
 El parámetro implícito pasa a estar en la posición {\itshape n} del ranking. 
 \end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00046}{46}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047 \{}
+\DoxyCodeLine{00048     \mbox{\hyperlink{class_jugador_a200ee7c036d98654af6fab08b8b909e9}{pos\_ranking}} = n;}
+\DoxyCodeLine{00049 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}\label{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}} 
+\index{Jugador@{Jugador}!modificar\_puntos@{modificar\_puntos}}
+\index{modificar\_puntos@{modificar\_puntos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{modificar\_puntos()}{modificar\_puntos()}}
+{\footnotesize\ttfamily void Jugador\+::modificar\+\_\+puntos (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Modificadora de los puntos del jugador. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener n puntos. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00071}{71}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072 \{}
+\DoxyCodeLine{00073     \mbox{\hyperlink{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}{puntos}} += n;}
+\DoxyCodeLine{00074 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a2020987455711d7068f4ee600aab3d90}\label{class_jugador_a2020987455711d7068f4ee600aab3d90}} 
+\index{Jugador@{Jugador}!mas\_torneo@{mas\_torneo}}
+\index{mas\_torneo@{mas\_torneo}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{mas\_torneo()}{mas\_torneo()}}
+{\footnotesize\ttfamily void Jugador\+::mas\+\_\+torneo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+incrementa los torneos jugados; 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+el jugador pasa a tener un torneo jugado más. 
+\end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00076}{76}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077 \{}
+\DoxyCodeLine{00078     ++\mbox{\hyperlink{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}{torneos\_disputados}};}
+\DoxyCodeLine{00079 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_ab2911f6ac6a37fb9cc27499d0f379a6e}\label{class_jugador_ab2911f6ac6a37fb9cc27499d0f379a6e}} 
+\index{Jugador@{Jugador}!modificar\_juegos@{modificar\_juegos}}
+\index{modificar\_juegos@{modificar\_juegos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{modificar\_juegos()}{modificar\_juegos()}}
+{\footnotesize\ttfamily void Jugador\+::modificar\+\_\+juegos (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Modificadora de los juegos del jugador. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener n juegos ganados\+: si c fue \textquotesingle{}+\textquotesingle{}, else\+: perdidos. 
+\end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00081}{81}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00082 \{}
+\DoxyCodeLine{00083     \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'+'})}
+\DoxyCodeLine{00084     \{}
+\DoxyCodeLine{00085         \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.first += n;}
+\DoxyCodeLine{00086     \}}
+\DoxyCodeLine{00087     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00088         \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.second += n;}
+\DoxyCodeLine{00089 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_aa12ab1bb66031833de8134c1262d624c}\label{class_jugador_aa12ab1bb66031833de8134c1262d624c}} 
+\index{Jugador@{Jugador}!modificar\_sets@{modificar\_sets}}
+\index{modificar\_sets@{modificar\_sets}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{modificar\_sets()}{modificar\_sets()}}
+{\footnotesize\ttfamily void Jugador\+::modificar\+\_\+sets (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Modificadora de los sets del jugador. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener n sets ganados\+: si c fue \textquotesingle{}+\textquotesingle{}, else\+: perdidos. 
+\end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00090}{90}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091 \{}
+\DoxyCodeLine{00092     \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'+'})}
+\DoxyCodeLine{00093     \{}
+\DoxyCodeLine{00094         \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.first += n;}
+\DoxyCodeLine{00095     \}}
+\DoxyCodeLine{00096     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00097         \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.second += n;}
+\DoxyCodeLine{00098 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_ac45437c4bd257d6bfb16e4a8ac3f1c3f}\label{class_jugador_ac45437c4bd257d6bfb16e4a8ac3f1c3f}} 
+\index{Jugador@{Jugador}!modificar\_partidos@{modificar\_partidos}}
+\index{modificar\_partidos@{modificar\_partidos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{modificar\_partidos()}{modificar\_partidos()}}
+{\footnotesize\ttfamily void Jugador\+::modificar\+\_\+partidos (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Modificadora de los partidos del jugador. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se incrementa en 1 los partidos ganados\+: si c fue \textquotesingle{}+\textquotesingle{}, else\+: perdidos por el jugador . 
+\end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00099}{99}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100 \{}
+\DoxyCodeLine{00101     \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'+'})}
+\DoxyCodeLine{00102     \{}
+\DoxyCodeLine{00103         ++\mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.first;}
+\DoxyCodeLine{00104     \}}
+\DoxyCodeLine{00105     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00106         ++\mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.second;}
+\DoxyCodeLine{00107 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_jugador_a51e052535daea3c7d4354f794ef30738}\label{class_jugador_a51e052535daea3c7d4354f794ef30738}} 
 \index{Jugador@{Jugador}!consultar\_id@{consultar\_id}}
 \index{consultar\_id@{consultar\_id}!Jugador@{Jugador}}
@@ -96,6 +303,17 @@ El parámetro implícito está incializado
 \begin{DoxyPostcond}{Postcondición}
 El resultado es el Identificador del parámetro implícito 
 \end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00031}{31}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032 \{}
+\DoxyCodeLine{00033     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_aaeeacd8da7dd5926ca44073124b5fd71}{id}};}
+\DoxyCodeLine{00034 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}\label{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}} 
 \index{Jugador@{Jugador}!consultar\_pos\_ranking@{consultar\_pos\_ranking}}
 \index{consultar\_pos\_ranking@{consultar\_pos\_ranking}!Jugador@{Jugador}}
@@ -112,6 +330,17 @@ El parámetro implícito está incializado
 \begin{DoxyPostcond}{Postcondición}
 El resultado es la posición en el ranking del parámetro implícito 
 \end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00041}{41}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042 \{}
+\DoxyCodeLine{00043     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_a200ee7c036d98654af6fab08b8b909e9}{pos\_ranking}};}
+\DoxyCodeLine{00044 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_jugador_a472bb412a7ae132929c7c023319fc829}\label{class_jugador_a472bb412a7ae132929c7c023319fc829}} 
 \index{Jugador@{Jugador}!consultar\_puntos@{consultar\_puntos}}
 \index{consultar\_puntos@{consultar\_puntos}!Jugador@{Jugador}}
@@ -128,6 +357,137 @@ El parámetro implícito está incializado
 \begin{DoxyPostcond}{Postcondición}
 El resultado son los puntos del parámetro implícito 
 \end{DoxyPostcond}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00036}{36}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037 \{}
+\DoxyCodeLine{00038     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}{puntos}};}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a2d78cfbb62da208cc9df6bbb98f5e332}\label{class_jugador_a2d78cfbb62da208cc9df6bbb98f5e332}} 
+\index{Jugador@{Jugador}!consultar\_partidos@{consultar\_partidos}}
+\index{consultar\_partidos@{consultar\_partidos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{consultar\_partidos()}{consultar\_partidos()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Jugador\+::consultar\+\_\+partidos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los partidos ganados (first) y perdidos(second) 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve un par de enteros siendo el primero los partidos ganados y el segundo los perdidos.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Devuelve}
+pair$<$int,int$>$ 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00051}{51}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052 \{}
+\DoxyCodeLine{00053     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}};}
+\DoxyCodeLine{00054 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_aabddb1b03343a9242a68017f783b2c23}\label{class_jugador_aabddb1b03343a9242a68017f783b2c23}} 
+\index{Jugador@{Jugador}!consultar\_sets@{consultar\_sets}}
+\index{consultar\_sets@{consultar\_sets}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{consultar\_sets()}{consultar\_sets()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Jugador\+::consultar\+\_\+sets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los sets ganados (first) y perdidos(second) 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve un par de enteros siendo el primero los sets ganados y el segundo los perdidos.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Devuelve}
+pair$<$int,int$>$ 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00056}{56}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057 \{}
+\DoxyCodeLine{00058     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}};}
+\DoxyCodeLine{00059 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a851bc2f0988ce331c5ca2da86fd2b0bf}\label{class_jugador_a851bc2f0988ce331c5ca2da86fd2b0bf}} 
+\index{Jugador@{Jugador}!consultar\_juegos@{consultar\_juegos}}
+\index{consultar\_juegos@{consultar\_juegos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{consultar\_juegos()}{consultar\_juegos()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Jugador\+::consultar\+\_\+juegos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los juegos ganados (first) y perdidos(second) 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve un par de enteros siendo el primero los juegos ganados y el segundo los perdidos.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Devuelve}
+pair$<$int,int$>$ 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00061}{61}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062 \{}
+\DoxyCodeLine{00063     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}};}
+\DoxyCodeLine{00064 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a598481309204ace7410336fcff2de320}\label{class_jugador_a598481309204ace7410336fcff2de320}} 
+\index{Jugador@{Jugador}!consultar\_torneos\_disputados@{consultar\_torneos\_disputados}}
+\index{consultar\_torneos\_disputados@{consultar\_torneos\_disputados}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{consultar\_torneos\_disputados()}{consultar\_torneos\_disputados()}}
+{\footnotesize\ttfamily int Jugador\+::consultar\+\_\+torneos\+\_\+disputados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+consultora de los torneos disputados por el jugador. 
+
+\begin{DoxyPrecond}{Precondición}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+devuelve un natural que representa los torneos disputados por el jugador. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Devuelve}
+int 
+\end{DoxyReturn}
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00066}{66}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067 \{}
+\DoxyCodeLine{00068     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}{torneos\_disputados}};}
+\DoxyCodeLine{00069 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{class_jugador_a426a2cf5d5d870a28c1fdab02c784eef}\label{class_jugador_a426a2cf5d5d870a28c1fdab02c784eef}} 
 \index{Jugador@{Jugador}!leer\_jugador@{leer\_jugador}}
 \index{leer\_jugador@{leer\_jugador}!Jugador@{Jugador}}
@@ -144,11 +504,26 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 El parámetro implícito pasa a tener un identificador (el nombre del jugador, el cual será un string) pero la puntuación inicializada a 0 y se añadirá a la cola del ranking, es decir en ultima posición. 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_jugador_aa931df7ff10f9707c8af56f259981ca8}\label{class_jugador_aa931df7ff10f9707c8af56f259981ca8}} 
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00022}{22}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024     \textcolor{comment}{// Asigna al Jugador un identificador y se incicializa con 0 puntos;}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{00027     cin >> name;}
+\DoxyCodeLine{00028     \textcolor{keywordtype}{id} = name;}
+\DoxyCodeLine{00029 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_jugador_a345f0a743b82217bf5a10edcd6ccaceb}\label{class_jugador_a345f0a743b82217bf5a10edcd6ccaceb}} 
 \index{Jugador@{Jugador}!escribir\_jugador@{escribir\_jugador}}
 \index{escribir\_jugador@{escribir\_jugador}!Jugador@{Jugador}}
 \doxysubsubsection{\texorpdfstring{escribir\_jugador()}{escribir\_jugador()}}
-{\footnotesize\ttfamily void Jugador\+::escribir\+\_\+jugador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Jugador\+::escribir\+\_\+jugador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -162,6 +537,25 @@ Se ha escrito el identificador, la puntucaión y la posición en el ranking del 
 \end{DoxyPostcond}
 
 
+Definición en la línea \mbox{\hyperlink{_jugador_8cc_source_l00109}{109}} del archivo \mbox{\hyperlink{_jugador_8cc_source}{Jugador.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110 \{}
+\DoxyCodeLine{00111     cout << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{"{} Rk:"{}} << \mbox{\hyperlink{class_jugador_a200ee7c036d98654af6fab08b8b909e9}{pos\_ranking}};}
+\DoxyCodeLine{00112     cout << \textcolor{stringliteral}{"{} Ps:"{}} << \mbox{\hyperlink{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}{puntos}};}
+\DoxyCodeLine{00113     cout << \textcolor{stringliteral}{"{} Ts:"{}} << \mbox{\hyperlink{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}{torneos\_disputados}};}
+\DoxyCodeLine{00114     cout << \textcolor{stringliteral}{"{} WM:"{}} << \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.first;}
+\DoxyCodeLine{00115     cout << \textcolor{stringliteral}{"{} LM:"{}} << \mbox{\hyperlink{class_jugador_ad22751abd0143014747f559dcfa63d49}{partidos}}.second;}
+\DoxyCodeLine{00116     cout << \textcolor{stringliteral}{"{} WS:"{}} << \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.first;}
+\DoxyCodeLine{00117     cout << \textcolor{stringliteral}{"{} LS:"{}} << \mbox{\hyperlink{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}{sets}}.second;}
+\DoxyCodeLine{00118     cout << \textcolor{stringliteral}{"{} WG:"{}} << \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.first;}
+\DoxyCodeLine{00119     cout << \textcolor{stringliteral}{"{} LG:"{}} << \mbox{\hyperlink{class_jugador_ab8ea358b14201e7fad986174d0b04f16}{juegos}}.second << endl;}
+\DoxyCodeLine{00120 \}}
+
+\end{DoxyCode}
+
+
 \doxysubsection{Documentación de los datos miembro}
 \mbox{\Hypertarget{class_jugador_aaeeacd8da7dd5926ca44073124b5fd71}\label{class_jugador_aaeeacd8da7dd5926ca44073124b5fd71}} 
 \index{Jugador@{Jugador}!id@{id}}
@@ -171,7 +565,7 @@ Se ha escrito el identificador, la puntucaión y la posición en el ranking del 
 
 
 
-Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00085}{85}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00023}{23}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
 
 \mbox{\Hypertarget{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}\label{class_jugador_a4e264d857d5a3f1a68cbb13e4b88930f}} 
 \index{Jugador@{Jugador}!puntos@{puntos}}
@@ -181,7 +575,7 @@ Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00085}{85}} del a
 
 
 
-Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00086}{86}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00024}{24}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
 
 \mbox{\Hypertarget{class_jugador_a200ee7c036d98654af6fab08b8b909e9}\label{class_jugador_a200ee7c036d98654af6fab08b8b909e9}} 
 \index{Jugador@{Jugador}!pos\_ranking@{pos\_ranking}}
@@ -191,10 +585,51 @@ Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00086}{86}} del a
 
 
 
-Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00087}{87}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00025}{25}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+
+\mbox{\Hypertarget{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}\label{class_jugador_a1fb5771e4831c35b18cdc2ddf6dac2fc}} 
+\index{Jugador@{Jugador}!torneos\_disputados@{torneos\_disputados}}
+\index{torneos\_disputados@{torneos\_disputados}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{torneos\_disputados}{torneos\_disputados}}
+{\footnotesize\ttfamily int Jugador\+::torneos\+\_\+disputados\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00026}{26}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+
+\mbox{\Hypertarget{class_jugador_ad22751abd0143014747f559dcfa63d49}\label{class_jugador_ad22751abd0143014747f559dcfa63d49}} 
+\index{Jugador@{Jugador}!partidos@{partidos}}
+\index{partidos@{partidos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{partidos}{partidos}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Jugador\+::partidos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00027}{27}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+
+\mbox{\Hypertarget{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}\label{class_jugador_a0f820a9a62c75c9104ac759c48a2219b}} 
+\index{Jugador@{Jugador}!sets@{sets}}
+\index{sets@{sets}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{sets}{sets}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Jugador\+::sets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00028}{28}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+
+\mbox{\Hypertarget{class_jugador_ab8ea358b14201e7fad986174d0b04f16}\label{class_jugador_ab8ea358b14201e7fad986174d0b04f16}} 
+\index{Jugador@{Jugador}!juegos@{juegos}}
+\index{juegos@{juegos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{juegos}{juegos}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Jugador\+::juegos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_jugador_8hh_source_l00029}{29}} del archivo \mbox{\hyperlink{_jugador_8hh_source}{Jugador.\+hh}}.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_jugador_8hh}{Jugador.\+hh}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_jugador_8hh}{Jugador.\+hh}}\item 
+\mbox{\hyperlink{_jugador_8cc}{Jugador.\+cc}}\end{DoxyCompactItemize}

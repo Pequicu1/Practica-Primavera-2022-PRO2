@@ -20,7 +20,7 @@
         - listar_categorias o lc: imprime todas las categorias del circuito junto con los puntos por cada nivel.
         - fin: finaliza el programa.
 
-    */
+*/
 
 /** @file program.cc
     @brief Programa principal para el ejercicio <em>Circuito de torneos de tenis</em>.

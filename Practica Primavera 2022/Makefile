@@ -24,7 +24,5 @@ tar: program.cc Cjt_Jugadores.cc Cjt_Jugadores.hh Torneo.cc Torneo.hh Cjt_Torneo
 clean:
 	rm -f *.o *.gch *.exe *.tar
 
-practica.tar: Makefile Jugador.hh Jugador.cc Torneo.hh Torneo.cc Cjt_torneos.cc Cjt_torneos.hh Cjt_jugadores.hh Cjt_jugadores.cc BinTree.hh program.cc 
-	tar -cvf practica.tar *.cc *.hh Makefile
-
-FC=gfortran -m32
+practica.tar: Makefile Jugador.hh Jugador.cc Torneo.hh Torneo.cc Cjt_torneos.cc Cjt_torneos.hh Cjt_jugadores.hh Cjt_jugadores.cc BinTree.hh program.cc
+	tar -cvf practica.tar *.cc *.hh Makefile html.zip

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tabla_5fde_5fpuntuaciones_0',['Tabla_de_puntuaciones',['../class_cjt___torneos.html#a03d189bf6edfa8e33e71a9757f34c657',1,'Cjt_Torneos']]]
+  ['sets_0',['sets',['../class_jugador.html#a0f820a9a62c75c9104ac759c48a2219b',1,'Jugador']]]
 ];

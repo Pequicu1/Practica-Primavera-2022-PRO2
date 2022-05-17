@@ -10,8 +10,6 @@
 
 #include "Cjt_Torneos.hh"
 
-typedef vector<vector<int>> Matriz;
-
 Cjt_Torneos::Cjt_Torneos()
 {
     ntorn = 0;

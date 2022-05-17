@@ -1,0 +1,280 @@
+\hypertarget{_torneo_8cc_source}{}\doxysection{Torneo.\+cc}
+\mbox{\hyperlink{_torneo_8cc}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_torneo_8hh}{Torneo.hh}}"{}}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00012}00012 \textcolor{preprocessor}{\#ifndef NO\_DIAGRAM}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00013}00013 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00014}00014 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00016}\mbox{\hyperlink{class_torneo_a7bf6d35a7ec8d0e13a0bed8deb8add3e}{00016}} \mbox{\hyperlink{class_torneo_a7bf6d35a7ec8d0e13a0bed8deb8add3e}{Torneo::Torneo}}()}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00017}00017 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00018}00018     \mbox{\hyperlink{class_torneo_a0c3a5229ee80cd4f3363f90b335b37e8}{Cuadro}} = \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00019}00019     \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}} = vector<Jugador>();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00020}00020     \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}} = vector<Jugador>();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00023}\mbox{\hyperlink{class_torneo_af347eb3ec196e06b5f7ae22fcef2faa0}{00023}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_af347eb3ec196e06b5f7ae22fcef2faa0}{Torneo::leer\_torneo}}()}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00025}00025     \textcolor{comment}{// Asigna al torneo un identificador y una categoría que han sido leidas po el canal de entrada estándar.}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00026}00026     \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00027}00027     \textcolor{keywordtype}{int} cat;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00028}00028     cin >> name >> cat;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00029}00029     \mbox{\hyperlink{class_torneo_a8ef1999f3378e2b929bb042ddb98339d}{identificador}} = name;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00030}00030     \mbox{\hyperlink{class_torneo_ad9bec7ef311a416138abb99f3a487b3e}{categoria}} = cat;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00033}\mbox{\hyperlink{class_torneo_ac558198d579c88ab11b873ed3cf0953d}{00033}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_torneo_ac558198d579c88ab11b873ed3cf0953d}{Torneo::consultar\_categoria}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00034}00034 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00035}00035     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_ad9bec7ef311a416138abb99f3a487b3e}{categoria}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00036}00036 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00038}\mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{00038}} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_torneo_a51fa3637b157ee65944e139932387860}{Torneo::consultar\_nombre}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00039}00039 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00040}00040     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_a8ef1999f3378e2b929bb042ddb98339d}{identificador}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00043}\mbox{\hyperlink{class_torneo_acdaa34d23dbd73346e5e23a238a6802e}{00043}} \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \mbox{\hyperlink{class_torneo_acdaa34d23dbd73346e5e23a238a6802e}{Torneo::obtener\_participantes}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00044}00044 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00045}00045     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00048}\mbox{\hyperlink{class_torneo_a659ce19a44f5045bc0b76439e4583180}{00048}} \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \mbox{\hyperlink{class_torneo_a659ce19a44f5045bc0b76439e4583180}{Torneo::consultar\_parts\_ant}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00049}00049 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00050}00050     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_abfca3e66bea21c4cf6654496e8045cb4}{participantes\_ant}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00053}\mbox{\hyperlink{class_torneo_a223c8c5d4c61a2fb32c771c3b6809776}{00053}} vector<Jugador> \mbox{\hyperlink{class_torneo_a223c8c5d4c61a2fb32c771c3b6809776}{Torneo::consultar\_ranking\_anterior}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00054}00054 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00055}00055     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00056}00056 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00058}\mbox{\hyperlink{class_torneo_aed1241440a947e4dd71a0a3c97481975}{00058}} \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \mbox{\hyperlink{class_torneo_aed1241440a947e4dd71a0a3c97481975}{Torneo::obtener\_cuadro}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00059}00059 \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00060}00060     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_a0c3a5229ee80cd4f3363f90b335b37e8}{Cuadro}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00063}\mbox{\hyperlink{class_torneo_abb41f61f8683e834417e74acbc8f1585}{00063}} \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \mbox{\hyperlink{class_torneo_abb41f61f8683e834417e74acbc8f1585}{Torneo::leer\_participantes}}(\textcolor{keywordtype}{int} n, \textcolor{keyword}{const} \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \&Jugs)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00064}00064 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00065}00065     \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}.clear();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00066}00066     \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} new\_participantes;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00067}00067     vector<Jugador> rank0 = Jugs.\mbox{\hyperlink{class_cjt___jugadores_a7fa4336496793fac97563dfa93b84eac}{obtener\_ranking}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00068}00068     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00069}00069     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00070}00070         \textcolor{keywordtype}{int} pos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00071}00071         cin >> pos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00073}00073         rank0[pos -\/ 1].modificar\_puntos(-\/rank0[pos -\/ 1].consultar\_puntos());}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00074}00074         \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}.push\_back(rank0[pos -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00075}00075         new\_participantes.\mbox{\hyperlink{class_cjt___jugadores_a9a89be5d20688b55549d85fc4acdcba2}{anadir\_jugador}}(rank0[pos -\/ 1]);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00077}00077     \textcolor{keywordflow}{return} new\_participantes;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00078}00078 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00080}\mbox{\hyperlink{class_torneo_ad38ffc5a5b5c5c738b53c5add063ec7c}{00080}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_ad38ffc5a5b5c5c738b53c5add063ec7c}{Torneo::actualiza\_participantes}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \&P)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00081}00081 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00082}00082     \mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}} = P;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00083}00083 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00085}00085 \textcolor{comment}{// Inciar\_Torneo}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00086}\mbox{\hyperlink{class_torneo_a2e9688788671d9791dfa5c0427cf2ab9}{00086}} \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \mbox{\hyperlink{class_torneo_a2e9688788671d9791dfa5c0427cf2ab9}{Torneo::crear\_torneo\_i}}(\mbox{\hyperlink{class_jugador}{Jugador}} ant, \textcolor{keyword}{const} vector<Jugador> \&rank, \textcolor{keywordtype}{int} altura, \textcolor{keywordtype}{int} altura\_act, \textcolor{keywordtype}{int} x)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00087}00087 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00088}00088     \textcolor{keywordflow}{if} (altura == altura\_act)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00089}00089     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00090}00090         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} a(ant);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00091}00091         \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00093}00093     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (altura -\/ 1 == altura\_act and ant.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() <= x)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00094}00094     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00095}00095         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} a(ant);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00096}00096         \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00097}00097     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00098}00098     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00099}00099     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00100}00100         \textcolor{keywordtype}{int} jug = pow(2, altura\_act) + 1 -\/ ant.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00102}00102         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} L = \mbox{\hyperlink{class_torneo_a2e9688788671d9791dfa5c0427cf2ab9}{crear\_torneo\_i}}(ant, rank, altura, altura\_act + 1, x);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00103}00103         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} R = \mbox{\hyperlink{class_torneo_a2e9688788671d9791dfa5c0427cf2ab9}{crear\_torneo\_i}}(rank[jug -\/ 1], rank, altura, altura\_act + 1, x);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00105}00105         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \mbox{\hyperlink{class_torneo_a0c3a5229ee80cd4f3363f90b335b37e8}{Cuadro}}(ant, L, R);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00107}00107         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_torneo_a0c3a5229ee80cd4f3363f90b335b37e8}{Cuadro}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00109}00109 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00110}\mbox{\hyperlink{class_torneo_a86d85faf8ec3f87ca3ab032c6f5e92c4}{00110}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_a86d85faf8ec3f87ca3ab032c6f5e92c4}{Torneo::crear\_torneo}}()}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00111}00111 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00112}00112     \textcolor{comment}{// altura del cuadro}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00113}00113     \textcolor{keywordtype}{int} altura = ceil(log2(\mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}}.\mbox{\hyperlink{class_cjt___jugadores_ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3}{numero\_jugadores}}()) + 1);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00115}00115     \textcolor{keywordtype}{int} x = pow(2, altura -\/ 1) -\/ \mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}}.\mbox{\hyperlink{class_cjt___jugadores_ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3}{numero\_jugadores}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00117}00117     vector<Jugador> local\_rank = \mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}}.\mbox{\hyperlink{class_cjt___jugadores_a7fa4336496793fac97563dfa93b84eac}{obtener\_ranking}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00118}00118     \mbox{\hyperlink{class_torneo_a0c3a5229ee80cd4f3363f90b335b37e8}{Cuadro}} = \mbox{\hyperlink{class_torneo_a2e9688788671d9791dfa5c0427cf2ab9}{crear\_torneo\_i}}(local\_rank[0], local\_rank, altura, 1, x);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00119}00119 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00121}\mbox{\hyperlink{class_torneo_af344369c3f0ba575aa583412d03fed43}{00121}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_af344369c3f0ba575aa583412d03fed43}{Torneo::imprimir\_cuadro}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \&A)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00122}00122 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00124}00124     \textcolor{keywordflow}{if} (A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}().\mbox{\hyperlink{class_bin_tree_a74cda259ba5c25b8ee38ed4dc33e4fad}{empty}}())}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00125}00125     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00126}00126         cout << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() << \textcolor{charliteral}{'.'} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().\mbox{\hyperlink{class_jugador_a51e052535daea3c7d4354f794ef30738}{consultar\_id}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00127}00127     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00128}00128     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00129}00129     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00130}00130         cout << \textcolor{charliteral}{'('};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00131}00131         \mbox{\hyperlink{class_torneo_af344369c3f0ba575aa583412d03fed43}{imprimir\_cuadro}}(A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}());}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00132}00132         cout << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00133}00133         \mbox{\hyperlink{class_torneo_af344369c3f0ba575aa583412d03fed43}{imprimir\_cuadro}}(A.\mbox{\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}}());}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00134}00134         cout << \textcolor{charliteral}{')'};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00135}00135     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00136}00136 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00138}00138 \textcolor{comment}{// Finalizar\_Torneo}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00139}\mbox{\hyperlink{class_torneo_a8fa674dd54b4be3543fd45d03573d7fa}{00139}} \mbox{\hyperlink{class_jugador}{Jugador}} \mbox{\hyperlink{class_torneo_a8fa674dd54b4be3543fd45d03573d7fa}{Torneo::ganador}}(\mbox{\hyperlink{class_jugador}{Jugador}} \&J1, \mbox{\hyperlink{class_jugador}{Jugador}} \&J2, \textcolor{keywordtype}{string} resultados, \textcolor{keywordtype}{int} pts)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00140}00140 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00141}00141     \textcolor{keywordtype}{int} i, j;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00142}00142     i = 0;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00143}00143     j = 2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00145}00145     \textcolor{keywordtype}{int} sets1, sets2, tot;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00146}00146     sets1 = sets2 = tot = 0;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00148}00148     \mbox{\hyperlink{class_jugador}{Jugador}} Ganador;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00150}00150     \textcolor{keywordflow}{if} (resultados.length() > 3)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00151}00151     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00152}00152         \textcolor{keywordflow}{while} (i <= resultados.length())}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00153}00153         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00155}00155             \textcolor{keywordflow}{if} (resultados[i] -\/ \textcolor{charliteral}{'0'} > resultados[j] -\/ \textcolor{charliteral}{'0'})}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00156}00156             \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00157}00157                 ++sets1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00158}00158             \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00159}00159             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00160}00160             \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00161}00161                 ++sets2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00162}00162             \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00163}00163             ++tot;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00164}00164             i += 4;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00165}00165             j += 4;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00166}00166         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00167}00167         \textcolor{keywordflow}{if} (sets1 > sets2)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00168}00168         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00169}00169             J2.\mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\_puntos}}(pts);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00170}00170             \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[J2.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = J2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00172}00172             Ganador = J1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00173}00173         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00174}00174         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00175}00175         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00176}00176             J1.\mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\_puntos}}(pts);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00177}00177             \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[J1.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = J1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00179}00179             Ganador = J2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00180}00180         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00181}00181     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00182}00182     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00183}00183     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00185}00185         \textcolor{keywordflow}{if} (resultados[i] == \textcolor{charliteral}{'1'} and resultados[j] == \textcolor{charliteral}{'0'})}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00186}00186         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00187}00187             J2.\mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\_puntos}}(pts);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00188}00188             \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[J2.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = J2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00190}00190             Ganador = J1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00191}00191         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00192}00192         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultados[i] == \textcolor{charliteral}{'0'} and resultados[j] == \textcolor{charliteral}{'1'})}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00193}00193         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00194}00194             J1.\mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\_puntos}}(pts);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00195}00195             \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[J1.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = J1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00197}00197             Ganador = J2;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00198}00198         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00199}00199     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00200}00200     \textcolor{keywordflow}{return} Ganador;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00201}00201 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00202}\mbox{\hyperlink{class_torneo_a440539db9363a19ed9b84b0eedc860d9}{00202}} \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} \mbox{\hyperlink{class_torneo_a440539db9363a19ed9b84b0eedc860d9}{Torneo::leer\_resultados\_i}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \&A, \mbox{\hyperlink{class_jugador}{Jugador}} \&Ganador, \textcolor{keyword}{const} vector<int> \&pts, \textcolor{keywordtype}{int} \&nivel, \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \&General)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00203}00203 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00204}00204     \textcolor{keywordtype}{string} puntos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00205}00205     cin >> puntos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00206}00206     \textcolor{keywordflow}{if} (puntos == \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00207}00207     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00208}00208         -\/-\/nivel;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00209}00209         Ganador = A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00210}00210         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} a;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00211}00211         \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00212}00212     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00213}00213     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00214}00214     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00216}00216         \mbox{\hyperlink{struct_partido}{Partido}} match;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00217}00217         match.\mbox{\hyperlink{struct_partido_aa584502663aa3dc26399535eab1825bc}{puntos}} = puntos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00218}00218         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} I = \mbox{\hyperlink{class_torneo_a440539db9363a19ed9b84b0eedc860d9}{leer\_resultados\_i}}(A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}(), match.\mbox{\hyperlink{struct_partido_a7796c4dcfed1668082ee8f08316a9015}{j1}}, pts, ++nivel, General);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00219}00219         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} D = \mbox{\hyperlink{class_torneo_a440539db9363a19ed9b84b0eedc860d9}{leer\_resultados\_i}}(A.\mbox{\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}}(), match.\mbox{\hyperlink{struct_partido_ac804727c4e15b8898b9a8cc47882a3ff}{j2}}, pts, ++nivel, General);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00220}00220 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00221}00221         -\/-\/nivel;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00222}00222         Ganador = \mbox{\hyperlink{class_torneo_a8fa674dd54b4be3543fd45d03573d7fa}{ganador}}(match.\mbox{\hyperlink{struct_partido_a7796c4dcfed1668082ee8f08316a9015}{j1}}, match.\mbox{\hyperlink{struct_partido_ac804727c4e15b8898b9a8cc47882a3ff}{j2}}, puntos, pts[nivel]);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00224}00224         General.\mbox{\hyperlink{class_cjt___jugadores_a4af2d82bb67b48f00c2712d1e9bc48d4}{modificar\_estadisticas}}(Ganador, match.\mbox{\hyperlink{struct_partido_a7796c4dcfed1668082ee8f08316a9015}{j1}}, match.\mbox{\hyperlink{struct_partido_ac804727c4e15b8898b9a8cc47882a3ff}{j2}}, puntos, pts, nivel);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00225}00225         \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[Ganador.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = Ganador;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00227}00227         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} res(match, I, D);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00228}00228 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00229}00229         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00230}00230     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00231}00231 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00233}\mbox{\hyperlink{class_torneo_a940df2f5a0958bb5511196700dfd4608}{00233}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_a940df2f5a0958bb5511196700dfd4608}{Torneo::eliminar\_jugador}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_jugador}{Jugador}} \&P)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00234}00234 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00235}00235     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00236}00236     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_torneo_abfca3e66bea21c4cf6654496e8045cb4}{participantes\_ant}}.\mbox{\hyperlink{class_cjt___jugadores_ade800bd75692fc1ec2a779f1d5e369a6}{existe\_jugador}}(P.\mbox{\hyperlink{class_jugador_a51e052535daea3c7d4354f794ef30738}{consultar\_id}}()))}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00237}00237     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00238}00238         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; not found; ++i)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00239}00239         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00240}00240             \textcolor{keywordflow}{if} (P.\mbox{\hyperlink{class_jugador_a51e052535daea3c7d4354f794ef30738}{consultar\_id}}() == \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}}[i].consultar\_id())}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00241}00241             \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00242}00242                 \mbox{\hyperlink{class_torneo_abfca3e66bea21c4cf6654496e8045cb4}{participantes\_ant}}.\mbox{\hyperlink{class_cjt___jugadores_a46aa25970f46c6b60b48347078500350}{eliminar\_jugador}}(\mbox{\hyperlink{class_torneo_abfca3e66bea21c4cf6654496e8045cb4}{participantes\_ant}}.\mbox{\hyperlink{class_cjt___jugadores_a7fa4336496793fac97563dfa93b84eac}{obtener\_ranking}}()[i]);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00243}00243                 \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}}[i] = \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}}[\mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}}.size() -\/ 1];}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00244}00244                 \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}}.pop\_back();}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00245}00245                 found = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00246}00246             \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00247}00247         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00248}00248     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00249}00249 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00251}\mbox{\hyperlink{class_torneo_a46eeed6018cd9cceedef8b547cda4349}{00251}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_a46eeed6018cd9cceedef8b547cda4349}{Torneo::leer\_resultados}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} \&A, \textcolor{keyword}{const} vector<int> \&Puntos, \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} \&General)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00252}00252 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00253}00253     \textcolor{keywordtype}{int} nivel = 1;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00254}00254     \mbox{\hyperlink{class_jugador}{Jugador}} Ganador;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00255}00255     \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} res = \mbox{\hyperlink{class_torneo_a440539db9363a19ed9b84b0eedc860d9}{leer\_resultados\_i}}(A, Ganador, Puntos, ++nivel, General);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00256}00256     \mbox{\hyperlink{class_torneo_ab8fa41e367d8b2a71ee8274f9a92222d}{imprimir\_resultados}}(res);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00257}00257     Ganador.\mbox{\hyperlink{class_jugador_a9b73499771e156cc468c9a2ab4bd521f}{modificar\_puntos}}(Puntos[0]);}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00258}00258     \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[Ganador.\mbox{\hyperlink{class_jugador_acfac089f0431e0d552c1af3b0d4c2213}{consultar\_pos\_ranking}}() -\/ 1] = Ganador;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00259}00259 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00260}00260     cout << endl;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00262}00262     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}.size(); ++i)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00263}00263     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00264}00264         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[i].consultar\_puntos() != 0)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00265}00265         \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00267}00267             cout << \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[i].consultar\_pos\_ranking() << \textcolor{charliteral}{'.'} << \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[i].consultar\_id() << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}}[i].consultar\_puntos() << endl;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00268}00268         \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00269}00269     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00270}00270     \mbox{\hyperlink{class_torneo_abfca3e66bea21c4cf6654496e8045cb4}{participantes\_ant}} = \mbox{\hyperlink{class_torneo_a9d3f9aa09ecd188d71a9bcfebc8f1309}{participantes}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00271}00271     \mbox{\hyperlink{class_torneo_a57b01ad5230f0b306539a204eb9ce2a1}{parts\_ant}} = \mbox{\hyperlink{class_torneo_aa3ddcbc04063a55a6aa71153433fe03d}{parts}};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00272}00272 \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00273}00273 }
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00274}\mbox{\hyperlink{class_torneo_ab8fa41e367d8b2a71ee8274f9a92222d}{00274}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_torneo_ab8fa41e367d8b2a71ee8274f9a92222d}{Torneo::imprimir\_resultados}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} \&A)}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00275}00275 \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00276}00276     \textcolor{keywordflow}{if} (not A.\mbox{\hyperlink{class_bin_tree_a74cda259ba5c25b8ee38ed4dc33e4fad}{empty}}())}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00277}00277     \{}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00278}00278         cout << \textcolor{charliteral}{'('};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00279}00279         cout << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().j1.consultar\_pos\_ranking() << \textcolor{charliteral}{'.'} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().j1.consultar\_id() << \textcolor{stringliteral}{"{} vs "{}} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().j2.consultar\_pos\_ranking() << \textcolor{charliteral}{'.'} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().j2.consultar\_id() << \textcolor{charliteral}{' '} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().puntos;}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00280}00280         \mbox{\hyperlink{class_torneo_ab8fa41e367d8b2a71ee8274f9a92222d}{imprimir\_resultados}}(A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}());}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00281}00281         \mbox{\hyperlink{class_torneo_ab8fa41e367d8b2a71ee8274f9a92222d}{imprimir\_resultados}}(A.\mbox{\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}}());}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00282}00282         cout << \textcolor{charliteral}{')'};}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00283}00283     \}}
+\DoxyCodeLine{\Hypertarget{_torneo_8cc_source_l00284}00284 \}}
+
+\end{DoxyCode}

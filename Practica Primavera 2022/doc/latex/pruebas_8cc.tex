@@ -1,0 +1,290 @@
+\hypertarget{pruebas_8cc}{}\doxysection{Referencia del Archivo pruebas.\+cc}
+\label{pruebas_8cc}\index{pruebas.cc@{pruebas.cc}}
+Dependencia gráfica adjunta para pruebas.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pruebas_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_jugador}{Jugador}}
+\begin{DoxyCompactList}\small\item\em Representa un \mbox{\hyperlink{class_jugador}{Jugador}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_partido}{Partido}}
+\begin{DoxyCompactList}\small\item\em Tupla de \mbox{\hyperlink{struct_torneo}{Torneo}}\+: \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_cjt___jugadores}{Cjt\+\_\+\+Jugadores}}
+\begin{DoxyCompactList}\small\item\em Representa el conjunto de todos los jugadores en el torneo. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{struct_torneo}{Torneo}}
+\begin{DoxyCompactList}\small\item\em Representa un \mbox{\hyperlink{struct_torneo}{Torneo}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \mbox{\hyperlink{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}{crear\+\_\+torneo\+\_\+i}} (\mbox{\hyperlink{class_jugador}{Jugador}} ant, const vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&rank, int altura, int altura\+\_\+act, int x)
+\item 
+void \mbox{\hyperlink{pruebas_8cc_ae61e5bc14562871302034eacc951256a}{crear\+\_\+torneo}} (const \mbox{\hyperlink{class_cjt___jugadores}{Cjt\+\_\+\+Jugadores}} \&jugs, \mbox{\hyperlink{struct_torneo}{Torneo}} \&T)
+\item 
+void \mbox{\hyperlink{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}{imprimir\+\_\+cuadro}} (const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&A)
+\item 
+\mbox{\hyperlink{class_jugador}{Jugador}} \mbox{\hyperlink{pruebas_8cc_a64cf92ccc741d441dd11a9dfb5ac6177}{ganador}} (\mbox{\hyperlink{class_jugador}{Jugador}} \&J1, \mbox{\hyperlink{class_jugador}{Jugador}} \&J2, string puntos)
+\item 
+\mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{struct_partido}{Partido}} $>$ \mbox{\hyperlink{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}{leer\+\_\+resultados\+\_\+i}} (const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&A, \mbox{\hyperlink{class_jugador}{Jugador}} \&P)
+\item 
+void \mbox{\hyperlink{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}{imprimir\+\_\+resultados}} (const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{struct_partido}{Partido}} $>$ \&Res)
+\item 
+void \mbox{\hyperlink{pruebas_8cc_a43e9e7b82f739b3653d8f63f8d648749}{leer\+\_\+resultados}} (const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&A)
+\item 
+int \mbox{\hyperlink{pruebas_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}\label{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}} 
+\index{pruebas.cc@{pruebas.cc}!crear\_torneo\_i@{crear\_torneo\_i}}
+\index{crear\_torneo\_i@{crear\_torneo\_i}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{crear\_torneo\_i()}{crear\_torneo\_i()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ crear\+\_\+torneo\+\_\+i (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{ant,  }\item[{const vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&}]{rank,  }\item[{int}]{altura,  }\item[{int}]{altura\+\_\+act,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00032}{32}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033 \{}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{if} (altura == altura\_act)}
+\DoxyCodeLine{00035     \{}
+\DoxyCodeLine{00036         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} a(ant);}
+\DoxyCodeLine{00037         \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{00038     \}}
+\DoxyCodeLine{00039     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (altura -\/ 1 == altura\_act and ant.\mbox{\hyperlink{class_jugador_abfd82fbfa2e58fdd634c94f7bc11c66b}{ranking}} <= x)}
+\DoxyCodeLine{00040     \{}
+\DoxyCodeLine{00041         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} a(ant);}
+\DoxyCodeLine{00042         \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{00043     \}}
+\DoxyCodeLine{00044     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00045     \{}
+\DoxyCodeLine{00046         \textcolor{keywordtype}{int} jug = pow(2, altura\_act) + 1 -\/ ant.\mbox{\hyperlink{class_jugador_abfd82fbfa2e58fdd634c94f7bc11c66b}{ranking}};}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} L = \mbox{\hyperlink{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}{crear\_torneo\_i}}(ant, rank, altura, altura\_act + 1, x);}
+\DoxyCodeLine{00049         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} R = \mbox{\hyperlink{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}{crear\_torneo\_i}}(rank[jug -\/ 1], rank, altura, altura\_act + 1, x);}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{00051         \mbox{\hyperlink{class_bin_tree}{BinTree<Jugador>}} Cuadro(ant, L, R);}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053         \textcolor{keywordflow}{return} Cuadro;}
+\DoxyCodeLine{00054     \}}
+\DoxyCodeLine{00055 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_ae61e5bc14562871302034eacc951256a}\label{pruebas_8cc_ae61e5bc14562871302034eacc951256a}} 
+\index{pruebas.cc@{pruebas.cc}!crear\_torneo@{crear\_torneo}}
+\index{crear\_torneo@{crear\_torneo}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{crear\_torneo()}{crear\_torneo()}}
+{\footnotesize\ttfamily void crear\+\_\+torneo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cjt___jugadores}{Cjt\+\_\+\+Jugadores}} \&}]{jugs,  }\item[{\mbox{\hyperlink{struct_torneo}{Torneo}} \&}]{T }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00056}{56}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057 \{}
+\DoxyCodeLine{00058     \textcolor{comment}{// altura del cuadro}}
+\DoxyCodeLine{00059     \textcolor{keywordtype}{int} altura = ceil(log2(jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}.size()) + 1);}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061     \textcolor{keywordtype}{int} x = pow(2, altura -\/ 1) -\/ jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}.size();}
+\DoxyCodeLine{00062     T.\mbox{\hyperlink{struct_torneo_aeef7c98490ad6cd780633bb4603dc6e3}{Cuadro}} = \mbox{\hyperlink{pruebas_8cc_aebbbb4d2308d5dcff98e463cc8d431f5}{crear\_torneo\_i}}(jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}[0], jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}, altura, 1, x);}
+\DoxyCodeLine{00063 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}\label{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}} 
+\index{pruebas.cc@{pruebas.cc}!imprimir\_cuadro@{imprimir\_cuadro}}
+\index{imprimir\_cuadro@{imprimir\_cuadro}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{imprimir\_cuadro()}{imprimir\_cuadro()}}
+{\footnotesize\ttfamily void imprimir\+\_\+cuadro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&}]{A }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00065}{65}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066 \{}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \textcolor{keywordflow}{if} (A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}().\mbox{\hyperlink{class_bin_tree_a74cda259ba5c25b8ee38ed4dc33e4fad}{empty}}())}
+\DoxyCodeLine{00069     \{}
+\DoxyCodeLine{00070         cout << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().\mbox{\hyperlink{class_jugador_abfd82fbfa2e58fdd634c94f7bc11c66b}{ranking}} << \textcolor{charliteral}{'.'} << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().\mbox{\hyperlink{class_jugador_a9c997b024c2a026c1a6ceee3f5c9b9f2}{name}};}
+\DoxyCodeLine{00071     \}}
+\DoxyCodeLine{00072     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00073     \{}
+\DoxyCodeLine{00074         cout << \textcolor{charliteral}{'('};}
+\DoxyCodeLine{00075         \mbox{\hyperlink{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}{imprimir\_cuadro}}(A.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}());}
+\DoxyCodeLine{00076         cout << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{00077         \mbox{\hyperlink{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}{imprimir\_cuadro}}(A.\mbox{\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}}());}
+\DoxyCodeLine{00078         cout << \textcolor{charliteral}{')'};}
+\DoxyCodeLine{00079     \}}
+\DoxyCodeLine{00080 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_a64cf92ccc741d441dd11a9dfb5ac6177}\label{pruebas_8cc_a64cf92ccc741d441dd11a9dfb5ac6177}} 
+\index{pruebas.cc@{pruebas.cc}!ganador@{ganador}}
+\index{ganador@{ganador}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{ganador()}{ganador()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugador}{Jugador}} ganador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}} \&}]{J1,  }\item[{\mbox{\hyperlink{class_jugador}{Jugador}} \&}]{J2,  }\item[{string}]{puntos }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00082}{82}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083 \{}
+\DoxyCodeLine{00084     \textcolor{keywordtype}{int} i, j;}
+\DoxyCodeLine{00085     i = 0;}
+\DoxyCodeLine{00086     j = 2;}
+\DoxyCodeLine{00087 }
+\DoxyCodeLine{00088     \textcolor{keywordtype}{int} sets1, sets2;}
+\DoxyCodeLine{00089     sets1 = sets2 = 0;}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091     \textcolor{comment}{// sumar partidos jugados;}}
+\DoxyCodeLine{00092     \textcolor{keywordflow}{while} (i <= puntos.length())}
+\DoxyCodeLine{00093     \{}
+\DoxyCodeLine{00094         \textcolor{keywordflow}{if} (puntos[i] == \textcolor{charliteral}{'1'} and puntos[j] == \textcolor{charliteral}{'0'})}
+\DoxyCodeLine{00095         \{}
+\DoxyCodeLine{00096             \textcolor{comment}{// J1 ++ partido ganado}}
+\DoxyCodeLine{00097             \textcolor{comment}{// J2 ++ partido perdido}}
+\DoxyCodeLine{00098             \textcolor{keywordflow}{return} J1;}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00100         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (puntos[i] == \textcolor{charliteral}{'0'} and puntos[j] == \textcolor{charliteral}{'1'})}
+\DoxyCodeLine{00101             \textcolor{comment}{// J2 ++ partido ganado}}
+\DoxyCodeLine{00102             \textcolor{comment}{// J1 ++ partido perdido}}
+\DoxyCodeLine{00103             \textcolor{keywordflow}{return} J2;}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105         \textcolor{comment}{// sumar juegos;}}
+\DoxyCodeLine{00106         \textcolor{keywordflow}{if} (puntos[i] > puntos[j])}
+\DoxyCodeLine{00107         \{}
+\DoxyCodeLine{00108             ++sets1;}
+\DoxyCodeLine{00109         \}}
+\DoxyCodeLine{00110         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00111             ++sets2;}
+\DoxyCodeLine{00112 }
+\DoxyCodeLine{00113         i += 4;}
+\DoxyCodeLine{00114         j += 4;}
+\DoxyCodeLine{00115     \}}
+\DoxyCodeLine{00116 }
+\DoxyCodeLine{00117     \textcolor{keywordflow}{if} (sets1 > sets2)}
+\DoxyCodeLine{00118         \textcolor{keywordflow}{return} J1;}
+\DoxyCodeLine{00119     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00120         \textcolor{keywordflow}{return} J2;}
+\DoxyCodeLine{00121 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}\label{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}} 
+\index{pruebas.cc@{pruebas.cc}!leer\_resultados\_i@{leer\_resultados\_i}}
+\index{leer\_resultados\_i@{leer\_resultados\_i}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{leer\_resultados\_i()}{leer\_resultados\_i()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{struct_partido}{Partido}} $>$ leer\+\_\+resultados\+\_\+i (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_jugador}{Jugador}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00123}{123}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124 \{}
+\DoxyCodeLine{00125     \textcolor{keywordtype}{string} puntos;}
+\DoxyCodeLine{00126     cin >> puntos;}
+\DoxyCodeLine{00127     \textcolor{keywordflow}{if} (puntos == \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00128     \{}
+\DoxyCodeLine{00129         cout << A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().\mbox{\hyperlink{class_jugador_a9c997b024c2a026c1a6ceee3f5c9b9f2}{name}} << endl;}
+\DoxyCodeLine{00130         P = A.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}();}
+\DoxyCodeLine{00131         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}}();}
+\DoxyCodeLine{00132     \}}
+\DoxyCodeLine{00133     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00134     \{}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136         \mbox{\hyperlink{struct_partido}{Partido}} match;}
+\DoxyCodeLine{00137         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} L = \mbox{\hyperlink{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}{leer\_resultados\_i}}(A, P);}
+\DoxyCodeLine{00138         \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} R = \mbox{\hyperlink{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}{leer\_resultados\_i}}(A, P);}
+\DoxyCodeLine{00139         match =}
+\DoxyCodeLine{00140 }
+\DoxyCodeLine{00141             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}}(match, L, R);}
+\DoxyCodeLine{00142         \textcolor{comment}{// leer\_resultados\_i(A.left(), Res);}}
+\DoxyCodeLine{00143         \textcolor{comment}{// leer\_resultados\_i(A.right(), Res);}}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145         \textcolor{comment}{// Res = BinTree<Partido>(match);}}
+\DoxyCodeLine{00146     \}}
+\DoxyCodeLine{00147 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}\label{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}} 
+\index{pruebas.cc@{pruebas.cc}!imprimir\_resultados@{imprimir\_resultados}}
+\index{imprimir\_resultados@{imprimir\_resultados}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{imprimir\_resultados()}{imprimir\_resultados()}}
+{\footnotesize\ttfamily void imprimir\+\_\+resultados (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{struct_partido}{Partido}} $>$ \&}]{Res }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00149}{149}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150 \{}
+\DoxyCodeLine{00151     cout << Res.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().J1.ranking << \textcolor{charliteral}{'.'} << Res.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().J1.name << \textcolor{stringliteral}{"{} vs "{}} << Res.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().J2.ranking << \textcolor{charliteral}{'.'} << Res.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().J2.name << \textcolor{charliteral}{' '} << Res.\mbox{\hyperlink{class_bin_tree_aaccb0c5b6cfe3b84dfeefc58efa24cda}{value}}().puntos;}
+\DoxyCodeLine{00152     \mbox{\hyperlink{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}{imprimir\_resultados}}(Res.\mbox{\hyperlink{class_bin_tree_a82108db4c1b08d1f111027788c196d4e}{left}}());}
+\DoxyCodeLine{00153     \mbox{\hyperlink{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}{imprimir\_resultados}}(Res.\mbox{\hyperlink{class_bin_tree_aff8e96651b27284c329667b5ad3e4d0b}{right}}());}
+\DoxyCodeLine{00154 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_a43e9e7b82f739b3653d8f63f8d648749}\label{pruebas_8cc_a43e9e7b82f739b3653d8f63f8d648749}} 
+\index{pruebas.cc@{pruebas.cc}!leer\_resultados@{leer\_resultados}}
+\index{leer\_resultados@{leer\_resultados}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{leer\_resultados()}{leer\_resultados()}}
+{\footnotesize\ttfamily void leer\+\_\+resultados (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bin_tree}{Bin\+Tree}}$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \&}]{A }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00156}{156}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00157 \{}
+\DoxyCodeLine{00158     \mbox{\hyperlink{class_jugador}{Jugador}} P;}
+\DoxyCodeLine{00159     \mbox{\hyperlink{class_bin_tree}{BinTree<Partido>}} Resultados = \mbox{\hyperlink{pruebas_8cc_a62a7e304e1c13fbf10997fc83020eaef}{leer\_resultados\_i}}(A, P);}
+\DoxyCodeLine{00160     \mbox{\hyperlink{pruebas_8cc_ab4ac246dda5f43e72802dfeb1bce99cc}{imprimir\_resultados}}(Resultados);}
+\DoxyCodeLine{00161 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{pruebas_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{pruebas_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{pruebas.cc@{pruebas.cc}!main@{main}}
+\index{main@{main}!pruebas.cc@{pruebas.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea \mbox{\hyperlink{pruebas_8cc_source_l00163}{163}} del archivo \mbox{\hyperlink{pruebas_8cc_source}{pruebas.\+cc}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00164 \{}
+\DoxyCodeLine{00165     \textcolor{keywordtype}{int} n;}
+\DoxyCodeLine{00166     cin >> n;}
+\DoxyCodeLine{00167     \mbox{\hyperlink{class_cjt___jugadores}{Cjt\_Jugadores}} jugs;}
+\DoxyCodeLine{00168     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i)}
+\DoxyCodeLine{00169     \{}
+\DoxyCodeLine{00170         \mbox{\hyperlink{class_jugador}{Jugador}} P;}
+\DoxyCodeLine{00171         cin >> P.\mbox{\hyperlink{class_jugador_a9c997b024c2a026c1a6ceee3f5c9b9f2}{name}};}
+\DoxyCodeLine{00172         P.\mbox{\hyperlink{class_jugador_abfd82fbfa2e58fdd634c94f7bc11c66b}{ranking}} = jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}.size() + 1;}
+\DoxyCodeLine{00173         jugs.\mbox{\hyperlink{class_cjt___jugadores_af0a7d77a144eab9713fc67ace4ebc4a5}{players}}.push\_back(P);}
+\DoxyCodeLine{00174     \}}
+\DoxyCodeLine{00175     \mbox{\hyperlink{struct_torneo}{Torneo}} T;}
+\DoxyCodeLine{00176     \mbox{\hyperlink{pruebas_8cc_ae61e5bc14562871302034eacc951256a}{crear\_torneo}}(jugs, T);}
+\DoxyCodeLine{00177     \mbox{\hyperlink{pruebas_8cc_a12954ff06381b6ed12e4e6b5814b781d}{imprimir\_cuadro}}(T.\mbox{\hyperlink{struct_torneo_aeef7c98490ad6cd780633bb4603dc6e3}{Cuadro}});}
+\DoxyCodeLine{00178     cout << endl;}
+\DoxyCodeLine{00179     \mbox{\hyperlink{pruebas_8cc_a43e9e7b82f739b3653d8f63f8d648749}{leer\_resultados}}(T.\mbox{\hyperlink{struct_torneo_aeef7c98490ad6cd780633bb4603dc6e3}{Cuadro}});}
+\DoxyCodeLine{00180 \}}
+
+\end{DoxyCode}

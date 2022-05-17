@@ -1,5 +1,5 @@
 /** @file Cjt_Jugadores.hh
-    @brief Especificación de la clase conjunto de jugadores.
+    @brief Especificación de la clase Cjt_Jugadores.
 */
 
 #ifndef CONJ_JUGADORES_HH

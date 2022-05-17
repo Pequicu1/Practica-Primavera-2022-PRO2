@@ -6,7 +6,6 @@
 #define TORNEO_HH
 
 #include "Cjt_Jugadores.hh"
-//#include "Categorias.hh"
 
 #ifndef NO_DIAGRAM
 #include "BinTree.hh"

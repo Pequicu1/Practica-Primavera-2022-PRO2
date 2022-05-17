@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoatp.png"/></td>
   <td id="projectalign">
-   <div id="projectname">CIRCUITO DE TORNEOS DE TENIS - [Práctica Primavera 2022]<span id="projectnumber">&#160;19/04/2022</span>
+   <div id="projectname">CIRCUITO DE TORNEOS DE TENIS - [Práctica Primavera 2022]<span id="projectnumber">&#160;17/05/2022</span>
    </div>
    <div id="projectbrief">IVÁN LÓPEZ BUIRA</div>
   </td>
@@ -67,7 +67,24 @@ $(function() {
   <div class="headertitle"><div class="title">CIRCUITO DE TORNEOS DE TENIS - [Práctica primavera 2022]. </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones. </p>
+<div class="textblock"><p >Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones. Se utilizan las clases: <em><a class="el" href="class_jugador.html" title="Representa un Jugador.">Jugador</a></em>, <em><a class="el" href="class_cjt___jugadores.html" title="Representa el conjunto de todos los jugadores en el torneo.">Cjt_Jugadores</a></em>, <em><a class="el" href="class_torneo.html" title="Representa un Torneo.">Torneo</a></em> y <em><a class="el" href="class_cjt___torneos.html" title="Representa el conjunto de todos los torneos del circuito.">Cjt_Torneos</a></em>.</p>
+<p >Este programa sigue lo siguiente:</p><ul>
+<li>Primero de todo se inicializan las categorias, con sus puntos, seguidamente los torneos del Circuito con una categoria asignada a cada uno y finalmente los jugadores que participan en este circuito.</li>
+<li>A conticuión entran una serie de comandos que modificaran el circuito a medida de cada iteracion dependiendo de la orden proporcionada.</li>
+</ul>
+<p >Los posibles comandos que el programa acepta son los siguientes:</p><ul>
+<li>nuevo_jugador o nj: añade a un nuevo jugador al circuito. Empezará el último en el ranking con 0 puntos.</li>
+<li>nuevo_torneo o nt: añade a un nuevo torneo al circuito.</li>
+<li>baja_jugador o bj: elimina un jugador del circuito.</li>
+<li>baja_torneo o bt: elimina un torneo del circuito. Restando los puntos que habían ganado a aquellos que habian participado en la última edición.</li>
+<li>iniciar_torneo o it: Inicia el torneo deseado creando un cuadro de emparejamientos incial.</li>
+<li>finalizar_torneo o ft: finaliza el torneo deseado, lee un arbol de resultados y computa un arbol de partidos de donde se calcularán los puntos y otras estadísticas ganados o perdidos por los jugadores.</li>
+<li>listar_ranking o lr: imprime los jugadores por orden decreciente de ranking junto con sus puntos.</li>
+<li>listar_jugadores o lj: imprime todos los jugadores por orden alfabético junto con todas las estadísticas del mismo.</li>
+<li>listar_torneos o lt: imprime los todos los torneos del circuito.</li>
+<li>listar_categorias o lc: imprime todas las categorias del circuito junto con los puntos por cada nivel.</li>
+<li>fin: finaliza el programa. </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

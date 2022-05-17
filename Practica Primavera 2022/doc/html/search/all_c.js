@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tabla_5fde_5fpuntuaciones_0',['Tabla_de_puntuaciones',['../class_cjt___torneos.html#a03d189bf6edfa8e33e71a9757f34c657',1,'Cjt_Torneos']]],
-  ['torneo_1',['Torneo',['../class_torneo.html',1,'Torneo'],['../class_torneo.html#a7bf6d35a7ec8d0e13a0bed8deb8add3e',1,'Torneo::Torneo()']]],
-  ['torneo_2ehh_2',['Torneo.hh',['../_torneo_8hh.html',1,'']]]
+  ['ranking_0',['ranking',['../class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42',1,'Cjt_Jugadores']]],
+  ['restar_5fpuntos_1',['restar_puntos',['../class_cjt___jugadores.html#afef4a536c490713226bacb027e98a5b2',1,'Cjt_Jugadores']]],
+  ['right_2',['right',['../struct_bin_tree_1_1_node.html#a6df770137090da60cd0376ce06893cbd',1,'BinTree::Node::right()'],['../class_bin_tree.html#aff8e96651b27284c329667b5ad3e4d0b',1,'BinTree::right()']]]
 ];

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoatp.png"/></td>
   <td id="projectalign">
-   <div id="projectname">CIRCUITO DE TORNEOS DE TENIS - [Práctica Primavera 2022]<span id="projectnumber">&#160;19/04/2022</span>
+   <div id="projectname">CIRCUITO DE TORNEOS DE TENIS - [Práctica Primavera 2022]<span id="projectnumber">&#160;17/05/2022</span>
    </div>
    <div id="projectbrief">IVÁN LÓPEZ BUIRA</div>
   </td>
@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-static-methods">Métodos privados estáticos</a> &#124;
 <a href="#pri-attribs">Atributos privados</a> &#124;
 <a href="class_cjt___jugadores-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la Clase Cjt_Jugadores</div></div>
@@ -82,42 +83,67 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a2e7a3bb35253088c8b66d6cfbc89742f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a2e7a3bb35253088c8b66d6cfbc89742f">Cjt_Jugadores</a> ()</td></tr>
 <tr class="memdesc:a2e7a3bb35253088c8b66d6cfbc89742f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creadora por defecto.  <a href="class_cjt___jugadores.html#a2e7a3bb35253088c8b66d6cfbc89742f">Más...</a><br /></td></tr>
 <tr class="separator:a2e7a3bb35253088c8b66d6cfbc89742f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149d4ff7bae45574d668f045731bfaff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a149d4ff7bae45574d668f045731bfaff">anadir_jugador</a> (const <a class="el" href="class_jugador.html">Jugador</a> &amp;jug)</td></tr>
-<tr class="memdesc:a149d4ff7bae45574d668f045731bfaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un jugador al circuito.  <a href="class_cjt___jugadores.html#a149d4ff7bae45574d668f045731bfaff">Más...</a><br /></td></tr>
-<tr class="separator:a149d4ff7bae45574d668f045731bfaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a89be5d20688b55549d85fc4acdcba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a9a89be5d20688b55549d85fc4acdcba2">anadir_jugador</a> (<a class="el" href="class_jugador.html">Jugador</a> &amp;jug)</td></tr>
+<tr class="memdesc:a9a89be5d20688b55549d85fc4acdcba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un jugador al circuito.  <a href="class_cjt___jugadores.html#a9a89be5d20688b55549d85fc4acdcba2">Más...</a><br /></td></tr>
+<tr class="separator:a9a89be5d20688b55549d85fc4acdcba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46aa25970f46c6b60b48347078500350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a46aa25970f46c6b60b48347078500350">eliminar_jugador</a> (const <a class="el" href="class_jugador.html">Jugador</a> &amp;jug)</td></tr>
 <tr class="memdesc:a46aa25970f46c6b60b48347078500350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina un jugador del circuito.  <a href="class_cjt___jugadores.html#a46aa25970f46c6b60b48347078500350">Más...</a><br /></td></tr>
 <tr class="separator:a46aa25970f46c6b60b48347078500350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0d47d7ade21b43f97705d6e8a6fe1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a8f0d47d7ade21b43f97705d6e8a6fe1c">existe_jugador</a> (const <a class="el" href="class_jugador.html">Jugador</a> &amp;P) const</td></tr>
-<tr class="memdesc:a8f0d47d7ade21b43f97705d6e8a6fe1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora que indica si existe el jugador P en el circuito.  <a href="class_cjt___jugadores.html#a8f0d47d7ade21b43f97705d6e8a6fe1c">Más...</a><br /></td></tr>
-<tr class="separator:a8f0d47d7ade21b43f97705d6e8a6fe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76148fa89c327c78999600b589f45d9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a76148fa89c327c78999600b589f45d9f">modificar_ranking</a> (const <a class="el" href="class_jugador.html">Jugador</a> &amp;P)</td></tr>
+<tr class="memdesc:a76148fa89c327c78999600b589f45d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifica las estadisticas de los jugadores del ranking  <a href="class_cjt___jugadores.html#a76148fa89c327c78999600b589f45d9f">Más...</a><br /></td></tr>
+<tr class="separator:a76148fa89c327c78999600b589f45d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af2d82bb67b48f00c2712d1e9bc48d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a4af2d82bb67b48f00c2712d1e9bc48d4">modificar_estadisticas</a> (<a class="el" href="class_jugador.html">Jugador</a> &amp;Ganador, <a class="el" href="class_jugador.html">Jugador</a> &amp;J1, <a class="el" href="class_jugador.html">Jugador</a> &amp;J2, string resultados, const vector&lt; int &gt; &amp;puntos, int nivel)</td></tr>
+<tr class="memdesc:a4af2d82bb67b48f00c2712d1e9bc48d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifica las estadísticas del J1 y J2 en base del gandor y los puntos que hayan obtenidos, sets y partido.  <a href="class_cjt___jugadores.html#a4af2d82bb67b48f00c2712d1e9bc48d4">Más...</a><br /></td></tr>
+<tr class="separator:a4af2d82bb67b48f00c2712d1e9bc48d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef4a536c490713226bacb027e98a5b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#afef4a536c490713226bacb027e98a5b2">restar_puntos</a> (const vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt; &amp;jugs)</td></tr>
+<tr class="memdesc:afef4a536c490713226bacb027e98a5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se restan a los jugadores del P.I los puntos que tienen aquellos que pertenecen al vector de entrada.  <a href="class_cjt___jugadores.html#afef4a536c490713226bacb027e98a5b2">Más...</a><br /></td></tr>
+<tr class="separator:afef4a536c490713226bacb027e98a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e654d501a23e4f43a1a61cdf7507cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#aa3e654d501a23e4f43a1a61cdf7507cc">ordenar_ranking</a> ()</td></tr>
+<tr class="memdesc:aa3e654d501a23e4f43a1a61cdf7507cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena reordena el ranking de jugadores en funcion de sus puntos;.  <a href="class_cjt___jugadores.html#aa3e654d501a23e4f43a1a61cdf7507cc">Más...</a><br /></td></tr>
+<tr class="separator:aa3e654d501a23e4f43a1a61cdf7507cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f59cd381777d921edad5efa43ab18d3"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="class_jugador.html">Jugador</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a2f59cd381777d921edad5efa43ab18d3">consultar_indice</a> () const</td></tr>
+<tr class="memdesc:a2f59cd381777d921edad5efa43ab18d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora del indice de jugadores del P.I. (mapa)  <a href="class_cjt___jugadores.html#a2f59cd381777d921edad5efa43ab18d3">Más...</a><br /></td></tr>
+<tr class="separator:a2f59cd381777d921edad5efa43ab18d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade800bd75692fc1ec2a779f1d5e369a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#ade800bd75692fc1ec2a779f1d5e369a6">existe_jugador</a> (string name)</td></tr>
+<tr class="memdesc:ade800bd75692fc1ec2a779f1d5e369a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora que indica si existe el jugador P en el circuito.  <a href="class_cjt___jugadores.html#ade800bd75692fc1ec2a779f1d5e369a6">Más...</a><br /></td></tr>
+<tr class="separator:ade800bd75692fc1ec2a779f1d5e369a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b4c5da18ea6eb38d3e97c8ff54dda59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jugador.html">Jugador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a2b4c5da18ea6eb38d3e97c8ff54dda59">obtener_jugador</a> (string id) const</td></tr>
 <tr class="memdesc:a2b4c5da18ea6eb38d3e97c8ff54dda59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora que devuelve el <a class="el" href="class_jugador.html" title="Representa un Jugador.">Jugador</a> deseado.  <a href="class_cjt___jugadores.html#a2b4c5da18ea6eb38d3e97c8ff54dda59">Más...</a><br /></td></tr>
 <tr class="separator:a2b4c5da18ea6eb38d3e97c8ff54dda59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa4336496793fac97563dfa93b84eac"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a7fa4336496793fac97563dfa93b84eac">obtener_ranking</a> () const</td></tr>
+<tr class="memdesc:a7fa4336496793fac97563dfa93b84eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora que devuelve el ranking en forma de vector de jugadores del p.i.  <a href="class_cjt___jugadores.html#a7fa4336496793fac97563dfa93b84eac">Más...</a><br /></td></tr>
+<tr class="separator:a7fa4336496793fac97563dfa93b84eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3">numero_jugadores</a> () const</td></tr>
 <tr class="memdesc:ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora que indica la cantidad de jugadores en el circuito.  <a href="class_cjt___jugadores.html#ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3">Más...</a><br /></td></tr>
 <tr class="separator:ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426c7e20ede71fd9fcbe34a1619d3e14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a426c7e20ede71fd9fcbe34a1619d3e14">ini_jugadores</a> (int n) const</td></tr>
-<tr class="memdesc:a426c7e20ede71fd9fcbe34a1619d3e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">inicializa el conjunto de jugadores  <a href="class_cjt___jugadores.html#a426c7e20ede71fd9fcbe34a1619d3e14">Más...</a><br /></td></tr>
-<tr class="separator:a426c7e20ede71fd9fcbe34a1619d3e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c60a851b0212b02d07f2048d13188d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a4c60a851b0212b02d07f2048d13188d6">listar_ranking</a> () const</td></tr>
-<tr class="memdesc:a4c60a851b0212b02d07f2048d13188d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escritura del ranking.  <a href="class_cjt___jugadores.html#a4c60a851b0212b02d07f2048d13188d6">Más...</a><br /></td></tr>
-<tr class="separator:a4c60a851b0212b02d07f2048d13188d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18a0cf28de1764a9179413b3731c45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#aa18a0cf28de1764a9179413b3731c45a">ini_jugadores</a> (int n)</td></tr>
+<tr class="memdesc:aa18a0cf28de1764a9179413b3731c45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">inicializa el conjunto de jugadores  <a href="class_cjt___jugadores.html#aa18a0cf28de1764a9179413b3731c45a">Más...</a><br /></td></tr>
+<tr class="separator:aa18a0cf28de1764a9179413b3731c45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafee69f19f923939dff47186af27a090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#aafee69f19f923939dff47186af27a090">listar_ranking</a> ()</td></tr>
+<tr class="memdesc:aafee69f19f923939dff47186af27a090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escritura del ranking.  <a href="class_cjt___jugadores.html#aafee69f19f923939dff47186af27a090">Más...</a><br /></td></tr>
+<tr class="separator:aafee69f19f923939dff47186af27a090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5308b5d4ff571486fbd02e81bc6413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#abf5308b5d4ff571486fbd02e81bc6413">imprimir_jugadores</a> () const</td></tr>
 <tr class="memdesc:abf5308b5d4ff571486fbd02e81bc6413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operación de escritura.  <a href="class_cjt___jugadores.html#abf5308b5d4ff571486fbd02e81bc6413">Más...</a><br /></td></tr>
 <tr class="separator:abf5308b5d4ff571486fbd02e81bc6413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Métodos privados estáticos</h2></td></tr>
+<tr class="memitem:af2031c9e968e5b92fca9529959e0efaf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#af2031c9e968e5b92fca9529959e0efaf">comp</a> (const <a class="el" href="class_jugador.html">Jugador</a> &amp;j1, const <a class="el" href="class_jugador.html">Jugador</a> &amp;j2)</td></tr>
+<tr class="separator:af2031c9e968e5b92fca9529959e0efaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
-<tr class="memitem:a7c4e0b47e8a197b0b73ef5f008b58105"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a7c4e0b47e8a197b0b73ef5f008b58105">vjug</a></td></tr>
-<tr class="separator:a7c4e0b47e8a197b0b73ef5f008b58105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad1113baffd28b8399ccde31d03d8d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#adad1113baffd28b8399ccde31d03d8d3">njug</a></td></tr>
+<tr class="memitem:a3559862f2ddf964d670dc8a6ca7d1995"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="class_jugador.html">Jugador</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a></td></tr>
+<tr class="separator:a3559862f2ddf964d670dc8a6ca7d1995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9304fd80a3c4be7787975ec720104f42"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a></td></tr>
+<tr class="separator:a9304fd80a3c4be7787975ec720104f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad1113baffd28b8399ccde31d03d8d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___jugadores.html#adad1113baffd28b8399ccde31d03d8d3">njug</a> = ranking.size()</td></tr>
 <tr class="separator:adad1113baffd28b8399ccde31d03d8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p >Representa el conjunto de todos los jugadores en el torneo. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00018">18</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00020">20</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="a2e7a3bb35253088c8b66d6cfbc89742f" name="a2e7a3bb35253088c8b66d6cfbc89742f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e7a3bb35253088c8b66d6cfbc89742f">&#9670;&nbsp;</a></span>Cjt_Jugadores()</h2>
@@ -138,11 +164,67 @@ Atributos privados</h2></td></tr>
 <p >Se ejecuta automáticamente al declarar un conjunto de jugadores. </p><dl class="section pre"><dt>Precondición</dt><dd><em>cierto</em> </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es un conjunto de jugadores vacío. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00013">13</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#adad1113baffd28b8399ccde31d03d8d3">njug</a> = 0;</div>
+<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a> = vector&lt;Jugador&gt;(<a class="code hl_variable" href="class_cjt___jugadores.html#adad1113baffd28b8399ccde31d03d8d3">njug</a>);</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a9304fd80a3c4be7787975ec720104f42"><div class="ttname"><a href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">Cjt_Jugadores::ranking</a></div><div class="ttdeci">vector&lt; Jugador &gt; ranking</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00025">Cjt_Jugadores.hh:25</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_adad1113baffd28b8399ccde31d03d8d3"><div class="ttname"><a href="class_cjt___jugadores.html#adad1113baffd28b8399ccde31d03d8d3">Cjt_Jugadores::njug</a></div><div class="ttdeci">int njug</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00026">Cjt_Jugadores.hh:26</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a149d4ff7bae45574d668f045731bfaff" name="a149d4ff7bae45574d668f045731bfaff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a149d4ff7bae45574d668f045731bfaff">&#9670;&nbsp;</a></span>anadir_jugador()</h2>
+<a id="af2031c9e968e5b92fca9529959e0efaf" name="af2031c9e968e5b92fca9529959e0efaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2031c9e968e5b92fca9529959e0efaf">&#9670;&nbsp;</a></span>comp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cjt_Jugadores::comp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>j1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>j2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00108">108</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (j1.<a class="code hl_function" href="class_jugador.html#a472bb412a7ae132929c7c023319fc829">consultar_puntos</a>() == j2.<a class="code hl_function" href="class_jugador.html#a472bb412a7ae132929c7c023319fc829">consultar_puntos</a>())</div>
+<div class="line"><span class="lineno">  111</span>    {</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> j1.<a class="code hl_function" href="class_jugador.html#acfac089f0431e0d552c1af3b0d4c2213">consultar_pos_ranking</a>() &lt; j2.<a class="code hl_function" href="class_jugador.html#acfac089f0431e0d552c1af3b0d4c2213">consultar_pos_ranking</a>();</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> j1.<a class="code hl_function" href="class_jugador.html#a472bb412a7ae132929c7c023319fc829">consultar_puntos</a>() &gt; j2.<a class="code hl_function" href="class_jugador.html#a472bb412a7ae132929c7c023319fc829">consultar_puntos</a>();</div>
+<div class="line"><span class="lineno">  116</span>}</div>
+<div class="ttc" id="aclass_jugador_html_a472bb412a7ae132929c7c023319fc829"><div class="ttname"><a href="class_jugador.html#a472bb412a7ae132929c7c023319fc829">Jugador::consultar_puntos</a></div><div class="ttdeci">int consultar_puntos() const</div><div class="ttdoc">Consultora de los puntos del jugador;.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00036">Jugador.cc:36</a></div></div>
+<div class="ttc" id="aclass_jugador_html_acfac089f0431e0d552c1af3b0d4c2213"><div class="ttname"><a href="class_jugador.html#acfac089f0431e0d552c1af3b0d4c2213">Jugador::consultar_pos_ranking</a></div><div class="ttdeci">int consultar_pos_ranking() const</div><div class="ttdoc">Consultora de la posición en el ranking del jugador;.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00041">Jugador.cc:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a89be5d20688b55549d85fc4acdcba2" name="a9a89be5d20688b55549d85fc4acdcba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a89be5d20688b55549d85fc4acdcba2">&#9670;&nbsp;</a></span>anadir_jugador()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +232,7 @@ Atributos privados</h2></td></tr>
         <tr>
           <td class="memname">void Cjt_Jugadores::anadir_jugador </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
           <td class="paramname"><em>jug</em></td><td>)</td>
           <td></td>
         </tr>
@@ -161,6 +243,14 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>jug es un jugador previamente inicializado. </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito pasa a contener los jugadores originales más el nuevo jugador. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00059">59</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{</div>
+<div class="line"><span class="lineno">   61</span>    P.modificar_ranking(<a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size() + 1);</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.push_back(P);</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>[P.consultar_id()] = P;</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a3559862f2ddf964d670dc8a6ca7d1995"><div class="ttname"><a href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">Cjt_Jugadores::indice_jugadores</a></div><div class="ttdeci">map&lt; string, Jugador &gt; indice_jugadores</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00024">Cjt_Jugadores.hh:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a46aa25970f46c6b60b48347078500350" name="a46aa25970f46c6b60b48347078500350"></a>
@@ -183,10 +273,323 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>jug es un jugador previamente inicializado. </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito pasa a contener los jugadores originales menos jug. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00066">66</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">//(vector)</span></div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordtype">int</span> pos = P.consultar_pos_ranking() - 1;</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = pos; i &lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size() - 1; ++i)</div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i] = <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i + 1];</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].modificar_ranking(i + 1);</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>[<a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_id()] = <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i];</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.pop_back();</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">//(map)</span></div>
+<div class="line"><span class="lineno">   79</span>    map&lt;string, Jugador&gt;::const_iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(P.consultar_id());</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.erase(it);</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a8f0d47d7ade21b43f97705d6e8a6fe1c" name="a8f0d47d7ade21b43f97705d6e8a6fe1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f0d47d7ade21b43f97705d6e8a6fe1c">&#9670;&nbsp;</a></span>existe_jugador()</h2>
+<a id="a76148fa89c327c78999600b589f45d9f" name="a76148fa89c327c78999600b589f45d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76148fa89c327c78999600b589f45d9f">&#9670;&nbsp;</a></span>modificar_ranking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Jugadores::modificar_ranking </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>modifica las estadisticas de los jugadores del ranking </p>
+<dl class="section pre"><dt>Precondición</dt><dd>cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>se modifica el jugador objetivo en el ranking </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00083">83</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[P.<a class="code hl_function" href="class_jugador.html#acfac089f0431e0d552c1af3b0d4c2213">consultar_pos_ranking</a>() - 1] = P;</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4af2d82bb67b48f00c2712d1e9bc48d4" name="a4af2d82bb67b48f00c2712d1e9bc48d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af2d82bb67b48f00c2712d1e9bc48d4">&#9670;&nbsp;</a></span>modificar_estadisticas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Jugadores::modificar_estadisticas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>Ganador</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>J1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
+          <td class="paramname"><em>J2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>resultados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>puntos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nivel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>modifica las estadísticas del J1 y J2 en base del gandor y los puntos que hayan obtenidos, sets y partido. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>hay un Ganador que se ha calculado previamente. </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Las características del J1 y J2 se han modificado. </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Ganador</td><td></td></tr>
+    <tr><td class="paramname">J1</td><td></td></tr>
+    <tr><td class="paramname">J2</td><td></td></tr>
+    <tr><td class="paramname">resultados</td><td></td></tr>
+    <tr><td class="paramname">puntos</td><td></td></tr>
+    <tr><td class="paramname">nivel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00145">145</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
+<div class="line"><span class="lineno">  147</span>    map&lt;string, Jugador&gt;::iterator it1 = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(J1.<a class="code hl_function" href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">consultar_id</a>());</div>
+<div class="line"><span class="lineno">  148</span>    map&lt;string, Jugador&gt;::iterator it2 = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(J2.<a class="code hl_function" href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">consultar_id</a>());</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">if</span> (Ganador.<a class="code hl_function" href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">consultar_id</a>() == J1.<a class="code hl_function" href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">consultar_id</a>())</div>
+<div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        (*it1).second.modificar_partidos(<span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  153</span>        (*it2).second.modificar_partidos(<span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  154</span>    }</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>        (*it1).second.modificar_partidos(<span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  158</span>        (*it2).second.modificar_partidos(<span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordtype">int</span> i, j;</div>
+<div class="line"><span class="lineno">  162</span>    i = 0;</div>
+<div class="line"><span class="lineno">  163</span>    j = 2;</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordtype">int</span> sets1, sets2, tot;</div>
+<div class="line"><span class="lineno">  166</span>    sets1 = sets2 = tot = 0;</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">if</span> (resultados.length() &gt; 3)</div>
+<div class="line"><span class="lineno">  169</span>    {</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">while</span> (i &lt;= resultados.length())</div>
+<div class="line"><span class="lineno">  171</span>        {</div>
+<div class="line"><span class="lineno">  172</span>            (*it1).second.modificar_juegos(resultados[i] - <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  173</span>            (*it2).second.modificar_juegos(resultados[i] - <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  174</span>            (*it1).second.modificar_juegos(resultados[j] - <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  175</span>            (*it2).second.modificar_juegos(resultados[j] - <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">if</span> (resultados[i] - <span class="charliteral">&#39;0&#39;</span> &gt; resultados[j] - <span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><span class="lineno">  178</span>            {</div>
+<div class="line"><span class="lineno">  179</span>                ++sets1;</div>
+<div class="line"><span class="lineno">  180</span>                (*it1).second.modificar_sets(1, <span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  181</span>                (*it2).second.modificar_sets(1, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  182</span>            }</div>
+<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  184</span>            {</div>
+<div class="line"><span class="lineno">  185</span>                (*it1).second.modificar_sets(1, <span class="charliteral">&#39;-&#39;</span>);</div>
+<div class="line"><span class="lineno">  186</span>                (*it2).second.modificar_sets(1, <span class="charliteral">&#39;+&#39;</span>);</div>
+<div class="line"><span class="lineno">  187</span>                ++sets2;</div>
+<div class="line"><span class="lineno">  188</span>            }</div>
+<div class="line"><span class="lineno">  189</span>            ++tot;</div>
+<div class="line"><span class="lineno">  190</span>            i += 4;</div>
+<div class="line"><span class="lineno">  191</span>            j += 4;</div>
+<div class="line"><span class="lineno">  192</span>        }</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">if</span> (sets1 &gt; sets2)</div>
+<div class="line"><span class="lineno">  194</span>        {</div>
+<div class="line"><span class="lineno">  195</span>            (*it2).second.modificar_puntos(pts[nivel]);</div>
+<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">if</span> (nivel == 1)</div>
+<div class="line"><span class="lineno">  197</span>            {</div>
+<div class="line"><span class="lineno">  198</span>                (*it1).second.modificar_puntos(pts[0]);</div>
+<div class="line"><span class="lineno">  199</span>                (*it1).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  200</span>            }</div>
+<div class="line"><span class="lineno">  201</span>            (*it2).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  202</span>        }</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  204</span>        {</div>
+<div class="line"><span class="lineno">  205</span>            (*it1).second.modificar_puntos(pts[nivel]);</div>
+<div class="line"><span class="lineno">  206</span>            <span class="keywordflow">if</span> (nivel == 1)</div>
+<div class="line"><span class="lineno">  207</span>            {</div>
+<div class="line"><span class="lineno">  208</span>                (*it2).second.modificar_puntos(pts[0]);</div>
+<div class="line"><span class="lineno">  209</span>                (*it2).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  210</span>            }</div>
+<div class="line"><span class="lineno">  211</span>            (*it1).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  212</span>        }</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  215</span>    {</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">if</span> (resultados[i] == <span class="charliteral">&#39;1&#39;</span> and resultados[j] == <span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><span class="lineno">  218</span>        {</div>
+<div class="line"><span class="lineno">  219</span>            (*it2).second.modificar_puntos(pts[nivel]);</div>
+<div class="line"><span class="lineno">  220</span>            <span class="keywordflow">if</span> (nivel == 1)</div>
+<div class="line"><span class="lineno">  221</span>            {</div>
+<div class="line"><span class="lineno">  222</span>                (*it1).second.modificar_puntos(pts[0]);</div>
+<div class="line"><span class="lineno">  223</span>                (*it1).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  224</span>            }</div>
+<div class="line"><span class="lineno">  225</span>            (*it2).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  226</span>        }</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (resultados[i] == <span class="charliteral">&#39;0&#39;</span> and resultados[j] == <span class="charliteral">&#39;1&#39;</span>)</div>
+<div class="line"><span class="lineno">  228</span>        {</div>
+<div class="line"><span class="lineno">  229</span>            (*it1).second.modificar_puntos(pts[nivel]);</div>
+<div class="line"><span class="lineno">  230</span>            <span class="keywordflow">if</span> (nivel == 1)</div>
+<div class="line"><span class="lineno">  231</span>            {</div>
+<div class="line"><span class="lineno">  232</span>                (*it2).second.modificar_puntos(pts[0]);</div>
+<div class="line"><span class="lineno">  233</span>                (*it2).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  234</span>            }</div>
+<div class="line"><span class="lineno">  235</span>            (*it1).second.mas_torneo();</div>
+<div class="line"><span class="lineno">  236</span>        }</div>
+<div class="line"><span class="lineno">  237</span>    }</div>
+<div class="line"><span class="lineno">  238</span>}</div>
+<div class="ttc" id="aclass_jugador_html_a51e052535daea3c7d4354f794ef30738"><div class="ttname"><a href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">Jugador::consultar_id</a></div><div class="ttdeci">string consultar_id() const</div><div class="ttdoc">Consultora del Identificador del jugador;.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00031">Jugador.cc:31</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afef4a536c490713226bacb027e98a5b2" name="afef4a536c490713226bacb027e98a5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef4a536c490713226bacb027e98a5b2">&#9670;&nbsp;</a></span>restar_puntos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Jugadores::restar_puntos </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>jugs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Se restan a los jugadores del P.I los puntos que tienen aquellos que pertenecen al vector de entrada. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>jugs no está vacío </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Los jugadores del P.I ahora tienen los puntos que tenían menos los que constaban en jugs. </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jugs</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00096">96</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; jugs.size(); ++i)</div>
+<div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="class_cjt___jugadores.html#ade800bd75692fc1ec2a779f1d5e369a6">existe_jugador</a>(jugs[i].consultar_id()))</div>
+<div class="line"><span class="lineno">  101</span>        {</div>
+<div class="line"><span class="lineno">  102</span>            map&lt;string, Jugador&gt;::iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(jugs[i].consultar_id());</div>
+<div class="line"><span class="lineno">  103</span>            (*it).second.modificar_puntos(-jugs[i].consultar_puntos());</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="aclass_cjt___jugadores_html_ade800bd75692fc1ec2a779f1d5e369a6"><div class="ttname"><a href="class_cjt___jugadores.html#ade800bd75692fc1ec2a779f1d5e369a6">Cjt_Jugadores::existe_jugador</a></div><div class="ttdeci">bool existe_jugador(string name)</div><div class="ttdoc">Consultora que indica si existe el jugador P en el circuito.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00053">Cjt_Jugadores.cc:53</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3e654d501a23e4f43a1a61cdf7507cc" name="aa3e654d501a23e4f43a1a61cdf7507cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e654d501a23e4f43a1a61cdf7507cc">&#9670;&nbsp;</a></span>ordenar_ranking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cjt_Jugadores::ordenar_ranking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ordena reordena el ranking de jugadores en funcion de sus puntos;. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El ranking del PI esta ordenado decrecientemente en funcion de los puntos de los jugadores. I en caso de empate, ordenado creciente en funcion de la posición anterior en el ranking. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00118">118</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        map&lt;string, Jugador&gt;::iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(<a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_id());</div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i] = (*it).second;</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span>    sort(<a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.begin(), <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.end(), <a class="code hl_function" href="class_cjt___jugadores.html#af2031c9e968e5b92fca9529959e0efaf">comp</a>);</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        map&lt;string, Jugador&gt;::iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(<a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_id());</div>
+<div class="line"><span class="lineno">  129</span>        (*it).second.modificar_ranking(i + 1);</div>
+<div class="line"><span class="lineno">  130</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i] = (*it).second;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+<div class="line"><span class="lineno">  132</span>}</div>
+<div class="ttc" id="aclass_cjt___jugadores_html_af2031c9e968e5b92fca9529959e0efaf"><div class="ttname"><a href="class_cjt___jugadores.html#af2031c9e968e5b92fca9529959e0efaf">Cjt_Jugadores::comp</a></div><div class="ttdeci">static bool comp(const Jugador &amp;j1, const Jugador &amp;j2)</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00108">Cjt_Jugadores.cc:108</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2f59cd381777d921edad5efa43ab18d3" name="a2f59cd381777d921edad5efa43ab18d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f59cd381777d921edad5efa43ab18d3">&#9670;&nbsp;</a></span>consultar_indice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, <a class="el" href="class_jugador.html">Jugador</a> &gt; Cjt_Jugadores::consultar_indice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora del indice de jugadores del P.I. (mapa) </p>
+<dl class="section pre"><dt>Precondición</dt><dd>cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna el mapa de Jugadores que representa el índice de los jugadores del conjunto. </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>map&lt;string, Jugador&gt; </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00048">48</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade800bd75692fc1ec2a779f1d5e369a6" name="ade800bd75692fc1ec2a779f1d5e369a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade800bd75692fc1ec2a779f1d5e369a6">&#9670;&nbsp;</a></span>existe_jugador()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,9 +597,9 @@ Atributos privados</h2></td></tr>
         <tr>
           <td class="memname">bool Cjt_Jugadores::existe_jugador </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_jugador.html">Jugador</a> &amp;&#160;</td>
-          <td class="paramname"><em>P</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,6 +608,12 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>El parámetro implícito está incializado. </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado indica si el jugador existe en el circuito o no </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00053">53</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    map&lt;string, Jugador&gt;::const_iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(name);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> it != <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.end();</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b4c5da18ea6eb38d3e97c8ff54dda59" name="a2b4c5da18ea6eb38d3e97c8ff54dda59"></a>
@@ -227,6 +636,38 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>El juagdor P existe en el parámetro implícito. </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna el jugador deseado a partir de su identificador. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00037">37</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
+<div class="line"><span class="lineno">   39</span>    map&lt;string, Jugador&gt;::const_iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.find(name);</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fa4336496793fac97563dfa93b84eac" name="a7fa4336496793fac97563dfa93b84eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa4336496793fac97563dfa93b84eac">&#9670;&nbsp;</a></span>obtener_ranking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="class_jugador.html">Jugador</a> &gt; Cjt_Jugadores::obtener_ranking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora que devuelve el ranking en forma de vector de jugadores del p.i. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>P.I. inicializado </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Retorna un vector de jugadores que representa el ranking. </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00043">43</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3" name="ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3"></a>
@@ -248,10 +689,15 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>El parámetro implícito está incializado. </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Retorna el número de jugadores en el circuito. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00032">32</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size();</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a426c7e20ede71fd9fcbe34a1619d3e14" name="a426c7e20ede71fd9fcbe34a1619d3e14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a426c7e20ede71fd9fcbe34a1619d3e14">&#9670;&nbsp;</a></span>ini_jugadores()</h2>
+<a id="aa18a0cf28de1764a9179413b3731c45a" name="aa18a0cf28de1764a9179413b3731c45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18a0cf28de1764a9179413b3731c45a">&#9670;&nbsp;</a></span>ini_jugadores()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +707,7 @@ Atributos privados</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,10 +722,26 @@ Atributos privados</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00019">19</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        <a class="code hl_class" href="class_jugador.html">Jugador</a> P;</div>
+<div class="line"><span class="lineno">   24</span>        P.<a class="code hl_function" href="class_jugador.html#a426a2cf5d5d870a28c1fdab02c784eef">leer_jugador</a>();</div>
+<div class="line"><span class="lineno">   25</span>        P.<a class="code hl_function" href="class_jugador.html#af7b4bdbeae795163b53d5f0b9445b766">modificar_ranking</a>(i + 1);</div>
+<div class="line"><span class="lineno">   26</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.push_back(P);</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>[P.<a class="code hl_function" href="class_jugador.html#a51e052535daea3c7d4354f794ef30738">consultar_id</a>()] = P;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+<div class="ttc" id="aclass_jugador_html"><div class="ttname"><a href="class_jugador.html">Jugador</a></div><div class="ttdoc">Representa un Jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8hh_source.html#l00019">Jugador.hh:20</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a426a2cf5d5d870a28c1fdab02c784eef"><div class="ttname"><a href="class_jugador.html#a426a2cf5d5d870a28c1fdab02c784eef">Jugador::leer_jugador</a></div><div class="ttdeci">void leer_jugador()</div><div class="ttdoc">Operación de lectura del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00022">Jugador.cc:22</a></div></div>
+<div class="ttc" id="aclass_jugador_html_af7b4bdbeae795163b53d5f0b9445b766"><div class="ttname"><a href="class_jugador.html#af7b4bdbeae795163b53d5f0b9445b766">Jugador::modificar_ranking</a></div><div class="ttdeci">void modificar_ranking(int n)</div><div class="ttdoc">Modificadora del rankging del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00046">Jugador.cc:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a4c60a851b0212b02d07f2048d13188d6" name="a4c60a851b0212b02d07f2048d13188d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c60a851b0212b02d07f2048d13188d6">&#9670;&nbsp;</a></span>listar_ranking()</h2>
+<a id="aafee69f19f923939dff47186af27a090" name="aafee69f19f923939dff47186af27a090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafee69f19f923939dff47186af27a090">&#9670;&nbsp;</a></span>listar_ranking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +750,7 @@ Atributos privados</h2></td></tr>
           <td class="memname">void Cjt_Jugadores::listar_ranking </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -297,6 +759,14 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se escribe por el canal estándard de salida el ranking de los jugadores por orden creciente de ranking actual. Se escribirán: la posición, el nombre y los puntos de cada jugador del circuito. </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00088">88</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">   91</span>    {</div>
+<div class="line"><span class="lineno">   92</span>        cout &lt;&lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_pos_ranking() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_id() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a9304fd80a3c4be7787975ec720104f42">ranking</a>[i].consultar_puntos() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abf5308b5d4ff571486fbd02e81bc6413" name="abf5308b5d4ff571486fbd02e81bc6413"></a>
@@ -318,11 +788,22 @@ Atributos privados</h2></td></tr>
 <dl class="section pre"><dt>Precondición</dt><dd>cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se han escrito los jugadores del circuito por el canal de salida estándard </dd></dl>
 
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8cc_source.html#l00134">134</a> del archivo <a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
+<div class="line"><span class="lineno">  136</span>    cout &lt;&lt; <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.size() &lt;&lt; endl;</div>
+<div class="line"><span class="lineno">  137</span>    map&lt;string, Jugador&gt;::const_iterator it = <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.begin();</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">while</span> (it != <a class="code hl_variable" href="class_cjt___jugadores.html#a3559862f2ddf964d670dc8a6ca7d1995">indice_jugadores</a>.end())</div>
+<div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        it-&gt;second.escribir_jugador();</div>
+<div class="line"><span class="lineno">  141</span>        ++it;</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="line"><span class="lineno">  143</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Documentación de los datos miembro</h2>
-<a id="a7c4e0b47e8a197b0b73ef5f008b58105" name="a7c4e0b47e8a197b0b73ef5f008b58105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c4e0b47e8a197b0b73ef5f008b58105">&#9670;&nbsp;</a></span>vjug</h2>
+<a id="a3559862f2ddf964d670dc8a6ca7d1995" name="a3559862f2ddf964d670dc8a6ca7d1995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3559862f2ddf964d670dc8a6ca7d1995">&#9670;&nbsp;</a></span>indice_jugadores</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +812,7 @@ Atributos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_jugador.html">Jugador</a>&gt; Cjt_Jugadores::vjug</td>
+          <td class="memname">map&lt;string, <a class="el" href="class_jugador.html">Jugador</a>&gt; Cjt_Jugadores::indice_jugadores</td>
         </tr>
       </table>
   </td>
@@ -341,7 +822,31 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00022">22</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00024">24</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
+
+</div>
+</div>
+<a id="a9304fd80a3c4be7787975ec720104f42" name="a9304fd80a3c4be7787975ec720104f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9304fd80a3c4be7787975ec720104f42">&#9670;&nbsp;</a></span>ranking</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_jugador.html">Jugador</a>&gt; Cjt_Jugadores::ranking</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00025">25</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
 
 </div>
 </div>
@@ -355,7 +860,7 @@ Atributos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Cjt_Jugadores::njug</td>
+          <td class="memname">int Cjt_Jugadores::njug = ranking.size()</td>
         </tr>
       </table>
   </td>
@@ -365,12 +870,13 @@ Atributos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00023">23</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="_cjt___jugadores_8hh_source.html#l00026">26</a> del archivo <a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a>.</p>
 
 </div>
 </div>
-<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
 <li><a class="el" href="_cjt___jugadores_8hh_source.html">Cjt_Jugadores.hh</a></li>
+<li><a class="el" href="_cjt___jugadores_8cc_source.html">Cjt_Jugadores.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
