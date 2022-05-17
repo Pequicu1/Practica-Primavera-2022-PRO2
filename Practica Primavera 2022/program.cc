@@ -1,16 +1,30 @@
 /**
- * @mainpage CIRCUITO DE TORNEOS DE TENIS - [Práctica primavera 2022].
+ @mainpage CIRCUITO DE TORNEOS DE TENIS - [Práctica primavera 2022].
+ Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones.
+ Se utilizan las clases: <em>Jugador</em>, <em>Cjt_Jugadores</em>, <em>Torneo</em> y <em>Cjt_Torneos</em>.
 
-Programa modular que pretende simular lo más parecido posible la gestión y funcionamiento de un circuito de torneos de tenis. Presenta diversas simplificaciones.
+    Este programa sigue lo siguiente:
+    - Primero de todo se inicializan las categorias, con sus puntos, seguidamente los torneos del Circuito con una categoria asignada a cada uno y finalmente los jugadores que participan en este circuito.
+    - A conticuión entran una serie de comandos que modificaran el circuito a medida de cada iteracion dependiendo de la orden proporcionada.
 
-*/
+    Los posibles comandos que el programa acepta son los siguientes:
+        - nuevo_jugador o nj: añade a un  nuevo jugador al circuito. Empezará el último en el ranking con 0 puntos.
+        - nuevo_torneo o nt: añade a un nuevo torneo al circuito.
+        - baja_jugador o bj: elimina un jugador del circuito.
+        - baja_torneo o bt: elimina un torneo del circuito. Restando los puntos que habían ganado a aquellos que habian participado en la última edición.
+        - iniciar_torneo o it: Inicia el torneo deseado creando un cuadro de emparejamientos incial.
+        - finalizar_torneo o ft: finaliza el torneo deseado, lee un arbol de resultados y computa un arbol de partidos de donde se calcularán los puntos y otras estadísticas ganados o perdidos por los jugadores.
+        - listar_ranking o lr: imprime los jugadores por orden decreciente de ranking junto con sus puntos.
+        - listar_jugadores o lj: imprime todos los jugadores por orden alfabético junto con todas las estadísticas del mismo.
+        - listar_torneos o lt: imprime los todos los torneos del circuito.
+        - listar_categorias o lc: imprime todas las categorias del circuito junto con los puntos por cada nivel.
+        - fin: finaliza el programa.
+
+    */
 
 /** @file program.cc
     @brief Programa principal para el ejercicio <em>Circuito de torneos de tenis</em>.
 */
-
-// para que el diagrama modular quede bien se han escrito includes redundantes;
-// en los ficheros .hh de la documentación de las clases ocurre lo mismo.
 
 #include "Cjt_Jugadores.hh"
 #include "Cjt_Torneos.hh"
@@ -87,8 +101,8 @@ int main()
             if (jugs.existe_jugador(name))
             {
                 Jugador P = jugs.obtener_jugador(name);
-                jugs.eliminar_jugador(P);
                 torns.eliminar_jugador(P);
+                jugs.eliminar_jugador(P);
                 cout << jugs.numero_jugadores() << endl;
             }
             else
@@ -103,12 +117,12 @@ int main()
             if (torns.existe_torneo(name_torneo))
             {
                 Torneo T = torns.obtener_torneo(name_torneo);
+                torns.eliminar_Torneo(T);
                 if (T.consultar_ranking_anterior().size() != 0)
                 {
                     jugs.restar_puntos(T.consultar_ranking_anterior());
                     jugs.ordenar_ranking();
                 }
-                torns.eliminar_Torneo(T);
                 cout << torns.numero_torneos() << endl;
             }
             else

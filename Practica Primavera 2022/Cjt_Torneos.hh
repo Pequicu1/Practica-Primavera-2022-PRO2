@@ -17,6 +17,9 @@
     @brief Representa el conjunto de todos los torneos del circuito.
     */
 
+/**
+ * @brief Matriz donde se guardaran las puntuaciones de todas las categorias segun el nivel
+ */
 typedef vector<vector<int>> Matriz;
 class Cjt_Torneos
 {
@@ -53,7 +56,7 @@ public:
   /**
    * @brief Modifica el Torneo T deseado
    * \pre P.I inicializado previamente y T existe
-   * \post modifica en el map de torneos el torneo deseado.
+   * \post modifica en el mapa de torneos el torneo deseado.
    * @param T
    */
   void actualizar_torneo(const Torneo &T);
@@ -63,7 +66,6 @@ public:
    * \pre P está en el torneo.
    * \post Los participantes del torneo serán los mismos menos el jugador P.
    */
-
   void eliminar_jugador(const Jugador &P);
 
   // -- CONSULTORAS --

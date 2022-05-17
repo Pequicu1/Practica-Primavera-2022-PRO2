@@ -18,29 +18,15 @@ Cjt_Jugadores::Cjt_Jugadores()
 
 void Cjt_Jugadores::ini_jugadores(int n)
 {
-    ranking = vector<Jugador>(n);
     for (int i = 0; i < n; ++i)
     {
         Jugador P;
         P.leer_jugador();
         P.modificar_ranking(i + 1);
-        ranking[i] = P;
+        ranking.push_back(P);
 
         indice_jugadores[P.consultar_id()] = P;
     }
-}
-
-bool Cjt_Jugadores::existe_jugador(string name)
-{
-    map<string, Jugador>::const_iterator it = indice_jugadores.find(name);
-    return it != indice_jugadores.end();
-}
-
-void Cjt_Jugadores::anadir_jugador(Jugador &P)
-{
-    P.modificar_ranking(ranking.size() + 1);
-    ranking.push_back(P);
-    indice_jugadores[P.consultar_id()] = P;
 }
 
 int Cjt_Jugadores::numero_jugadores() const
@@ -59,17 +45,28 @@ vector<Jugador> Cjt_Jugadores::obtener_ranking() const
     return ranking;
 }
 
+map<string, Jugador> Cjt_Jugadores::consultar_indice() const
+{
+    return indice_jugadores;
+}
+
+bool Cjt_Jugadores::existe_jugador(string name)
+{
+    map<string, Jugador>::const_iterator it = indice_jugadores.find(name);
+    return it != indice_jugadores.end();
+}
+
+void Cjt_Jugadores::anadir_jugador(Jugador &P)
+{
+    P.modificar_ranking(ranking.size() + 1);
+    ranking.push_back(P);
+    indice_jugadores[P.consultar_id()] = P;
+}
+
 void Cjt_Jugadores::eliminar_jugador(const Jugador &P)
 {
-
-    // Lo borro del indice (map)
-    map<string, Jugador>::const_iterator it = indice_jugadores.find(P.consultar_id());
-    indice_jugadores.erase(it);
-
-    // Lo borro del ranking (vector)
-    // sort(ranking.begin(), ranking.end());
+    //(vector)
     int pos = P.consultar_pos_ranking() - 1;
-    //  Cuando se elimina un jugador los que estaban detrás de él suben 1 posición el ranking
     for (int i = pos; i < ranking.size() - 1; ++i)
     {
         ranking[i] = ranking[i + 1];
@@ -77,27 +74,15 @@ void Cjt_Jugadores::eliminar_jugador(const Jugador &P)
         indice_jugadores[ranking[i].consultar_id()] = ranking[i];
     }
     ranking.pop_back();
+
+    //(map)
+    map<string, Jugador>::const_iterator it = indice_jugadores.find(P.consultar_id());
+    indice_jugadores.erase(it);
 }
 
 void Cjt_Jugadores::modificar_ranking(const Jugador &P)
 {
     ranking[P.consultar_pos_ranking() - 1] = P;
-}
-
-void Cjt_Jugadores::mod_indice(const Jugador &P)
-{
-    map<string, Jugador>::iterator it = indice_jugadores.find(P.consultar_id());
-    (*it).second = P;
-}
-
-void Cjt_Jugadores::actualizar_indice(const Cjt_Jugadores &P)
-{
-    vector<Jugador> jugs = P.obtener_ranking();
-    for (int i = 0; i < jugs.size(); ++i)
-    {
-        map<string, Jugador>::iterator it = indice_jugadores.find(jugs[i].consultar_id());
-        (*it).second = jugs[i];
-    }
 }
 
 void Cjt_Jugadores::listar_ranking()
@@ -106,11 +91,6 @@ void Cjt_Jugadores::listar_ranking()
     {
         cout << ranking[i].consultar_pos_ranking() << ' ' << ranking[i].consultar_id() << ' ' << ranking[i].consultar_puntos() << endl;
     }
-}
-
-map<string, Jugador> Cjt_Jugadores::consultar_indice() const
-{
-    return indice_jugadores;
 }
 
 void Cjt_Jugadores::restar_puntos(const vector<Jugador> &jugs)
@@ -125,7 +105,7 @@ void Cjt_Jugadores::restar_puntos(const vector<Jugador> &jugs)
     }
 }
 
-bool comp(const Jugador &j1, const Jugador &j2)
+bool Cjt_Jugadores::comp(const Jugador &j1, const Jugador &j2)
 {
     if (j1.consultar_puntos() == j2.consultar_puntos())
     {

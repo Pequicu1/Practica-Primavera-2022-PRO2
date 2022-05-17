@@ -16,6 +16,12 @@
     @brief Representa un Torneo
     */
 
+/**
+ * @brief Tupla de Torneo:
+ *  - Jugador 1
+ *  - Jugador 2
+ *  - puntos del partido
+ */
 struct Partido
 {
   Jugador j1;
@@ -28,13 +34,21 @@ class Torneo
 
 private:
   string identificador;
+  int categoria;
   Cjt_Jugadores participantes;
   Cjt_Jugadores participantes_ant;
 
   vector<Jugador> parts;
   vector<Jugador> parts_ant;
-  int categoria;
   BinTree<Jugador> Cuadro;
+
+  // iniciar_torneo
+  BinTree<Jugador> crear_torneo_i(Jugador ant, const vector<Jugador> &rank, int altura, int altura_act, int x);
+
+  // finalizar_torneo
+  BinTree<Partido> leer_resultados_i(const BinTree<Jugador> &A, Jugador &Ganador, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
+  Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts);
+  static void imprimir_resultados(const BinTree<Partido> &A);
 
 public:
   // -- CONSTRUCTORA --
@@ -48,13 +62,26 @@ public:
   // -- MODIFICADORAS --
 
   /** @brief Crea el cuadro del torneo del parámetro implícito con los particiapantes introducidos.
-        \pre Participantes es un conjunto de jugadores ya incializado.
-        \post Retorna un BinTree de pares de jugadores que representa el cuadro de partidos del torneo.
+        \pre cierto
+        \post El atributo Cuadro del P.I ahora es un BinTree de Jugadores que representa el cuadro de emparejamientos incial del Torneo.
     */
   void crear_torneo();
 
+  /**
+   * @brief Actualiza el conjunto de jugadores "participantes" del parametro implícit.
+   * \pre cierto
+   * \post participantes ahora es P.
+   * @param P
+   */
   void actualiza_participantes(const Cjt_Jugadores &P);
-  void actualiza_participantes_ant(const Cjt_Jugadores &P);
+
+  /**
+   * @brief Elimina el jugador del ranking pasado del torneo
+   *  \pre P esta inicializado.
+   * \post  El vector de Jugadores del ranking anterior es 1 mas pequeño y el jugador P no está.
+   * @param P
+   */
+  void eliminar_jugador(const Jugador &P);
 
   // -- CONSULTORAS --
 
@@ -62,29 +89,34 @@ public:
 
   /** @brief Consultora de la categoría del torneo.
       \pre <em>cierto</em>
-      \post El resultado es la categoría del parámetro implícito.
+      \post Retorna es la categoría del parámetro implícito.
   */
   int consultar_categoria() const;
 
   /** @brief Consultora del nombre del torneo.
         \pre <em>cierto</em>
-        \post El resultado es el identificador del parámetro implícito.
+        \post Retorna es el identificador del parámetro implícito.
     */
   string consultar_nombre() const;
 
-  vector<Jugador> consultar_ranking() const;
+  /**
+   * @brief Consultora del vector de Jugadroes que representa el ranking anterior.
+   * \pre cierto
+   * \post devuelve el vector de Jugadores que representa el ranking anterior.
+   * @return vector<Jugador>
+   */
   vector<Jugador> consultar_ranking_anterior() const;
 
   /** @brief Consultora del cuadro de emparejamientos Torneo.
         \pre El parámetro implícito está previamente inicializado.
-        \post El resultado es el cuadro de emparejamientos del parámetro implícito.
+        \post Retorna es el cuadro de emparejamientos del parámetro implícito.
     */
   BinTree<Jugador> obtener_cuadro() const;
 
   /**
    * @brief Consultora del cuadro de emparejamientos Torneo.
        \pre El parámetro implícito está previamente inicializado.
-       \post Devuelve los participantes del torneo.
+       \post Retorna los participantes del torneo.
    * @return Cjt_Jugadores
    */
   Cjt_Jugadores obtener_participantes() const;
@@ -97,35 +129,26 @@ public:
     */
   Cjt_Jugadores leer_participantes(int n, const Cjt_Jugadores &Jug);
 
-  /** @brief Lee los resultados del torneo.
-        \pre A es un cuadro de emparejamientos inicializado del torneo.
-        \post El cuadro A queda con los resultados introducidos en preorden siguiendo el Árbol binario.
+  /** @brief Lee y analiza los resultados del torneo.
+        \pre A es un cuadro de emparejamientos inicializado del torneo. Puntuaciones es el vector de enteros que corresponde a la fila de la Matriz donde se encuentran
+        las diferentes categorías con su nivel.
+        \post Se ha generado un arbol de "Partido" (Struct) que representa los emparejamiento a lo largo del torneo con sus respectivos gandores para
+        cada encuentro.
+        En el canal estándard de salida se han escrito todos los jugadores que han conseguido puntos en el torneo. [pos_ranking.nombre puntos]
+        Se han actualizado el ranking y los participantes anteriores a los actuales.
     */
   void leer_resultados(const BinTree<Jugador> &A, const vector<int> &Puntuaciones, Cjt_Jugadores &General);
-
-  BinTree<Partido> leer_resultados_i(const BinTree<Jugador> &A, Jugador &Ganador, const vector<int> &pts, int &nivel, Cjt_Jugadores &General);
-
-  Jugador ganador(Jugador &J1, Jugador &J2, string resultados, int pts);
-
-  void eliminar_jugador(const Jugador &P);
 
   /** @brief Operación de lectura
      \pre cierto
      \post El parámetro implícito pasa a tener un identificador y una categoría.
  */
-  void
-  leer_torneo();
+  void leer_torneo();
 
   /** @brief Operación de escritura del cuadro del parámetro implícito.
         \pre <em>cierto</em>
         \post Se han escrito los emparejamientos del cuadro del torneo en el canal estándard de salida.
     */
-  void imprimir_cuadro(const BinTree<Jugador> &A) const;
-
-  /** @brief Operación de escritura de los resultados del torneo.
-        \pre <em>cierto</em>
-        \post Se han escrito los resultados del torneo en el canal de estandárd de salida.
-    */
-  void imprimir_resultados(const BinTree<Partido> &A) const;
+  static void imprimir_cuadro(const BinTree<Jugador> &A);
 };
 #endif

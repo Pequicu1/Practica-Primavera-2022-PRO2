@@ -25,6 +25,8 @@ private:
     vector<Jugador> ranking;
     int njug = ranking.size();
 
+    static bool comp(const Jugador &j1, const Jugador &j2);
+
 public:
     // -- CONSTRUCTORA --
 
@@ -54,34 +56,48 @@ public:
     /**
      * @brief modifica las estadisticas de los jugadores del ranking
      * \pre cierto
-     * \post se modifica el jugador objetivo del ranking
+     * \post se modifica el jugador objetivo en el ranking
      */
     void modificar_ranking(const Jugador &P);
 
     /**
-     * @brief actualiza el jugador en el mapa
-     * \pre cierto
-     * \post El jugador con el identificador deseado será actualizado con nuvos datos;
-     * @param P
+     * @brief modifica las estadísticas del J1 y J2 en base del gandor y los puntos que hayan obtenidos, sets y partido.
+     * \pre hay un Ganador que se ha calculado previamente.
+     * \post Las características del J1 y J2 se han modificado.
+     * @param Ganador
+     * @param J1
+     * @param J2
+     * @param resultados
+     * @param puntos
+     * @param nivel
      */
-    void mod_indice(const Jugador &P);
-
-    void actualizar_indice(const Cjt_Jugadores &Ply);
-
     void modificar_estadisticas(Jugador &Ganador, Jugador &J1, Jugador &J2, string resultados, const vector<int> &puntos, int nivel);
 
-    map<string, Jugador> consultar_indice() const;
-
+    /**
+     * @brief Se restan a los jugadores del P.I los puntos que tienen aquellos que pertenecen al vector de entrada.
+     * \pre jugs no está vacío
+     * \post Los jugadores del P.I ahora tienen los puntos que tenían menos los que constaban en jugs.
+     * @param jugs
+     */
     void restar_puntos(const vector<Jugador> &jugs);
 
     /**
      * @brief Ordena reordena el ranking de jugadores en funcion de sus puntos;
      * \pre cierto
-     * \post El ranking del PI esta ordenado decrecientemente en funcion de los puntos de los jugadores.
+     * \post El ranking del PI esta ordenado decrecientemente en funcion de los puntos de los jugadores. I en caso de empate, ordenado creciente en funcion de la posición
+     * anterior en el ranking.
      */
     void ordenar_ranking();
 
     // -- CONSULTORAS --
+
+    /**
+     * @brief Consultora del indice de jugadores del P.I. (mapa)
+     * \pre cierto
+     * \post Retorna el mapa de Jugadores que representa el índice de los jugadores del conjunto.
+     * @return map<string, Jugador>
+     */
+    map<string, Jugador> consultar_indice() const;
 
     /** @brief Consultora que indica si existe el jugador P en el circuito.
         \pre El parámetro implícito está incializado.

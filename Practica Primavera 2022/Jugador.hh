@@ -19,13 +19,22 @@ using namespace std;
 class Jugador
 {
 
+private:
+  string id;
+  int puntos;
+  int pos_ranking;
+  int torneos_disputados;
+  pair<int, int> partidos;
+  pair<int, int> sets;
+  pair<int, int> juegos;
+
 public:
   // -- CONSTRUCTORA --
 
   /** @brief Creadora por defecto.
    *
     \pre <em>cierto</em>
-    \post El resultado es un jugador vacío.
+    \post El resultado es un jugador vacío inicializado todo a 0.
 */
   Jugador();
 
@@ -55,19 +64,21 @@ public:
   /**
    * @brief Modificadora de los juegos del jugador.
       \pre cierto
-      \post El parámetro implícito pasa a tener n juegos ganados o perdidos.
+      \post El parámetro implícito pasa a tener n juegos ganados: si c fue '+', else: perdidos.
    */
   void modificar_juegos(int n, char c);
+
   /**
    * @brief Modificadora de los sets del jugador.
       \pre cierto
-      \post El parámetro implícito pasa a tener n sets ganados o perdidos.
+      \post El parámetro implícito pasa a tener n sets ganados: si c fue '+', else: perdidos.
    */
   void modificar_sets(int n, char c);
+
   /**
    * @brief Modificadora de los partidos del jugador.
       \pre cierto
-      \post se incrementa en 1 los partidos gando o perdidos por el jugador.
+      \post se incrementa en 1 los partidos ganados: si c fue '+', else: perdidos por el jugador .
    */
   void modificar_partidos(char c);
 
@@ -94,7 +105,6 @@ public:
       \pre El parámetro implícito está incializado
       \post El resultado son los puntos del parámetro implícito
 */
-
   int consultar_puntos() const;
 
   /**
@@ -149,14 +159,5 @@ public:
    * por el canal estándard
    */
   void escribir_jugador() const;
-
-private:
-  string id;
-  int puntos;
-  int pos_ranking;
-  int torneos_disputados;
-  pair<int, int> partidos;
-  pair<int, int> sets;
-  pair<int, int> juegos;
 };
 #endif
