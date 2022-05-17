@@ -72,7 +72,7 @@ public:
 
     map<string, Jugador> consultar_indice() const;
 
-    void restar_puntos(const Cjt_Jugadores &T);
+    void restar_puntos(const vector<Jugador> &jugs);
 
     /**
      * @brief Ordena reordena el ranking de jugadores en funcion de sus puntos;

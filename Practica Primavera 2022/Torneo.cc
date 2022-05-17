@@ -16,6 +16,8 @@
 Torneo::Torneo()
 {
     Cuadro = BinTree<Jugador>();
+    parts = vector<Jugador>();
+    parts_ant = vector<Jugador>();
 }
 
 void Torneo::leer_torneo()
@@ -48,18 +50,21 @@ Cjt_Jugadores Torneo::consultar_parts_ant() const
     return participantes_ant;
 }
 
-Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs) const
+Cjt_Jugadores Torneo::leer_participantes(int n, const Cjt_Jugadores &Jugs)
 {
+    // vector<Jugador> parts;
     Cjt_Jugadores new_participantes;
     vector<Jugador> rank0 = Jugs.obtener_ranking();
     for (int i = 0; i < n; ++i)
     {
         int pos;
         cin >> pos;
+
         rank0[pos - 1].modificar_puntos(-rank0[pos - 1].consultar_puntos());
+        parts.push_back(rank0[pos - 1]);
         new_participantes.anadir_jugador(rank0[pos - 1]);
     }
-
+    (*this).parts = parts;
     return new_participantes;
 }
 
@@ -156,14 +161,14 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
         if (sets1 > sets2)
         {
             J2.modificar_puntos(pts);
-            participantes.modificar_ranking(J2);
+            parts[J2.consultar_pos_ranking() - 1] = J2;
 
             Ganador = J1;
         }
         else
         {
             J1.modificar_puntos(pts);
-            participantes.modificar_ranking(J1);
+            parts[J1.consultar_pos_ranking() - 1] = J1;
 
             Ganador = J2;
         }
@@ -174,14 +179,14 @@ Jugador Torneo::ganador(Jugador &J1, Jugador &J2, string resultados, int pts)
         if (resultados[i] == '1' and resultados[j] == '0')
         {
             J2.modificar_puntos(pts);
-            participantes.modificar_ranking(J2);
+            parts[J2.consultar_pos_ranking() - 1] = J2;
 
             Ganador = J1;
         }
         else if (resultados[i] == '0' and resultados[j] == '1')
         {
             J1.modificar_puntos(pts);
-            participantes.modificar_ranking(J1);
+            parts[J1.consultar_pos_ranking() - 1] = J1;
 
             Ganador = J2;
         }
@@ -211,7 +216,7 @@ BinTree<Partido> Torneo::leer_resultados_i(const BinTree<Jugador> &A, Jugador &G
         Ganador = ganador(match.j1, match.j2, puntos, pts[nivel]);
 
         General.modificar_estadisticas(Ganador, match.j1, match.j2, puntos, pts, nivel);
-        participantes.modificar_ranking(Ganador);
+        parts[Ganador.consultar_pos_ranking() - 1] = Ganador;
 
         BinTree<Partido> res(match, I, D);
 
@@ -226,18 +231,20 @@ void Torneo::leer_resultados(const BinTree<Jugador> &A, const vector<int> &Punto
     BinTree<Partido> res = leer_resultados_i(A, Ganador, Puntos, ++nivel, General);
     imprimir_resultados(res);
     Ganador.modificar_puntos(Puntos[0]);
-    participantes.modificar_ranking(Ganador);
+    parts[Ganador.consultar_pos_ranking() - 1] = Ganador;
+
     cout << endl;
 
-    for (int i = 0; i < participantes.obtener_ranking().size(); ++i)
+    for (int i = 0; i < parts.size(); ++i)
     {
-        if (participantes.obtener_ranking()[i].consultar_puntos() != 0)
+        if (parts[i].consultar_puntos() != 0)
         {
 
-            cout << participantes.obtener_ranking()[i].consultar_pos_ranking() << '.' << participantes.obtener_ranking()[i].consultar_id() << ' ' << participantes.obtener_ranking()[i].consultar_puntos() << endl;
+            cout << parts[i].consultar_pos_ranking() << '.' << parts[i].consultar_id() << ' ' << parts[i].consultar_puntos() << endl;
         }
     }
     participantes_ant = participantes;
+    parts_ant = parts;
 }
 
 BinTree<Jugador> Torneo::obtener_cuadro() const
@@ -250,9 +257,10 @@ void Torneo::eliminar_jugador(const Jugador &P)
     bool found = false;
     for (int i = 0; not found; ++i)
     {
-        if (P.consultar_id() == participantes_ant.obtener_ranking()[i].consultar_id())
+        if (P.consultar_id() == parts_ant[i].consultar_id())
         {
             participantes_ant.eliminar_jugador(participantes_ant.obtener_ranking()[i]);
+            parts_ant[i].modificar_puntos(-parts_ant[i].consultar_puntos());
             found = true;
         }
     }
@@ -268,4 +276,13 @@ void Torneo::imprimir_resultados(const BinTree<Partido> &A) const
         imprimir_resultados(A.right());
         cout << ')';
     }
+}
+
+vector<Jugador> Torneo::consultar_ranking() const
+{
+    return parts;
+}
+vector<Jugador> Torneo::consultar_ranking_anterior() const
+{
+    return parts_ant;
 }

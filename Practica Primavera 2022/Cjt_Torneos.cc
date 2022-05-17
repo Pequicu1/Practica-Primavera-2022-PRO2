@@ -93,7 +93,7 @@ void Cjt_Torneos::eliminar_jugador(const Jugador &P)
     map<string, Torneo>::iterator it = indice_torneos.begin();
     while (c <= P.consultar_torneos_disputados())
     {
-        if ((*it).second.obtener_participantes().existe_jugador(P.consultar_id()))
+        if ((*it).second.consultar_parts_ant().existe_jugador(P.consultar_id()))
         {
             (*it).second.eliminar_jugador(P);
             ++c;

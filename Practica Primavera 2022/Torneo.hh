@@ -30,6 +30,9 @@ private:
   string identificador;
   Cjt_Jugadores participantes;
   Cjt_Jugadores participantes_ant;
+
+  vector<Jugador> parts;
+  vector<Jugador> parts_ant;
   int categoria;
   BinTree<Jugador> Cuadro;
 
@@ -69,6 +72,9 @@ public:
     */
   string consultar_nombre() const;
 
+  vector<Jugador> consultar_ranking() const;
+  vector<Jugador> consultar_ranking_anterior() const;
+
   /** @brief Consultora del cuadro de emparejamientos Torneo.
         \pre El parámetro implícito está previamente inicializado.
         \post El resultado es el cuadro de emparejamientos del parámetro implícito.
@@ -89,7 +95,7 @@ public:
         \pre 8 <= n <= 2^(K-1)
         \post Retorna un conjunto de jugadores que serán los n participantes del torneo.
     */
-  Cjt_Jugadores leer_participantes(int n, const Cjt_Jugadores &Jug) const;
+  Cjt_Jugadores leer_participantes(int n, const Cjt_Jugadores &Jug);
 
   /** @brief Lee los resultados del torneo.
         \pre A es un cuadro de emparejamientos inicializado del torneo.

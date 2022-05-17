@@ -113,18 +113,14 @@ map<string, Jugador> Cjt_Jugadores::consultar_indice() const
     return indice_jugadores;
 }
 
-void Cjt_Jugadores::restar_puntos(const Cjt_Jugadores &jugs)
+void Cjt_Jugadores::restar_puntos(const vector<Jugador> &jugs)
 {
-    for (int i = 0; i < jugs.obtener_ranking().size(); ++i)
+    for (int i = 0; i < jugs.size(); ++i)
     {
-        if (existe_jugador(jugs.obtener_ranking()[i].consultar_id()))
+        if (existe_jugador(jugs[i].consultar_id()))
         {
-            if (jugs.obtener_ranking()[i].consultar_id() == "Fritz")
-            {
-                cout << "ESTOY AUQI" << endl;
-            }
-            map<string, Jugador>::iterator it = indice_jugadores.find(jugs.obtener_ranking()[i].consultar_id());
-            (*it).second.modificar_puntos(-jugs.obtener_ranking()[i].consultar_puntos());
+            map<string, Jugador>::iterator it = indice_jugadores.find(jugs[i].consultar_id());
+            (*it).second.modificar_puntos(-jugs[i].consultar_puntos());
         }
     }
 }

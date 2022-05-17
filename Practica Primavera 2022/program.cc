@@ -103,9 +103,12 @@ int main()
             if (torns.existe_torneo(name_torneo))
             {
                 Torneo T = torns.obtener_torneo(name_torneo);
-                jugs.restar_puntos(T.consultar_parts_ant());
+                if (T.consultar_ranking_anterior().size() != 0)
+                {
+                    jugs.restar_puntos(T.consultar_ranking_anterior());
+                    jugs.ordenar_ranking();
+                }
                 torns.eliminar_Torneo(T);
-                jugs.ordenar_ranking();
                 cout << torns.numero_torneos() << endl;
             }
             else
@@ -139,7 +142,7 @@ int main()
             cout << ' ' << id << endl;
 
             Torneo T = torns.obtener_torneo(id);
-            jugs.restar_puntos(T.consultar_parts_ant());
+            jugs.restar_puntos(T.consultar_ranking_anterior());
             T.leer_resultados(T.obtener_cuadro(), torns.obtener_puntuaciones()[T.consultar_categoria() - 1], jugs);
             torns.actualizar_torneo(T);
             jugs.ordenar_ranking();
